@@ -1,0 +1,2552 @@
+[
+ {
+  "id": "ENT-001",
+  "name": "User",
+  "module": "MOD-01/03",
+  "purpose": "Login identity AND employee master (reference stores both in one table)",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int PK",
+    "notes": ""
+   },
+   {
+    "name": "first_name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "last_name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "username",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "email",
+    "type": "str unique",
+    "notes": "login"
+   },
+   {
+    "name": "password",
+    "type": "hash",
+    "notes": ""
+   },
+   {
+    "name": "employee_code",
+    "type": "str unique",
+    "notes": "reference employeeID e.g. KN007; auto-sequence"
+   },
+   {
+    "name": "phone",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "role_id",
+    "type": "FK Role",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": "Active/Deactive"
+   },
+   {
+    "name": "is_deleted",
+    "type": "bool",
+    "notes": "soft delete"
+   },
+   {
+    "name": "photo",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "date_of_birth",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "date_of_joining",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "sub_unit_id",
+    "type": "FK SubUnit",
+    "notes": "reference departmentID"
+   },
+   {
+    "name": "designation_id",
+    "type": "FK Designation",
+    "notes": ""
+   },
+   {
+    "name": "nationality_id",
+    "type": "FK Nationality",
+    "notes": ""
+   },
+   {
+    "name": "reports_to_id",
+    "type": "FK User",
+    "notes": "reference reportingID"
+   },
+   {
+    "name": "employment_type_id",
+    "type": "FK EmploymentStatus",
+    "notes": "reference empType/empStatusID"
+   },
+   {
+    "name": "employee_status",
+    "type": "enum",
+    "notes": "Confirm Employees | On Probation | On Notice Period (reference employeesStatus 1/2/3)"
+   },
+   {
+    "name": "gender",
+    "type": "enum",
+    "notes": "Male/Female/Other"
+   },
+   {
+    "name": "marital_status",
+    "type": "enum",
+    "notes": "Single/Married/Other"
+   },
+   {
+    "name": "process_id",
+    "type": "FK Process",
+    "notes": "time zone + leave/holiday calendar"
+   },
+   {
+    "name": "work_mode_id",
+    "type": "FK WorkingMode",
+    "notes": "default work mode"
+   },
+   {
+    "name": "job_title_id",
+    "type": "FK JobTitle",
+    "notes": ""
+   },
+   {
+    "name": "salary_slab_id",
+    "type": "FK SalarySlab",
+    "notes": ""
+   },
+   {
+    "name": "working_capacity_pct",
+    "type": "int",
+    "notes": "e.g. 100"
+   },
+   {
+    "name": "working_days",
+    "type": "json",
+    "notes": "weekday list"
+   },
+   {
+    "name": "weekly_work_hours",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "address",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "location",
+    "type": "str",
+    "notes": "job location"
+   },
+   {
+    "name": "driver_licence_number",
+    "type": "str",
+    "notes": "SENSITIVE"
+   },
+   {
+    "name": "licence_expiry",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "medical_condition",
+    "type": "text",
+    "notes": "SPECIAL CATEGORY \u2014 restrict"
+   },
+   {
+    "name": "deactivated_on",
+    "type": "date",
+    "notes": "last working date"
+   },
+   {
+    "name": "rms_applicant_id",
+    "type": "FK Applicant null",
+    "notes": "hired candidate link"
+   },
+   {
+    "name": "created_at",
+    "type": "datetime",
+    "notes": ""
+   },
+   {
+    "name": "updated_at",
+    "type": "datetime",
+    "notes": ""
+   }
+  ],
+  "relationships": "Role 1\u2014n User; User n\u20141 SubUnit/Designation/JobTitle/...; User reports_to User"
+ },
+ {
+  "id": "ENT-002",
+  "name": "Role",
+  "module": "MOD-16",
+  "purpose": "Role with menu permissions",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "title",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "slug",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "Role n\u2014n MenuItem via RolePermission"
+ },
+ {
+  "id": "ENT-003",
+  "name": "MenuItem",
+  "module": "MOD-16",
+  "purpose": "Data-driven menu + permission code",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": "stable permission code (see permissions.json)"
+   },
+   {
+    "name": "title",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "slug",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "route",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "parent_id",
+    "type": "FK MenuItem null",
+    "notes": ""
+   },
+   {
+    "name": "is_menu",
+    "type": "bool",
+    "notes": ""
+   },
+   {
+    "name": "icon",
+    "type": "str",
+    "notes": "line-awesome name"
+   },
+   {
+    "name": "order",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   },
+   {
+    "name": "master_status",
+    "type": "bool",
+    "notes": "tenant-level enable"
+   }
+  ],
+  "relationships": "self-referencing tree"
+ },
+ {
+  "id": "ENT-004",
+  "name": "RolePermission",
+  "module": "MOD-16",
+  "purpose": "Role \u2194 menu item grant",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "role_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "menu_item_id",
+    "type": "FK",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-005",
+  "name": "ReportingManager",
+  "module": "MOD-14",
+  "purpose": "Users flagged as reporting managers per sub unit",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "user_id",
+    "type": "FK User",
+    "notes": ""
+   },
+   {
+    "name": "sub_unit_id",
+    "type": "FK SubUnit",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "drives is_reporting_manager"
+ },
+ {
+  "id": "ENT-006",
+  "name": "Company",
+  "module": "MOD-15",
+  "purpose": "Tenant profile (singleton)",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "company_name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "contact_person",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "address",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "country_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "state",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "city",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "postal_code",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "email",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "phone",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "mobile",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "fax",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "cin",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "website_url",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "tax_id",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "registration_no",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "handbook",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "logo",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "time_zone",
+    "type": "str",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-007",
+  "name": "Theme",
+  "module": "MOD-15",
+  "purpose": "Branding",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "site_logo",
+    "type": "file",
+    "notes": "40\u00d740 recommended"
+   },
+   {
+    "name": "favicon",
+    "type": "file",
+    "notes": "16\u00d716"
+   },
+   {
+    "name": "primary_color",
+    "type": "hex",
+    "notes": "#021156"
+   },
+   {
+    "name": "secondary_color",
+    "type": "hex",
+    "notes": "#ea0606"
+   },
+   {
+    "name": "sidebar_color",
+    "type": "hex",
+    "notes": "#0d339c"
+   },
+   {
+    "name": "auto_punching",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-008",
+  "name": "SmtpProfile",
+  "module": "MOD-15",
+  "purpose": "Outgoing mail profiles HR and PMO",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "profile",
+    "type": "enum HR|PMO",
+    "notes": ""
+   },
+   {
+    "name": "host",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "username",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "password",
+    "type": "secret",
+    "notes": "write-only"
+   },
+   {
+    "name": "port",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "from_address",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "from_name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "security",
+    "type": "enum SSL|TLS",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-009",
+  "name": "Localisation",
+  "module": "MOD-15",
+  "purpose": "Locale defaults",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "country_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "date_format",
+    "type": "enum",
+    "notes": "8 formats; e.g. 15/05/2016"
+   },
+   {
+    "name": "timezone",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "language_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "currency_code",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "currency_symbol",
+    "type": "str",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-010",
+  "name": "MasterItem (generic)",
+  "module": "MOD-14",
+  "purpose": "Simple lookup lists: Skill, Education, Language, Nationality, Country, SubUnit, Designation, TerminationReason, EmploymentStatus, WorkAuthorization, CurrencyCode, DocumentType, Customer, EvaluationStatus, InterviewStatus, TechnicalStatus",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": "unique (new build)"
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": "Active/Deactive"
+   },
+   {
+    "name": "is_deleted",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "Customer adds description; Country used by Location"
+ },
+ {
+  "id": "ENT-011",
+  "name": "WorkingMode",
+  "module": "MOD-14",
+  "purpose": "Work mode codes",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": "code e.g. WFO"
+   },
+   {
+    "name": "description",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "used by Attendance, Who's Where, User"
+ },
+ {
+  "id": "ENT-012",
+  "name": "Process",
+  "module": "MOD-14",
+  "purpose": "Operating region with time zone",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": "e.g. UK"
+   },
+   {
+    "name": "time_zone",
+    "type": "str",
+    "notes": "e.g. Europe/London"
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "Process 1\u2014n LeaveYear, Holiday, User"
+ },
+ {
+  "id": "ENT-013",
+  "name": "Location",
+  "module": "MOD-14",
+  "purpose": "State/region list",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "country_id",
+    "type": "FK Country",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-014",
+  "name": "JobTitle",
+  "module": "MOD-14",
+  "purpose": "Job titles with specification file",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "title",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "description",
+    "type": "rich text",
+    "notes": ""
+   },
+   {
+    "name": "job_specification_file",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "note",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-015",
+  "name": "DocumentListItem",
+  "module": "MOD-14",
+  "purpose": "Named HR document kinds",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": "e.g. Passport, RTW, BRP"
+   },
+   {
+    "name": "document_type_id",
+    "type": "FK DocumentType",
+    "notes": "Paper Work / Pre-Employment / Employment / Post-Employment"
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-016",
+  "name": "Client",
+  "module": "MOD-14",
+  "purpose": "Project clients",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "email",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "contact_no",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "description",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "Client 1\u2014n Project"
+ },
+ {
+  "id": "ENT-017",
+  "name": "Letter",
+  "module": "MOD-14",
+  "purpose": "Letter templates",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "title",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "description",
+    "type": "rich text",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-018",
+  "name": "SalarySlab",
+  "module": "MOD-14",
+  "purpose": "Salary structure (legacy Indian payroll fields)",
+  "evidence": "Verified (API fields), Medium",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "salary_slab",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "process_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "components",
+    "type": "json",
+    "notes": "basicNormalWages, providentFund, hraPayble, esic, convAllowance, mlwa, medicalAllowance, professionalTax, washingAllowance, advanceDeduction, adhocAllowance, medicalInsurance, paybleOTAmount, tds, splIncentive, anyOtherDeduction, otherPayble"
+   },
+   {
+    "name": "pay_frequency",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "currency",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "amount",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "Out of scope for UK unless confirmed (OQ)"
+ },
+ {
+  "id": "ENT-019",
+  "name": "WorkWeek",
+  "module": "MOD-14",
+  "purpose": "Day types per process",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "process_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "mon..sun",
+    "type": "enum",
+    "notes": "Full Day | Half Day | Non-Working Day"
+   }
+  ],
+  "relationships": "drives timesheet disabled days"
+ },
+ {
+  "id": "ENT-020",
+  "name": "EmployeeDocument",
+  "module": "MOD-03",
+  "purpose": "Immigration / compliance documents",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "document_list_item_id",
+    "type": "FK",
+    "notes": "Type"
+   },
+   {
+    "name": "number",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "issued_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "expiry_date",
+    "type": "date",
+    "notes": "drives Expiring Documents + countdown"
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "notes",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "verified",
+    "type": "bool",
+    "notes": "Verify checkbox; drives Verification Pending"
+   },
+   {
+    "name": "checked_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "is_archived",
+    "type": "bool",
+    "notes": "Archive Documents section"
+   },
+   {
+    "name": "status",
+    "type": "str",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-021",
+  "name": "Dependent",
+  "module": "MOD-03",
+  "purpose": "Dependants",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "relationship",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "phone",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "date_of_birth",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-022",
+  "name": "EmergencyContact",
+  "module": "MOD-03",
+  "purpose": "Primary/secondary contact, next of kin",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "kind",
+    "type": "enum primary|secondary|next_of_kin",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "relationship",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "home_phone",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "mobile",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "email",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "address",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "comment",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   }
+  ],
+  "relationships": "Generate PDF"
+ },
+ {
+  "id": "ENT-023",
+  "name": "ContactDetail / Address",
+  "module": "MOD-03",
+  "purpose": "Address history",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "street1",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "street2",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "city",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "state",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "postal_code",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "country_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "address_type",
+    "type": "enum Current|Past",
+    "notes": ""
+   },
+   {
+    "name": "from_month",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "from_year",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "to_month",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "to_year",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "mobile",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "work_email",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "other_email",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "added_by",
+    "type": "enum Admin|Employee",
+    "notes": ""
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "verified",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-024",
+  "name": "Education / Experience / Skill / Language / Membership",
+  "module": "MOD-03",
+  "purpose": "Qualifications",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "\u2026",
+    "type": "",
+    "notes": "see FORM catalogue: education (institute, level, major, year, file); experience (company, job title, type, location, current, start/end month-year, file); skill (skill, years, comment); language (language, reading/writing/speaking, competency Poor|Basic|Good|Mother Tongue, comment); membership (membership, paid by, amount, currency, commence, renewal)"
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-025",
+  "name": "ChangeOfCircumstance",
+  "module": "MOD-03",
+  "purpose": "Life events",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "circumstance_type",
+    "type": "multi-select",
+    "notes": ""
+   },
+   {
+    "name": "description",
+    "type": "rich text",
+    "notes": ""
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-026",
+  "name": "PaperworkDocument",
+  "module": "MOD-03",
+  "purpose": "Generated/uploaded HR paperwork",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "document_list_item_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "title",
+    "type": "str",
+    "notes": ""
+   }
+  ],
+  "relationships": "Generate Contract dialog declared"
+ },
+ {
+  "id": "ENT-027",
+  "name": "OrgDocument",
+  "module": "MOD-03/08/10",
+  "purpose": "Single-file libraries with archive: Hierarchy, Hiring Process, Newsletter",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "kind",
+    "type": "enum hierarchy|hiring_process|newsletter",
+    "notes": ""
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "is_archived",
+    "type": "bool",
+    "notes": ""
+   },
+   {
+    "name": "is_deleted",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-028",
+  "name": "AttendanceSession",
+  "module": "MOD-04",
+  "purpose": "Punch in/out",
+  "evidence": "Verified (workflow)",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "date",
+    "type": "date",
+    "notes": "process time zone"
+   },
+   {
+    "name": "work_mode_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "punch_in",
+    "type": "time",
+    "notes": ""
+   },
+   {
+    "name": "punch_out",
+    "type": "time null",
+    "notes": ""
+   },
+   {
+    "name": "total_minutes",
+    "type": "int",
+    "notes": "computed"
+   },
+   {
+    "name": "source",
+    "type": "enum self|admin",
+    "notes": ""
+   }
+  ],
+  "relationships": "multiple sessions per day"
+ },
+ {
+  "id": "ENT-029",
+  "name": "PunchSetting",
+  "module": "MOD-04",
+  "purpose": "Per-employee working days",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "working_capacity_pct",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "hours_per_week",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "mon..fri",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-030",
+  "name": "LeaveYear",
+  "module": "MOD-05",
+  "purpose": "Leave period",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "from_date",
+    "type": "date",
+    "notes": "reference stores swapped \u2014 defect"
+   },
+   {
+    "name": "to_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "process_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "is_default",
+    "type": "bool",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "1\u2014n LeaveType"
+ },
+ {
+  "id": "ENT-031",
+  "name": "LeaveType",
+  "module": "MOD-05",
+  "purpose": "Leave category per year",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "leave_year_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "allocation_per_year",
+    "type": "decimal",
+    "notes": "reference field 'leave'"
+   },
+   {
+    "name": "process_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-032",
+  "name": "LeaveEntitlement",
+  "module": "MOD-05",
+  "purpose": "Assigned days per employee/type/year",
+  "evidence": "Inferred, Medium \u2014 reference shows assigned 0 despite allocation; mechanism unknown",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "leave_type_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "assigned",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "used",
+    "type": "decimal",
+    "notes": "computed from approved requests"
+   },
+   {
+    "name": "balance",
+    "type": "decimal",
+    "notes": "computed"
+   }
+  ],
+  "relationships": "Proposed explicit table"
+ },
+ {
+  "id": "ENT-033",
+  "name": "LeaveRequest",
+  "module": "MOD-05",
+  "purpose": "Leave application",
+  "evidence": "Verified (request fields)",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "leave_type_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "duration",
+    "type": "enum Full Day|First Half|Second Half",
+    "notes": ""
+   },
+   {
+    "name": "from_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "to_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "days",
+    "type": "decimal",
+    "notes": "computed excl. non-working days & holidays (Proposed)"
+   },
+   {
+    "name": "comment",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "manager_status",
+    "type": "enum Pending|Approved|Rejected",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "enum Pending|Approve With Pay|Approve Without Pay|Rejected",
+    "notes": ""
+   },
+   {
+    "name": "rejection_reason",
+    "type": "text",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-034",
+  "name": "LeaveRota",
+  "module": "MOD-05",
+  "purpose": "Rota date per employee",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "date",
+    "type": "date",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-035",
+  "name": "WfhRequest",
+  "module": "MOD-06",
+  "purpose": "Work-from-home request",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "duration",
+    "type": "enum Full Day|First Half|Second Half",
+    "notes": ""
+   },
+   {
+    "name": "date",
+    "type": "date",
+    "notes": "unique per user (new build)"
+   },
+   {
+    "name": "comment",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "enum Pending|Approved|Rejected",
+    "notes": "reference wfh_status"
+   },
+   {
+    "name": "rejection_reason",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "is_deleted",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-036",
+  "name": "HolidayYear",
+  "module": "MOD-07",
+  "purpose": "Holiday calendar period",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "from_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "to_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "is_default",
+    "type": "bool",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "1\u2014n Holiday"
+ },
+ {
+  "id": "ENT-037",
+  "name": "Holiday",
+  "module": "MOD-07",
+  "purpose": "Public holiday",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "holiday_year_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "type",
+    "type": "enum Full Day|Half Day",
+    "notes": ""
+   },
+   {
+    "name": "process_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-038",
+  "name": "Policy",
+  "module": "MOD-08",
+  "purpose": "Policy register",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "code",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "version",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "effective_from",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "last_update",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "sub_units",
+    "type": "m2m SubUnit",
+    "notes": ""
+   },
+   {
+    "name": "url",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "attachment",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "description",
+    "type": "rich text",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-039",
+  "name": "HoDocument",
+  "module": "MOD-08",
+  "purpose": "Head-office document",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "uploaded_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "description",
+    "type": "rich text",
+    "notes": ""
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "is_archived",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-040",
+  "name": "Project",
+  "module": "MOD-09",
+  "purpose": "Project",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "client_id",
+    "type": "FK Client null",
+    "notes": ""
+   },
+   {
+    "name": "start_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "end_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "lead_id",
+    "type": "FK User",
+    "notes": "team_leader"
+   },
+   {
+    "name": "members",
+    "type": "m2m User",
+    "notes": "team_members"
+   },
+   {
+    "name": "description",
+    "type": "rich text",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "1\u2014n Task, ProjectDocument"
+ },
+ {
+  "id": "ENT-041",
+  "name": "ProjectDocument",
+  "module": "MOD-09",
+  "purpose": "Project file",
+  "evidence": "Verified (UI)",
+  "fields": [
+   {
+    "name": "project_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "file",
+    "type": "file",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-042",
+  "name": "Task",
+  "module": "MOD-09",
+  "purpose": "Kanban task",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "project_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "priority",
+    "type": "enum High|Medium|Low",
+    "notes": ""
+   },
+   {
+    "name": "assignees",
+    "type": "m2m User",
+    "notes": "\u2286 project members"
+   },
+   {
+    "name": "deadline",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "enum To Do|Not Started|In progress|Testing|On Hold|Review|Completed",
+    "notes": ""
+   },
+   {
+    "name": "total_hours",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "estimated_hours",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "remaining_hours",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "start_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "end_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "description",
+    "type": "rich text",
+    "notes": ""
+   }
+  ],
+  "relationships": "1\u2014n TaskComment, TaskAttachment"
+ },
+ {
+  "id": "ENT-043",
+  "name": "Timesheet",
+  "module": "MOD-11",
+  "purpose": "Weekly header",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "start_date",
+    "type": "date",
+    "notes": "Monday"
+   },
+   {
+    "name": "end_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "approval_status",
+    "type": "enum Pending|Accepted|Rejected",
+    "notes": ""
+   },
+   {
+    "name": "is_deleted",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": "unique (user, start_date)"
+ },
+ {
+  "id": "ENT-044",
+  "name": "TimesheetLine",
+  "module": "MOD-11",
+  "purpose": "Project activity row",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "timesheet_id",
+    "type": "FK NOT NULL ON DELETE CASCADE",
+    "notes": "reference uses unconstrained string \u2014 defect"
+   },
+   {
+    "name": "project_id",
+    "type": "FK NOT NULL",
+    "notes": ""
+   },
+   {
+    "name": "activity",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "day1..day7",
+    "type": "decimal 0\u201310",
+    "notes": ""
+   },
+   {
+    "name": "week_total",
+    "type": "decimal",
+    "notes": "computed"
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-045",
+  "name": "TimesheetLog",
+  "module": "MOD-11",
+  "purpose": "Action history",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "timesheet_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "action",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "comment",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "actor_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "at",
+    "type": "datetime",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-046",
+  "name": "WeeklyStatusReport",
+  "module": "MOD-10",
+  "purpose": "WSR",
+  "evidence": "Verified (workflow)",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "week_start",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "week_end",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "submitted_by",
+    "type": "enum Employee|Admin",
+    "notes": ""
+   },
+   {
+    "name": "attachment",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "enum Submitted|Approved|Rejected",
+    "notes": "approval values Declared"
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-047",
+  "name": "Query",
+  "module": "MOD-10",
+  "purpose": "Employee query / helpdesk",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "query_code",
+    "type": "str",
+    "notes": "Q<tenant><nn>, e.g. Qknighton01"
+   },
+   {
+    "name": "employee_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "created_by",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "subject",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "priority",
+    "type": "enum High|Medium|Low",
+    "notes": ""
+   },
+   {
+    "name": "message",
+    "type": "rich text",
+    "notes": ""
+   },
+   {
+    "name": "attachment",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "enum In-Progress|Closed",
+    "notes": ""
+   }
+  ],
+  "relationships": "1\u2014n QueryReply"
+ },
+ {
+  "id": "ENT-048",
+  "name": "WhosWhereEntry",
+  "module": "MOD-10",
+  "purpose": "Planned location per weekday",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "user_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "week_start",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "project_id",
+    "type": "FK null",
+    "notes": ""
+   },
+   {
+    "name": "day1..day5",
+    "type": "FK WorkingMode",
+    "notes": "Mon\u2013Fri"
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-049",
+  "name": "JobRole (Advert)",
+  "module": "MOD-13",
+  "purpose": "Vacancy",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "reference_no",
+    "type": "str",
+    "notes": "e.g. KN2025_3554_105"
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "positions",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "publish_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "expiry_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "portal1..3_name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "portal1..3_reference",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "salary_min_gbp",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "salary_max_gbp",
+    "type": "decimal",
+    "notes": ""
+   },
+   {
+    "name": "description",
+    "type": "rich text",
+    "notes": ""
+   },
+   {
+    "name": "notes",
+    "type": "rich text",
+    "notes": ""
+   },
+   {
+    "name": "documents",
+    "type": "files",
+    "notes": "combined, screening notes, Indeed, Jora, FindAJob, job description"
+   },
+   {
+    "name": "status",
+    "type": "enum Open|Paused|Closed",
+    "notes": ""
+   }
+  ],
+  "relationships": "1\u2014n Applicant"
+ },
+ {
+  "id": "ENT-050",
+  "name": "Applicant",
+  "module": "MOD-13",
+  "purpose": "Candidate",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "id",
+    "type": "int",
+    "notes": ""
+   },
+   {
+    "name": "job_role_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "email",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "phone",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "cv_file",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "cv_text",
+    "type": "text",
+    "notes": "parsed"
+   },
+   {
+    "name": "application_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "respond_to_portal",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "work_authorization_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "cv_evaluation_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "cv_evaluation_status_id",
+    "type": "FK EvaluationStatus",
+    "notes": ""
+   },
+   {
+    "name": "technical_test_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "technical_test_status_id",
+    "type": "FK TechnicalStatus",
+    "notes": ""
+   },
+   {
+    "name": "final_interview_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "final_interview_status_id",
+    "type": "FK InterviewStatus",
+    "notes": ""
+   },
+   {
+    "name": "cif_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "job_offered_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "joining_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "application_pack_location",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "applicant_status",
+    "type": "enum Awaiting|Selected|Joined|Rejected",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   },
+   {
+    "name": "test_token",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "cif_token",
+    "type": "str",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-051",
+  "name": "CvEvaluation",
+  "module": "MOD-13",
+  "purpose": "Scorecard",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "applicant_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "assessor_name",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "assessment_date",
+    "type": "date",
+    "notes": ""
+   },
+   {
+    "name": "ratings",
+    "type": "8 \u00d7 int 1\u20135 + comment",
+    "notes": "technical exposure, applicable work skills, applicable work experience, domain exposure, relevance to position, job-move logic, gaps, CV neatness"
+   },
+   {
+    "name": "outcome",
+    "type": "enum Strong|Potential|Rejected",
+    "notes": ""
+   },
+   {
+    "name": "note",
+    "type": "text",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-052",
+  "name": "TechnicalQuestion / InterviewQuestion",
+  "module": "MOD-13",
+  "purpose": "Question banks",
+  "evidence": "Verified (API fields), High",
+  "fields": [
+   {
+    "name": "job_roles",
+    "type": "m2m JobRole",
+    "notes": ""
+   },
+   {
+    "name": "type",
+    "type": "enum MCQ|Brief / Panel 1\u20133",
+    "notes": ""
+   },
+   {
+    "name": "question",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "option_a..d",
+    "type": "str",
+    "notes": "MCQ"
+   },
+   {
+    "name": "correct_answer",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "code_snippet",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "answer_explanation",
+    "type": "text",
+    "notes": ""
+   },
+   {
+    "name": "video_link",
+    "type": "url",
+    "notes": ""
+   },
+   {
+    "name": "image",
+    "type": "file",
+    "notes": ""
+   },
+   {
+    "name": "status",
+    "type": "bool",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ },
+ {
+  "id": "ENT-053",
+  "name": "AuditEvent",
+  "module": "core",
+  "purpose": "Change history (new)",
+  "evidence": "Proposed",
+  "fields": [
+   {
+    "name": "actor_id",
+    "type": "FK",
+    "notes": ""
+   },
+   {
+    "name": "entity",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "entity_id",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "action",
+    "type": "str",
+    "notes": ""
+   },
+   {
+    "name": "before",
+    "type": "json",
+    "notes": ""
+   },
+   {
+    "name": "after",
+    "type": "json",
+    "notes": ""
+   },
+   {
+    "name": "at",
+    "type": "datetime",
+    "notes": ""
+   },
+   {
+    "name": "ip",
+    "type": "str",
+    "notes": ""
+   }
+  ],
+  "relationships": ""
+ }
+]

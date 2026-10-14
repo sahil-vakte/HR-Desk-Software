@@ -1,0 +1,1115 @@
+{
+ "base": "/api/v1",
+ "auth": "session cookie + CSRF",
+ "error_model": {
+  "422": {
+   "message": "str",
+   "errors": {
+    "field": [
+     "str"
+    ]
+   }
+  },
+  "403": {
+   "message": "You do not have permission to perform this action."
+  }
+ },
+ "pagination": {
+  "request": [
+   "page",
+   "page_size"
+  ],
+  "response": [
+   "count",
+   "next",
+   "previous",
+   "results"
+  ]
+ },
+ "operations": [
+  {
+   "id": "API-001",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/auth/login/",
+   "raw": "POST `/auth/login/`",
+   "purpose": "Email + password login",
+   "permission": "public",
+   "reference": "POST /api/login",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-002",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/auth/logout/",
+   "raw": "POST `/auth/logout/`",
+   "purpose": "Logout",
+   "permission": "authenticated",
+   "reference": "POST /api/logout",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-003",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/session/",
+   "raw": "GET `/session/`",
+   "purpose": "Current user (safe fields only) + role + permissions + menu tree + `is_reporting_manager`",
+   "permission": "authenticated",
+   "reference": "GET /api/user + /api/left_menus",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-004",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/auth/password/forgot/",
+   "raw": "POST `/auth/password/forgot/`",
+   "purpose": "Send reset link",
+   "permission": "public, rate-limited",
+   "reference": "POST /api/forgotPassword",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-005",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/auth/password/reset/",
+   "raw": "POST `/auth/password/reset/`",
+   "purpose": "Reset with token",
+   "permission": "public",
+   "reference": "POST /api/resetPassword",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-006",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/auth/password/change/",
+   "raw": "POST `/auth/password/change/`",
+   "purpose": "Change own password (old, new, confirm)",
+   "permission": "authenticated",
+   "reference": "POST /api/settings/changePassword",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-007",
+   "methods": [
+    "GET",
+    "PATCH"
+   ],
+   "path": "/api/v1/me/profile/",
+   "raw": "GET/PATCH `/me/profile/`",
+   "purpose": "Own profile",
+   "permission": "self (71)",
+   "reference": "/api/settings/getProfileData, updateProfile",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-010",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/dashboard/admin/",
+   "raw": "GET `/dashboard/admin/`",
+   "purpose": "KPI counts, today absent, birthdays, pending verification, expiring docs",
+   "permission": "1 + admin",
+   "reference": "/api/dashboard/*",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-011",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/dashboard/me/",
+   "raw": "GET `/dashboard/me/`",
+   "purpose": "Punch state, today/week/month hours, leave summary, upcoming holiday, my expiring docs",
+   "permission": "1 self",
+   "reference": "/api/dashboard/*, attendance/getEmployeesActivity",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-020",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/employees/",
+   "raw": "CRUD `/employees/`",
+   "purpose": "Employee master; filters: status (current/past), name, employee_id, employment_status, reporting_manager, job_title, sub_unit, joined_from/to",
+   "permission": "29 admin",
+   "reference": "/api/employee",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-021",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/employees/next-id/",
+   "raw": "GET `/employees/next-id/`",
+   "purpose": "Next employee ID (KN###)",
+   "permission": "29",
+   "reference": "(Add Employee default)",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-022",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/employees/check-email/?email=",
+   "raw": "GET `/employees/check-email/?email=`",
+   "purpose": "Duplicate email check",
+   "permission": "29",
+   "reference": "/api/checkEmail",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-023",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/employees/{id}/{dependents|emergency-contacts|addresses|contact-details|education|experience|skills|languages|memberships|circumstance-changes|documents|job|salary|supervisors|subordinates}/",
+   "raw": "CRUD `/employees/{id}/{dependents|emergency-contacts|addresses|contact-details|education|experience|skills|languages|memberships|circumstance-changes|documents|job|salary|supervisors|subordinates}/`",
+   "purpose": "Profile sub-records",
+   "permission": "29 admin; self read (and limited write where verified)",
+   "reference": "/api/employee/*",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-024",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/employees/{id}/documents/{docId}/verify/",
+   "raw": "POST `/employees/{id}/documents/{docId}/verify/` \u00b7 `/archive/`",
+   "purpose": "Document verification / archive",
+   "permission": "29",
+   "reference": "verificationRecords, archiveRecords",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-025",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/employees/{id}/paperwork/",
+   "raw": "POST `/employees/{id}/paperwork/`",
+   "purpose": "Generate paperwork document (type, file, date)",
+   "permission": "29",
+   "reference": "generatePaperworkDocument",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-026",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/employees/{id}/emergency-contact.pdf",
+   "raw": "GET `/employees/{id}/emergency-contact.pdf`",
+   "purpose": "PDF export",
+   "permission": "29",
+   "reference": "emergencyContactPDF",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-027",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/employees/export.csv",
+   "raw": "GET `/employees/export.csv`",
+   "purpose": "Export CSV of filtered list",
+   "permission": "29",
+   "reference": "Export CSV",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-028",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/directory/",
+   "raw": "GET `/directory/`",
+   "purpose": "Employee directory: name, job title, sub unit, photo only",
+   "permission": "58",
+   "reference": "/api/directoryList",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-029",
+   "methods": [
+    "GET",
+    "POST"
+   ],
+   "path": "/api/v1/hierarchy-documents/",
+   "raw": "GET/POST `/hierarchy-documents/`, `/hiring-process-documents/`",
+   "purpose": "Upload + archive org chart / hiring docs",
+   "permission": "75 / 81",
+   "reference": "hierarchyList, hiringProcessList",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-030",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/attendance/punch-in/",
+   "raw": "POST `/attendance/punch-in/` \u00b7 `/attendance/punch-out/`",
+   "purpose": "Own punch (server time, process time zone)",
+   "permission": "27 self",
+   "reference": "updateAttendanceActivityStatus (GET)",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-031",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/attendance/me/?month=&year=&date=",
+   "raw": "GET `/attendance/me/?month=&year=&date=`",
+   "purpose": "Own history",
+   "permission": "27 self",
+   "reference": "getEmployeeAttendance",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-032",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/attendance/grid/?month=&year=&employee=",
+   "raw": "GET `/attendance/grid/?month=&year=&employee=`",
+   "purpose": "Admin monthly grid + totals (days, HR, taken, balance)",
+   "permission": "28",
+   "reference": "getAllEmployeesAttendancelist",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-033",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/attendance/records/",
+   "raw": "CRUD `/attendance/records/`",
+   "purpose": "Manual add/edit (employee, date, work mode, in, out)",
+   "permission": "admin (Attendance update)",
+   "reference": "attendance/addupdate",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-034",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/attendance/punch-settings/",
+   "raw": "GET/PUT `/attendance/punch-settings/`",
+   "purpose": "Per-employee working days & capacity",
+   "permission": "admin",
+   "reference": "submitPunchinData",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-035",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/attendance/grid/export.(pdf|xlsx)",
+   "raw": "GET `/attendance/grid/export.(pdf|xlsx)`",
+   "purpose": "Export",
+   "permission": "28",
+   "reference": "Export PDF/Excel",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-040",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/leave-years/",
+   "raw": "CRUD `/leave-years/` (+ `/copy/`)",
+   "purpose": "Leave years (from, to, process, is_default, status)",
+   "permission": "57",
+   "reference": "masters/leaveYear",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-041",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/leave-years/{id}/leave-types/",
+   "raw": "CRUD `/leave-years/{id}/leave-types/`",
+   "purpose": "Leave types (name, allocation/year, status)",
+   "permission": "14/57",
+   "reference": "masters/leaveType",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-042",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/leave/balance/?employee=&leave_year=",
+   "raw": "GET `/leave/balance/?employee=&leave_year=`",
+   "purpose": "Assigned / used / balance per type",
+   "permission": "56 self; admin any",
+   "reference": "leaveBalanceChartSheet",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-043",
+   "methods": [
+    "GET",
+    "POST"
+   ],
+   "path": "/api/v1/leave/requests/",
+   "raw": "GET/POST `/leave/requests/`",
+   "purpose": "Own list / apply (type, duration Full/First Half/Second Half, from, to, comment); admin may apply for an employee",
+   "permission": "55 self; 31 admin",
+   "reference": "/api/leave",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-044",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/leave/requests/manage/",
+   "raw": "GET `/leave/requests/manage/`",
+   "purpose": "Admin list (filters: include current/past, employee, month, year, status)",
+   "permission": "31",
+   "reference": "adminLeavelist",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-045",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/leave/requests/team/",
+   "raw": "GET `/leave/requests/team/`",
+   "purpose": "Reporting-manager list (direct reports only)",
+   "permission": "46 + is_reporting_manager",
+   "reference": "managerLeavelist",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-046",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/leave/requests/{id}/approve/",
+   "raw": "POST `/leave/requests/{id}/approve/` `{paid:true|false}` \u00b7 `/reject/` `{reason}`",
+   "purpose": "Decision (manager status and final status)",
+   "permission": "31 or 46 (scoped)",
+   "reference": "leaveStatusChange, submitRejectionForm",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-047",
+   "methods": [
+    "DELETE"
+   ],
+   "path": "/api/v1/leave/requests/{id}/",
+   "raw": "DELETE `/leave/requests/{id}/`",
+   "purpose": "Cancel own pending request",
+   "permission": "self",
+   "reference": "\u2014",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-048",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/leave/rota/",
+   "raw": "GET/PUT `/leave/rota/`",
+   "purpose": "Leave rota dates per employee",
+   "permission": "admin",
+   "reference": "submitleaverotaData",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-049",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/leave/details/export.(pdf|csv)",
+   "raw": "GET `/leave/details/export.(pdf|csv)`",
+   "purpose": "Own leave details export",
+   "permission": "56",
+   "reference": "Generate PDF/CSV",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-050",
+   "methods": [
+    "GET",
+    "POST"
+   ],
+   "path": "/api/v1/wfh-requests/",
+   "raw": "GET/POST `/wfh-requests/`",
+   "purpose": "Own list / submit (duration, date, comment) \u2014 unique per employee+date",
+   "permission": "52 self",
+   "reference": "/api/workFromHome",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-051",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/wfh-requests/manage/",
+   "raw": "GET `/wfh-requests/manage/`",
+   "purpose": "Admin list (all)",
+   "permission": "52 admin",
+   "reference": "/api/workFromHome",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-052",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/wfh-requests/{id}/approve/",
+   "raw": "POST `/wfh-requests/{id}/approve/` \u00b7 `/reject/ {reason (required)}`",
+   "purpose": "Decision",
+   "permission": "admin",
+   "reference": "wfhStatusChange, wfhRejectionForm",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-053",
+   "methods": [
+    "DELETE"
+   ],
+   "path": "/api/v1/wfh-requests/{id}/",
+   "raw": "DELETE `/wfh-requests/{id}/`",
+   "purpose": "Delete",
+   "permission": "admin; self if pending",
+   "reference": "workFromHome delete",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-060",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/holiday-years/",
+   "raw": "CRUD `/holiday-years/`",
+   "purpose": "Holiday years",
+   "permission": "84",
+   "reference": "masters/holidayYear",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-061",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/holiday-years/{id}/holidays/",
+   "raw": "CRUD `/holiday-years/{id}/holidays/`",
+   "purpose": "Holidays (name, date, type Full/Half Day, status)",
+   "permission": "16 read all; admin write",
+   "reference": "masters/holiday",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-070",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/policies/",
+   "raw": "CRUD `/policies/`",
+   "purpose": "Policy register (code, name, version, effective from, last update, sub units, URL, attachment, description)",
+   "permission": "30 read; admin write",
+   "reference": "/api/policies",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-071",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/ho-documents/",
+   "raw": "CRUD `/ho-documents/` (+ `/archive/`)",
+   "purpose": "HO documents",
+   "permission": "83",
+   "reference": "/api/hoDocument",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-080",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/projects/",
+   "raw": "CRUD `/projects/`",
+   "purpose": "Projects (name, client, start, end, lead, members, description, status) \u2014 non-admins see member projects only",
+   "permission": "65",
+   "reference": "/api/project",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-081",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/projects/{id}/documents/",
+   "raw": "CRUD `/projects/{id}/documents/`",
+   "purpose": "Project documents",
+   "permission": "65 members",
+   "reference": "project/uploadDoccument",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-082",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/tasks/",
+   "raw": "CRUD `/tasks/`",
+   "purpose": "Tasks (project, name, priority, assignees \u2286 project members, deadline, status, total/estimated hours, start, end, description)",
+   "permission": "66 members",
+   "reference": "/api/projectTasks",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-083",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/projects/{id}/assignable-users/",
+   "raw": "GET `/projects/{id}/assignable-users/`",
+   "purpose": "Members for assignment",
+   "permission": "66",
+   "reference": "getAssignToList",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-084",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/tasks/{id}/comments/",
+   "raw": "CRUD `/tasks/{id}/comments/`, `/tasks/{id}/attachments/`",
+   "purpose": "Comments, attachments",
+   "permission": "66 members",
+   "reference": "tasksComment, submitAttachments",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-090",
+   "methods": [
+    "GET",
+    "POST"
+   ],
+   "path": "/api/v1/newsletters/",
+   "raw": "GET/POST `/newsletters/` (+ `/archive/`, `/send/`)",
+   "purpose": "Newsletter upload and send (HTML preview, SMTP PMO)",
+   "permission": "77 read; admin write/send",
+   "reference": "newsletterList, sendNewsLetterMails",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-091",
+   "methods": [
+    "GET",
+    "POST"
+   ],
+   "path": "/api/v1/wsr/",
+   "raw": "GET/POST `/wsr/`",
+   "purpose": "Weekly status reports (week start, employee, submitted by, attachment)",
+   "permission": "78 self; admin all",
+   "reference": "/api/wsr",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-092",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/wsr/{id}/approve/",
+   "raw": "POST `/wsr/{id}/approve/` \u00b7 `/reject/`",
+   "purpose": "WSR approval status",
+   "permission": "admin",
+   "reference": "wsr/changeApprovalStatus",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-093",
+   "methods": [
+    "GET",
+    "POST"
+   ],
+   "path": "/api/v1/queries/",
+   "raw": "GET/POST `/queries/` ; GET `/queries/{id}/`",
+   "purpose": "Queries (subject, priority, message, attachment; admin chooses employee)",
+   "permission": "79 self; admin all",
+   "reference": "empolyeeQueries",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-094",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/queries/{id}/replies/",
+   "raw": "POST `/queries/{id}/replies/` \u00b7 `/queries/{id}/close/`",
+   "purpose": "Reply thread, close",
+   "permission": "participants; admin",
+   "reference": "replyQuery, CloseQuery",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-095",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/whos-where/?week_start=",
+   "raw": "GET/PUT `/whos-where/?week_start=`",
+   "purpose": "Weekly grid: per employee project + work mode Mon\u2013Fri",
+   "permission": "80 read all; admin edit",
+   "reference": "whoswhere",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-096",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/whos-where/export.(pdf|csv)?week_start=",
+   "raw": "GET `/whos-where/export.(pdf|csv)?week_start=`",
+   "purpose": "Download report",
+   "permission": "80",
+   "reference": "Download Report",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-100",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/timesheets/?employee=&week=",
+   "raw": "GET `/timesheets/?employee=&week=`",
+   "purpose": "List (admin all; employee own)",
+   "permission": "82",
+   "reference": "pendingTimesheet",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-101",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/timesheets/{userId}/{weekStart}/",
+   "raw": "GET/PUT `/timesheets/{userId}/{weekStart}/`",
+   "purpose": "Weekly sheet with lines (project, activity, day1\u20137 hours), holiday/leave overlays, disabled days",
+   "permission": "82 self; admin any",
+   "reference": "getTimesheetDetails, submitTimesheet",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-102",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/timesheets/{id}/accept/",
+   "raw": "POST `/timesheets/{id}/accept/` \u00b7 `/reject/ {comment}`",
+   "purpose": "Decision",
+   "permission": "admin",
+   "reference": "timesheetAction",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-103",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/timesheets/{id}/log/",
+   "raw": "GET `/timesheets/{id}/log/`",
+   "purpose": "Action history",
+   "permission": "82",
+   "reference": "timesheetLogList",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-110",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/reports/leave/?sub_unit=&leave_year=&status=",
+   "raw": "GET `/reports/leave/?sub_unit=&leave_year=&status=` (+ `.pdf/.csv`)",
+   "purpose": "Leave report",
+   "permission": "42",
+   "reference": "reports/leaveReport",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-111",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/reports/attendance/?date=&month=&year=&employee=",
+   "raw": "GET `/reports/attendance/?date=&month=&year=&employee=` (+ export)",
+   "purpose": "Attendance report",
+   "permission": "68",
+   "reference": "reports/attendanceReport",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-112",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/reports/pmo/?month=&year=&employee=",
+   "raw": "GET `/reports/pmo/?month=&year=&employee=`",
+   "purpose": "Monthly WSR submission grid (weeks 1\u20135)",
+   "permission": "85",
+   "reference": "reports/PMOwsrReport",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-120",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/rms/roles/",
+   "raw": "CRUD `/rms/roles/`",
+   "purpose": "Job roles (ref no, name, positions, publish/expiry dates, portals \u00d73, salary min/max \u00a3, status Open/Paused/Closed, description, notes)",
+   "permission": "45",
+   "reference": "rms/advert",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-121",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/rms/applicants/",
+   "raw": "CRUD `/rms/applicants/` (+ `/bulk-cv/`)",
+   "purpose": "Applicants (role, CV file, name, email, contact, status, application data)",
+   "permission": "47",
+   "reference": "rms/candidate, submitBulkCvs",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-122",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/rms/applicants/{id}/parse-cv/",
+   "raw": "POST `/rms/applicants/{id}/parse-cv/`",
+   "purpose": "Async CV parsing",
+   "permission": "47",
+   "reference": "cvparser (Affinda / CV parser API)",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-123",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/rms/applicants/{id}/cv-evaluation/",
+   "raw": "GET/PUT `/rms/applicants/{id}/cv-evaluation/`",
+   "purpose": "8 rating factors (1\u20135) + comments + outcome Strong/Potential/Rejected",
+   "permission": "47",
+   "reference": "getCVEvaluationDetails",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-124",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/rms/applicants/{id}/technical-test/send/",
+   "raw": "POST `/rms/applicants/{id}/technical-test/send/` ; public `GET/POST /public/tests/{token}/\u2026`",
+   "purpose": "Generate and email test; candidate answers 20 questions",
+   "permission": "47 / public token",
+   "reference": "technical-test/*",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-125",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/rms/applicants/{id}/interviews/{panel}/",
+   "raw": "GET/PUT `/rms/applicants/{id}/interviews/{panel}/`",
+   "purpose": "Interview notes per panel 1\u20133",
+   "permission": "47",
+   "reference": "getInterviewNotes",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-126",
+   "methods": [
+    "POST"
+   ],
+   "path": "/api/v1/rms/applicants/{id}/cif/request/",
+   "raw": "POST `/rms/applicants/{id}/cif/request/` ; public `GET/POST /public/cif/{token}/`",
+   "purpose": "Candidate Information Form",
+   "permission": "47 / public token",
+   "reference": "requestCIFSendEmail, cif-form",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-127",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/rms/applicants/{id}/documents/",
+   "raw": "CRUD `/rms/applicants/{id}/documents/` ; GET `/rms/documents/`",
+   "purpose": "Applicant documents",
+   "permission": "47 / 69",
+   "reference": "uploadDocument, candidateDocumentsList",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-128",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/rms/pipeline/",
+   "raw": "GET `/rms/pipeline/`",
+   "purpose": "Applicants with status Selected",
+   "permission": "86",
+   "reference": "rms/candidate?employeeStatus=Selected",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-130",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/masters/{type}/",
+   "raw": "CRUD `/masters/{type}/`",
+   "purpose": "Generic master lists (see DATA_MODEL \u00a73) incl. activate/deactivate",
+   "permission": "per-master menu id",
+   "reference": "/api/masters/*, /api/RMSMaster/*",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-131",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/masters/technical-questions/",
+   "raw": "CRUD `/masters/technical-questions/`, `/masters/interview-questions/`",
+   "purpose": "Question banks",
+   "permission": "54 / 53",
+   "reference": "rms/technicalQuestions, RMSMaster/interviewQuestions",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-132",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/lookups/{type}/",
+   "raw": "GET `/lookups/{type}/`",
+   "purpose": "Active options for dropdowns (safe fields only: id, name)",
+   "permission": "authenticated",
+   "reference": "/api/common/*",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-140",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/settings/company/",
+   "raw": "GET/PUT `/settings/company/`",
+   "purpose": "Company profile + handbook + logo",
+   "permission": "40",
+   "reference": "getCompanySettings",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-141",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/settings/email/",
+   "raw": "GET/PUT `/settings/email/`",
+   "purpose": "SMTP profiles HR and PMO (password write-only)",
+   "permission": "36",
+   "reference": "getEmailSettings",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-142",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/settings/theme/",
+   "raw": "GET/PUT `/settings/theme/` ; public GET `/public/branding/` (logo, colours, company name only)",
+   "purpose": "Theme",
+   "permission": "34",
+   "reference": "getThemeSettings",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-143",
+   "methods": [
+    "GET",
+    "PUT"
+   ],
+   "path": "/api/v1/settings/localisation/",
+   "raw": "GET/PUT `/settings/localisation/`",
+   "purpose": "Country, date format, time zone, language, currency code/symbol",
+   "permission": "35",
+   "reference": "getLocalizationData",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-150",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/admin/users/",
+   "raw": "CRUD `/admin/users/`",
+   "purpose": "Admin users (first, last, email, password, user type, username, phone, status)",
+   "permission": "super admin",
+   "reference": "/api/users",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-151",
+   "methods": [
+    "CRUD"
+   ],
+   "path": "/api/v1/admin/roles/",
+   "raw": "CRUD `/admin/roles/` ; GET/PUT `/admin/roles/{id}/permissions/`",
+   "purpose": "Roles and menu permissions",
+   "permission": "super admin",
+   "reference": "/api/roles, get_menus",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-152",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/admin/menu-items/",
+   "raw": "GET `/admin/menu-items/`",
+   "purpose": "Menu catalogue (75 items)",
+   "permission": "super admin",
+   "reference": "\u2014",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  },
+  {
+   "id": "API-160",
+   "methods": [
+    "GET"
+   ],
+   "path": "/api/v1/audit-events/?entity=&entity_id=",
+   "raw": "GET `/audit-events/?entity=&entity_id=`",
+   "purpose": "Audit trail",
+   "permission": "super admin",
+   "reference": "\u2014 (new)",
+   "status": "Proposed",
+   "conventions": "see API_SPECIFICATION.md \u00a74.1 (pagination, errors, soft delete, actions)"
+  }
+ ],
+ "reference_catalogue": "schemas/api-reference-observed.json"
+}

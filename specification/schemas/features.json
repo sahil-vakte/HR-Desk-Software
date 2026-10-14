@@ -1,0 +1,1437 @@
+[
+ {
+  "id": "FEAT-001",
+  "module": "MOD-01",
+  "name": "Email/password login with error message",
+  "roles": "All",
+  "status": "Verified",
+  "screens": [],
+  "apis": [
+   "API-001"
+  ],
+  "rules": [
+   "BR-004"
+  ],
+  "entities": [
+   "User"
+  ],
+  "tests": [
+   "TEST-001",
+   "TEST-002",
+   "TEST-052",
+   "TEST-053",
+   "TEST-054"
+  ]
+ },
+ {
+  "id": "FEAT-002",
+  "module": "MOD-01",
+  "name": "Logout",
+  "roles": "All",
+  "status": "Verified",
+  "screens": [],
+  "apis": [
+   "API-002"
+  ],
+  "rules": [
+   "BR-006"
+  ],
+  "entities": [],
+  "tests": [
+   "TEST-003"
+  ]
+ },
+ {
+  "id": "FEAT-003",
+  "module": "MOD-01",
+  "name": "Session bootstrap: user, role, permissions, data-driven menu",
+  "roles": "All",
+  "status": "Verified",
+  "screens": [],
+  "apis": [
+   "API-003"
+  ],
+  "rules": [
+   "BR-001",
+   "BR-002",
+   "BR-003"
+  ],
+  "entities": [
+   "Role",
+   "MenuItem"
+  ],
+  "tests": [
+   "TEST-004",
+   "TEST-005"
+  ]
+ },
+ {
+  "id": "FEAT-004",
+  "module": "MOD-01",
+  "name": "Forgot / reset password",
+  "roles": "All",
+  "status": "Declared",
+  "screens": [],
+  "apis": [
+   "API-004",
+   "API-005"
+  ],
+  "rules": [
+   "BR-005"
+  ],
+  "entities": [
+   "User"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-005",
+  "module": "MOD-01",
+  "name": "Change own password",
+  "roles": "All",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-001"
+  ],
+  "apis": [
+   "API-006"
+  ],
+  "rules": [
+   "BR-005"
+  ],
+  "entities": [
+   "User"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-006",
+  "module": "MOD-03",
+  "name": "My profile view/update",
+  "roles": "All",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-010"
+  ],
+  "apis": [
+   "API-007"
+  ],
+  "rules": [],
+  "entities": [
+   "User"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-010",
+  "module": "MOD-02",
+  "name": "Admin dashboard: KPI counts, today absent, birthdays, pending verification, expiring documents",
+  "roles": "Super Admin",
+  "status": "Verified",
+  "screens": [
+   "SCR-004"
+  ],
+  "apis": [
+   "API-010"
+  ],
+  "rules": [
+   "BR-012",
+   "BR-015",
+   "BR-017"
+  ],
+  "entities": [
+   "User",
+   "EmployeeDocument"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-011",
+  "module": "MOD-02",
+  "name": "Employee dashboard: punch clock, statistics, activity, leave summary, upcoming holiday, my expiring docs",
+  "roles": "Employee",
+  "status": "Verified",
+  "screens": [
+   "SCR-004"
+  ],
+  "apis": [
+   "API-011"
+  ],
+  "rules": [
+   "BR-020",
+   "BR-023"
+  ],
+  "entities": [
+   "AttendanceSession"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-020",
+  "module": "MOD-03",
+  "name": "Employee list with filters, export CSV, row actions",
+  "roles": "Super Admin",
+  "status": "Verified",
+  "screens": [
+   "SCR-007"
+  ],
+  "apis": [
+   "API-020",
+   "API-027"
+  ],
+  "rules": [
+   "BR-013"
+  ],
+  "entities": [
+   "User"
+  ],
+  "tests": [
+   "TEST-042",
+   "TEST-050"
+  ]
+ },
+ {
+  "id": "FEAT-021",
+  "module": "MOD-03",
+  "name": "Add employee (auto employee ID, unique email, password policy)",
+  "roles": "Super Admin",
+  "status": "Declared (form Verified)",
+  "screens": [
+   "SCR-007"
+  ],
+  "apis": [
+   "API-020",
+   "API-021",
+   "API-022"
+  ],
+  "rules": [
+   "BR-010",
+   "BR-011",
+   "BR-005"
+  ],
+  "entities": [
+   "User"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-022",
+  "module": "MOD-03",
+  "name": "Employee profile with sections (personal, contact, emergency, documents, jobs, salary, report-to, qualifications, membership, paperwork)",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-006"
+  ],
+  "apis": [
+   "API-023"
+  ],
+  "rules": [],
+  "entities": [
+   "User",
+   "Dependent",
+   "EmergencyContact",
+   "ContactDetail / Address",
+   "Education / Experience / Skill / Language / Membership",
+   "ChangeOfCircumstance"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-023",
+  "module": "MOD-03",
+  "name": "Employee documents with expiry, verification, archive",
+  "roles": "Super Admin",
+  "status": "Declared (UI Verified)",
+  "screens": [
+   "SCR-006"
+  ],
+  "apis": [
+   "API-023",
+   "API-024"
+  ],
+  "rules": [
+   "BR-015",
+   "BR-016"
+  ],
+  "entities": [
+   "EmployeeDocument"
+  ],
+  "tests": [
+   "TEST-043"
+  ]
+ },
+ {
+  "id": "FEAT-024",
+  "module": "MOD-03",
+  "name": "Paperwork generation and contract generation",
+  "roles": "Super Admin",
+  "status": "Declared",
+  "screens": [
+   "SCR-006"
+  ],
+  "apis": [
+   "API-025"
+  ],
+  "rules": [],
+  "entities": [
+   "PaperworkDocument"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-025",
+  "module": "MOD-03",
+  "name": "Hierarchy and Hiring Process document libraries with archive",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-008",
+   "SCR-009"
+  ],
+  "apis": [
+   "API-029"
+  ],
+  "rules": [],
+  "entities": [
+   "OrgDocument"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-026",
+  "module": "MOD-03",
+  "name": "Employee directory (safe fields)",
+  "roles": "Permission 58",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-005"
+  ],
+  "apis": [
+   "API-028"
+  ],
+  "rules": [],
+  "entities": [
+   "User"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-027",
+  "module": "MOD-03",
+  "name": "Delete / deactivate employee",
+  "roles": "Super Admin",
+  "status": "Declared",
+  "screens": [
+   "SCR-007"
+  ],
+  "apis": [
+   "API-020"
+  ],
+  "rules": [],
+  "entities": [
+   "User"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-030",
+  "module": "MOD-04",
+  "name": "Punch in / punch out with activity and statistics",
+  "roles": "Employee",
+  "status": "Verified",
+  "screens": [
+   "SCR-004",
+   "SCR-011"
+  ],
+  "apis": [
+   "API-030",
+   "API-031"
+  ],
+  "rules": [
+   "BR-020",
+   "BR-021",
+   "BR-022",
+   "BR-023"
+  ],
+  "entities": [
+   "AttendanceSession"
+  ],
+  "tests": [
+   "TEST-007",
+   "TEST-008",
+   "TEST-051"
+  ]
+ },
+ {
+  "id": "FEAT-031",
+  "module": "MOD-04",
+  "name": "Admin monthly attendance grid with export",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-014"
+  ],
+  "apis": [
+   "API-032",
+   "API-035"
+  ],
+  "rules": [
+   "BR-024"
+  ],
+  "entities": [
+   "AttendanceSession"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-032",
+  "module": "MOD-04",
+  "name": "Manual attendance add/update",
+  "roles": "Super Admin",
+  "status": "Declared (form Verified)",
+  "screens": [
+   "SCR-013"
+  ],
+  "apis": [
+   "API-033"
+  ],
+  "rules": [
+   "BR-025"
+  ],
+  "entities": [
+   "AttendanceSession"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-033",
+  "module": "MOD-04",
+  "name": "Punch-in settings per employee",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-015"
+  ],
+  "apis": [
+   "API-034"
+  ],
+  "rules": [],
+  "entities": [
+   "PunchSetting"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-034",
+  "module": "MOD-04",
+  "name": "Admin view of an employee's attendance",
+  "roles": "Super Admin",
+  "status": "Verified",
+  "screens": [
+   "SCR-012"
+  ],
+  "apis": [
+   "API-031"
+  ],
+  "rules": [],
+  "entities": [
+   "AttendanceSession"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-040",
+  "module": "MOD-05",
+  "name": "Leave years CRUD + copy",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-023"
+  ],
+  "apis": [
+   "API-040"
+  ],
+  "rules": [
+   "BR-030",
+   "BR-038"
+  ],
+  "entities": [
+   "LeaveYear"
+  ],
+  "tests": [
+   "TEST-041"
+  ]
+ },
+ {
+  "id": "FEAT-041",
+  "module": "MOD-05",
+  "name": "Leave types per year CRUD",
+  "roles": "Super Admin",
+  "status": "Verified (create/delete executed)",
+  "screens": [
+   "SCR-021",
+   "SCR-022"
+  ],
+  "apis": [
+   "API-041"
+  ],
+  "rules": [
+   "BR-030",
+   "BR-037"
+  ],
+  "entities": [
+   "LeaveType"
+  ],
+  "tests": [
+   "TEST-040"
+  ]
+ },
+ {
+  "id": "FEAT-042",
+  "module": "MOD-05",
+  "name": "Apply leave (self) with balance check",
+  "roles": "Employee",
+  "status": "Verified (rule)",
+  "screens": [
+   "SCR-017"
+  ],
+  "apis": [
+   "API-043"
+  ],
+  "rules": [
+   "BR-031",
+   "BR-032"
+  ],
+  "entities": [
+   "LeaveRequest",
+   "LeaveEntitlement"
+  ],
+  "tests": [
+   "TEST-009",
+   "TEST-010"
+  ]
+ },
+ {
+  "id": "FEAT-043",
+  "module": "MOD-05",
+  "name": "Apply leave on behalf of employee",
+  "roles": "Super Admin",
+  "status": "Verified (rule)",
+  "screens": [
+   "SCR-016"
+  ],
+  "apis": [
+   "API-043"
+  ],
+  "rules": [
+   "BR-033"
+  ],
+  "entities": [
+   "LeaveRequest"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-044",
+  "module": "MOD-05",
+  "name": "Admin leave request list and decision (with pay / without pay / reject)",
+  "roles": "Super Admin",
+  "status": "Declared",
+  "screens": [
+   "SCR-016"
+  ],
+  "apis": [
+   "API-044",
+   "API-046"
+  ],
+  "rules": [
+   "BR-034",
+   "BR-035"
+  ],
+  "entities": [
+   "LeaveRequest"
+  ],
+  "tests": [
+   "TEST-011",
+   "TEST-012",
+   "TEST-044"
+  ]
+ },
+ {
+  "id": "FEAT-045",
+  "module": "MOD-05",
+  "name": "Manager leave request list and decision for direct reports",
+  "roles": "Reporting manager",
+  "status": "Declared",
+  "screens": [
+   "SCR-020"
+  ],
+  "apis": [
+   "API-045",
+   "API-046"
+  ],
+  "rules": [
+   "BR-002",
+   "BR-034"
+  ],
+  "entities": [
+   "LeaveRequest"
+  ],
+  "tests": [
+   "TEST-006"
+  ]
+ },
+ {
+  "id": "FEAT-046",
+  "module": "MOD-05",
+  "name": "Leave balance details with PDF/CSV",
+  "roles": "Employee",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-018"
+  ],
+  "apis": [
+   "API-042",
+   "API-049"
+  ],
+  "rules": [
+   "BR-036"
+  ],
+  "entities": [
+   "LeaveEntitlement"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-047",
+  "module": "MOD-05",
+  "name": "Leave entitlement allocation",
+  "roles": "Super Admin",
+  "status": "Unknown \u2192 Proposed",
+  "screens": [],
+  "apis": [
+   "API-041",
+   "API-042"
+  ],
+  "rules": [
+   "BR-036"
+  ],
+  "entities": [
+   "LeaveEntitlement"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-048",
+  "module": "MOD-05",
+  "name": "Leave rota",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-019"
+  ],
+  "apis": [
+   "API-048"
+  ],
+  "rules": [],
+  "entities": [
+   "LeaveRota"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-050",
+  "module": "MOD-06",
+  "name": "Submit WFH request",
+  "roles": "Employee",
+  "status": "Verified",
+  "screens": [
+   "SCR-024"
+  ],
+  "apis": [
+   "API-050"
+  ],
+  "rules": [
+   "BR-050",
+   "BR-051",
+   "BR-054",
+   "BR-056"
+  ],
+  "entities": [
+   "WfhRequest"
+  ],
+  "tests": [
+   "TEST-013",
+   "TEST-014",
+   "TEST-015"
+  ]
+ },
+ {
+  "id": "FEAT-051",
+  "module": "MOD-06",
+  "name": "Approve / reject WFH (reason required)",
+  "roles": "Super Admin",
+  "status": "Verified",
+  "screens": [
+   "SCR-024"
+  ],
+  "apis": [
+   "API-051",
+   "API-052"
+  ],
+  "rules": [
+   "BR-052",
+   "BR-053"
+  ],
+  "entities": [
+   "WfhRequest"
+  ],
+  "tests": [
+   "TEST-016",
+   "TEST-017",
+   "TEST-018",
+   "TEST-045"
+  ]
+ },
+ {
+  "id": "FEAT-052",
+  "module": "MOD-06",
+  "name": "WFH visibility scoping",
+  "roles": "All",
+  "status": "Verified (defect)",
+  "screens": [
+   "SCR-024"
+  ],
+  "apis": [
+   "API-050",
+   "API-051"
+  ],
+  "rules": [
+   "BR-055"
+  ],
+  "entities": [
+   "WfhRequest"
+  ],
+  "tests": [
+   "TEST-019"
+  ]
+ },
+ {
+  "id": "FEAT-060",
+  "module": "MOD-07",
+  "name": "Holiday years and holidays CRUD; employee read-only list",
+  "roles": "All / Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-025",
+   "SCR-026",
+   "SCR-027"
+  ],
+  "apis": [
+   "API-060",
+   "API-061"
+  ],
+  "rules": [
+   "BR-060"
+  ],
+  "entities": [
+   "HolidayYear",
+   "Holiday"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-061",
+  "module": "MOD-14",
+  "name": "Work week configuration",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-075"
+  ],
+  "apis": [
+   "API-130"
+  ],
+  "rules": [
+   "BR-061",
+   "BR-062"
+  ],
+  "entities": [
+   "WorkWeek"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-070",
+  "module": "MOD-08",
+  "name": "Policy register (admin CRUD, employee view)",
+  "roles": "All",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-030"
+  ],
+  "apis": [
+   "API-070"
+  ],
+  "rules": [],
+  "entities": [
+   "Policy"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-071",
+  "module": "MOD-08",
+  "name": "HO documents with archive",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-029"
+  ],
+  "apis": [
+   "API-071"
+  ],
+  "rules": [],
+  "entities": [
+   "HoDocument"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-080",
+  "module": "MOD-09",
+  "name": "Projects CRUD with lead, members, documents, overview",
+  "roles": "Super Admin; members read",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-033",
+   "SCR-032",
+   "SCR-031"
+  ],
+  "apis": [
+   "API-080",
+   "API-081"
+  ],
+  "rules": [
+   "BR-070"
+  ],
+  "entities": [
+   "Project",
+   "ProjectDocument"
+  ],
+  "tests": [
+   "TEST-023"
+  ]
+ },
+ {
+  "id": "FEAT-081",
+  "module": "MOD-09",
+  "name": "Task Kanban: create, edit, status, assignees \u2286 members",
+  "roles": "Members",
+  "status": "Verified",
+  "screens": [
+   "SCR-034"
+  ],
+  "apis": [
+   "API-082",
+   "API-083"
+  ],
+  "rules": [
+   "BR-071",
+   "BR-072",
+   "BR-073",
+   "BR-074"
+  ],
+  "entities": [
+   "Task"
+  ],
+  "tests": [
+   "TEST-020",
+   "TEST-021",
+   "TEST-022"
+  ]
+ },
+ {
+  "id": "FEAT-082",
+  "module": "MOD-09",
+  "name": "Task comments and attachments",
+  "roles": "Members",
+  "status": "Declared",
+  "screens": [
+   "SCR-034"
+  ],
+  "apis": [
+   "API-084"
+  ],
+  "rules": [],
+  "entities": [
+   "Task"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-090",
+  "module": "MOD-10",
+  "name": "Newsletters upload, preview, send, archive",
+  "roles": "All read; admin send",
+  "status": "Declared (screen Verified)",
+  "screens": [
+   "SCR-035"
+  ],
+  "apis": [
+   "API-090"
+  ],
+  "rules": [
+   "BR-097"
+  ],
+  "entities": [
+   "OrgDocument"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-091",
+  "module": "MOD-10",
+  "name": "Weekly status report submit",
+  "roles": "Employee; admin on behalf",
+  "status": "Verified",
+  "screens": [
+   "SCR-039"
+  ],
+  "apis": [
+   "API-091"
+  ],
+  "rules": [
+   "BR-090",
+   "BR-091"
+  ],
+  "entities": [
+   "WeeklyStatusReport"
+  ],
+  "tests": [
+   "TEST-031",
+   "TEST-032",
+   "TEST-033"
+  ]
+ },
+ {
+  "id": "FEAT-092",
+  "module": "MOD-10",
+  "name": "WSR approval",
+  "roles": "Super Admin",
+  "status": "Declared",
+  "screens": [
+   "SCR-039"
+  ],
+  "apis": [
+   "API-092"
+  ],
+  "rules": [
+   "BR-092"
+  ],
+  "entities": [
+   "WeeklyStatusReport"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-093",
+  "module": "MOD-10",
+  "name": "Query raise, view, reply, close",
+  "roles": "All",
+  "status": "Raise Verified; reply/close Declared",
+  "screens": [
+   "SCR-036",
+   "SCR-037"
+  ],
+  "apis": [
+   "API-093",
+   "API-094"
+  ],
+  "rules": [
+   "BR-094",
+   "BR-095"
+  ],
+  "entities": [
+   "Query"
+  ],
+  "tests": [
+   "TEST-034",
+   "TEST-035",
+   "TEST-036"
+  ]
+ },
+ {
+  "id": "FEAT-094",
+  "module": "MOD-10",
+  "name": "Who's Where weekly plan (admin edit, all view, download)",
+  "roles": "All",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-038"
+  ],
+  "apis": [
+   "API-095",
+   "API-096"
+  ],
+  "rules": [
+   "BR-096"
+  ],
+  "entities": [
+   "WhosWhereEntry"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-100",
+  "module": "MOD-11",
+  "name": "Weekly timesheet entry and save",
+  "roles": "Employee",
+  "status": "Verified",
+  "screens": [
+   "SCR-041",
+   "SCR-042"
+  ],
+  "apis": [
+   "API-100",
+   "API-101"
+  ],
+  "rules": [
+   "BR-075",
+   "BR-076",
+   "BR-077",
+   "BR-078",
+   "BR-080",
+   "BR-081",
+   "BR-062"
+  ],
+  "entities": [
+   "Timesheet",
+   "TimesheetLine"
+  ],
+  "tests": [
+   "TEST-024",
+   "TEST-025",
+   "TEST-026",
+   "TEST-027",
+   "TEST-028"
+  ]
+ },
+ {
+  "id": "FEAT-101",
+  "module": "MOD-11",
+  "name": "Timesheet accept / reject with comment and log",
+  "roles": "Super Admin",
+  "status": "Declared",
+  "screens": [
+   "SCR-042"
+  ],
+  "apis": [
+   "API-102",
+   "API-103"
+  ],
+  "rules": [
+   "BR-079",
+   "BR-082"
+  ],
+  "entities": [
+   "Timesheet",
+   "TimesheetLog"
+  ],
+  "tests": [
+   "TEST-029",
+   "TEST-030",
+   "TEST-046"
+  ]
+ },
+ {
+  "id": "FEAT-110",
+  "module": "MOD-12",
+  "name": "Leave report with PDF/CSV",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-044"
+  ],
+  "apis": [
+   "API-110"
+  ],
+  "rules": [],
+  "entities": [],
+  "tests": []
+ },
+ {
+  "id": "FEAT-111",
+  "module": "MOD-12",
+  "name": "Attendance report with PDF/CSV",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-043"
+  ],
+  "apis": [
+   "API-111"
+  ],
+  "rules": [],
+  "entities": [],
+  "tests": []
+ },
+ {
+  "id": "FEAT-112",
+  "module": "MOD-12",
+  "name": "Monthly PMO (WSR) report",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-045"
+  ],
+  "apis": [
+   "API-112"
+  ],
+  "rules": [
+   "BR-093"
+  ],
+  "entities": [],
+  "tests": []
+ },
+ {
+  "id": "FEAT-120",
+  "module": "MOD-13",
+  "name": "Job roles CRUD with portals, salary range, documents",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-048",
+   "SCR-046",
+   "SCR-047",
+   "SCR-053"
+  ],
+  "apis": [
+   "API-120"
+  ],
+  "rules": [
+   "BR-100",
+   "BR-107"
+  ],
+  "entities": [
+   "JobRole (Advert)"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-121",
+  "module": "MOD-13",
+  "name": "Applicants list, add, bulk CV, parse",
+  "roles": "Super Admin",
+  "status": "Declared (screen Verified)",
+  "screens": [
+   "SCR-050"
+  ],
+  "apis": [
+   "API-121",
+   "API-122"
+  ],
+  "rules": [
+   "BR-101",
+   "BR-106"
+  ],
+  "entities": [
+   "Applicant"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-122",
+  "module": "MOD-13",
+  "name": "Applicant tracking: info, CV evaluation, technical test, documents",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-051"
+  ],
+  "apis": [
+   "API-123",
+   "API-124",
+   "API-125",
+   "API-127"
+  ],
+  "rules": [
+   "BR-102",
+   "BR-103",
+   "BR-104"
+  ],
+  "entities": [
+   "Applicant",
+   "CvEvaluation"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-123",
+  "module": "MOD-13",
+  "name": "CIF request and public form",
+  "roles": "Super Admin; candidate",
+  "status": "Declared",
+  "screens": [],
+  "apis": [
+   "API-126"
+  ],
+  "rules": [
+   "BR-105"
+  ],
+  "entities": [
+   "Applicant"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-124",
+  "module": "MOD-13",
+  "name": "Applicant documents list and pipeline",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-049",
+   "SCR-052"
+  ],
+  "apis": [
+   "API-127",
+   "API-128"
+  ],
+  "rules": [
+   "BR-101"
+  ],
+  "entities": [
+   "Applicant"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-125",
+  "module": "MOD-14",
+  "name": "Technical and interview question banks",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-080",
+   "SCR-078"
+  ],
+  "apis": [
+   "API-131"
+  ],
+  "rules": [],
+  "entities": [
+   "TechnicalQuestion / InterviewQuestion"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-130",
+  "module": "MOD-14",
+  "name": "Generic master lists CRUD with status and delete (24 lists)",
+  "roles": "Super Admin",
+  "status": "Verified (CRUD executed)",
+  "screens": [
+   "SCR-021",
+   "SCR-022",
+   "SCR-023",
+   "SCR-025",
+   "SCR-026",
+   "SCR-027",
+   "SCR-054",
+   "SCR-055",
+   "SCR-056",
+   "SCR-057",
+   "SCR-058",
+   "SCR-059",
+   "SCR-060",
+   "SCR-061",
+   "SCR-062",
+   "SCR-063",
+   "SCR-064",
+   "SCR-065",
+   "SCR-066",
+   "SCR-067",
+   "SCR-068",
+   "SCR-069",
+   "SCR-070",
+   "SCR-071",
+   "SCR-072",
+   "SCR-073",
+   "SCR-074",
+   "SCR-075",
+   "SCR-076",
+   "SCR-077",
+   "SCR-078",
+   "SCR-079",
+   "SCR-080",
+   "SCR-081",
+   "SCR-092"
+  ],
+  "apis": [
+   "API-130",
+   "API-132"
+  ],
+  "rules": [
+   "BR-110",
+   "BR-111",
+   "BR-112"
+  ],
+  "entities": [
+   "MasterItem (generic)",
+   "WorkingMode",
+   "Process",
+   "Location",
+   "JobTitle",
+   "DocumentListItem",
+   "Client",
+   "Letter",
+   "SalarySlab",
+   "ReportingManager"
+  ],
+  "tests": [
+   "TEST-037",
+   "TEST-038",
+   "TEST-039"
+  ]
+ },
+ {
+  "id": "FEAT-140",
+  "module": "MOD-15",
+  "name": "Company settings",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-082"
+  ],
+  "apis": [
+   "API-140"
+  ],
+  "rules": [],
+  "entities": [
+   "Company"
+  ],
+  "tests": [
+   "TEST-047"
+  ]
+ },
+ {
+  "id": "FEAT-141",
+  "module": "MOD-15",
+  "name": "Email (SMTP) settings HR/PMO",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-083"
+  ],
+  "apis": [
+   "API-141"
+  ],
+  "rules": [],
+  "entities": [
+   "SmtpProfile"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-142",
+  "module": "MOD-15",
+  "name": "Theme settings + public branding",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-085"
+  ],
+  "apis": [
+   "API-142"
+  ],
+  "rules": [],
+  "entities": [
+   "Theme"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-143",
+  "module": "MOD-15",
+  "name": "Localisation settings",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-084"
+  ],
+  "apis": [
+   "API-143"
+  ],
+  "rules": [],
+  "entities": [
+   "Localisation"
+  ],
+  "tests": []
+ },
+ {
+  "id": "FEAT-150",
+  "module": "MOD-16",
+  "name": "Admin users CRUD",
+  "roles": "Super Admin",
+  "status": "Verified (screen)",
+  "screens": [
+   "SCR-088"
+  ],
+  "apis": [
+   "API-150"
+  ],
+  "rules": [],
+  "entities": [
+   "User"
+  ],
+  "tests": [
+   "TEST-048"
+  ]
+ },
+ {
+  "id": "FEAT-151",
+  "module": "MOD-16",
+  "name": "Roles and menu permission matrix",
+  "roles": "Super Admin",
+  "status": "Verified (read)",
+  "screens": [
+   "SCR-086",
+   "SCR-087"
+  ],
+  "apis": [
+   "API-151",
+   "API-152"
+  ],
+  "rules": [
+   "BR-001"
+  ],
+  "entities": [
+   "Role",
+   "MenuItem",
+   "RolePermission"
+  ],
+  "tests": [
+   "TEST-049"
+  ]
+ },
+ {
+  "id": "FEAT-160",
+  "module": "core",
+  "name": "Audit trail of all changes",
+  "roles": "Super Admin",
+  "status": "Proposed",
+  "screens": [],
+  "apis": [
+   "API-160"
+  ],
+  "rules": [],
+  "entities": [
+   "AuditEvent"
+  ],
+  "tests": [
+   "TEST-055"
+  ]
+ }
+]

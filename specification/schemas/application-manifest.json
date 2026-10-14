@@ -1,0 +1,424 @@
+{
+ "application": {
+  "name": "HRDESK (Knighton Inc Ltd tenant)",
+  "reference_url": "http://knighton.hrdesk.cloud/",
+  "type": "Multi-module HR, PMO and recruitment web application",
+  "inspection_date": "2026-10-14",
+  "reference_stack": "Vue 2.7 SPA + (inferred) Laravel REST API",
+  "proposed_stack": "React 18 + TypeScript + Vite / Django 5 + DRF / PostgreSQL 16"
+ },
+ "roles_inspected": [
+  {
+   "role": "Super Admin",
+   "access": "full",
+   "status": "Verified"
+  },
+  {
+   "role": "Employee (supplied as 'Manager' account; no reporting-manager flag)",
+   "status": "Verified"
+  },
+  {
+   "role": "Employee",
+   "status": "Verified"
+  },
+  {
+   "role": "Reporting manager experience",
+   "status": "Inferred from client code"
+  }
+ ],
+ "reference_roles_in_tenant": [
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8"
+ ],
+ "modules": [
+  {
+   "id": "MOD-01",
+   "features": [
+    "FEAT-001",
+    "FEAT-002",
+    "FEAT-003",
+    "FEAT-004",
+    "FEAT-005"
+   ]
+  },
+  {
+   "id": "MOD-02",
+   "features": [
+    "FEAT-010",
+    "FEAT-011"
+   ]
+  },
+  {
+   "id": "MOD-03",
+   "features": [
+    "FEAT-006",
+    "FEAT-020",
+    "FEAT-021",
+    "FEAT-022",
+    "FEAT-023",
+    "FEAT-024",
+    "FEAT-025",
+    "FEAT-026",
+    "FEAT-027"
+   ]
+  },
+  {
+   "id": "MOD-04",
+   "features": [
+    "FEAT-030",
+    "FEAT-031",
+    "FEAT-032",
+    "FEAT-033",
+    "FEAT-034"
+   ]
+  },
+  {
+   "id": "MOD-05",
+   "features": [
+    "FEAT-040",
+    "FEAT-041",
+    "FEAT-042",
+    "FEAT-043",
+    "FEAT-044",
+    "FEAT-045",
+    "FEAT-046",
+    "FEAT-047",
+    "FEAT-048"
+   ]
+  },
+  {
+   "id": "MOD-06",
+   "features": [
+    "FEAT-050",
+    "FEAT-051",
+    "FEAT-052"
+   ]
+  },
+  {
+   "id": "MOD-07",
+   "features": [
+    "FEAT-060"
+   ]
+  },
+  {
+   "id": "MOD-08",
+   "features": [
+    "FEAT-070",
+    "FEAT-071"
+   ]
+  },
+  {
+   "id": "MOD-09",
+   "features": [
+    "FEAT-080",
+    "FEAT-081",
+    "FEAT-082"
+   ]
+  },
+  {
+   "id": "MOD-10",
+   "features": [
+    "FEAT-090",
+    "FEAT-091",
+    "FEAT-092",
+    "FEAT-093",
+    "FEAT-094"
+   ]
+  },
+  {
+   "id": "MOD-11",
+   "features": [
+    "FEAT-100",
+    "FEAT-101"
+   ]
+  },
+  {
+   "id": "MOD-12",
+   "features": [
+    "FEAT-110",
+    "FEAT-111",
+    "FEAT-112"
+   ]
+  },
+  {
+   "id": "MOD-13",
+   "features": [
+    "FEAT-120",
+    "FEAT-121",
+    "FEAT-122",
+    "FEAT-123",
+    "FEAT-124"
+   ]
+  },
+  {
+   "id": "MOD-14",
+   "features": [
+    "FEAT-061",
+    "FEAT-125",
+    "FEAT-130"
+   ]
+  },
+  {
+   "id": "MOD-15",
+   "features": [
+    "FEAT-140",
+    "FEAT-141",
+    "FEAT-142",
+    "FEAT-143"
+   ]
+  },
+  {
+   "id": "MOD-16",
+   "features": [
+    "FEAT-150",
+    "FEAT-151"
+   ]
+  },
+  {
+   "id": "core",
+   "features": [
+    "FEAT-160"
+   ]
+  }
+ ],
+ "routes": {
+  "reference_client_routes": 181,
+  "catalogued": 128,
+  "captured": 98
+ },
+ "screens": 97,
+ "forms": 95,
+ "entities": [
+  "ENT-001",
+  "ENT-002",
+  "ENT-003",
+  "ENT-004",
+  "ENT-005",
+  "ENT-006",
+  "ENT-007",
+  "ENT-008",
+  "ENT-009",
+  "ENT-010",
+  "ENT-011",
+  "ENT-012",
+  "ENT-013",
+  "ENT-014",
+  "ENT-015",
+  "ENT-016",
+  "ENT-017",
+  "ENT-018",
+  "ENT-019",
+  "ENT-020",
+  "ENT-021",
+  "ENT-022",
+  "ENT-023",
+  "ENT-024",
+  "ENT-025",
+  "ENT-026",
+  "ENT-027",
+  "ENT-028",
+  "ENT-029",
+  "ENT-030",
+  "ENT-031",
+  "ENT-032",
+  "ENT-033",
+  "ENT-034",
+  "ENT-035",
+  "ENT-036",
+  "ENT-037",
+  "ENT-038",
+  "ENT-039",
+  "ENT-040",
+  "ENT-041",
+  "ENT-042",
+  "ENT-043",
+  "ENT-044",
+  "ENT-045",
+  "ENT-046",
+  "ENT-047",
+  "ENT-048",
+  "ENT-049",
+  "ENT-050",
+  "ENT-051",
+  "ENT-052",
+  "ENT-053"
+ ],
+ "integrations": [
+  "INT-01",
+  "INT-02",
+  "INT-03",
+  "INT-04",
+  "INT-05",
+  "INT-06",
+  "INT-07"
+ ],
+ "business_rules": [
+  "BR-001",
+  "BR-002",
+  "BR-003",
+  "BR-004",
+  "BR-005",
+  "BR-006",
+  "BR-010",
+  "BR-011",
+  "BR-012",
+  "BR-013",
+  "BR-014",
+  "BR-015",
+  "BR-016",
+  "BR-017",
+  "BR-020",
+  "BR-021",
+  "BR-022",
+  "BR-023",
+  "BR-024",
+  "BR-025",
+  "BR-030",
+  "BR-031",
+  "BR-032",
+  "BR-033",
+  "BR-034",
+  "BR-035",
+  "BR-036",
+  "BR-037",
+  "BR-038",
+  "BR-039",
+  "BR-040",
+  "BR-050",
+  "BR-051",
+  "BR-052",
+  "BR-053",
+  "BR-054",
+  "BR-055",
+  "BR-056",
+  "BR-060",
+  "BR-061",
+  "BR-062",
+  "BR-070",
+  "BR-071",
+  "BR-072",
+  "BR-073",
+  "BR-074",
+  "BR-075",
+  "BR-076",
+  "BR-077",
+  "BR-078",
+  "BR-079",
+  "BR-080",
+  "BR-081",
+  "BR-082",
+  "BR-090",
+  "BR-091",
+  "BR-092",
+  "BR-093",
+  "BR-094",
+  "BR-095",
+  "BR-096",
+  "BR-097",
+  "BR-100",
+  "BR-101",
+  "BR-102",
+  "BR-103",
+  "BR-104",
+  "BR-105",
+  "BR-106",
+  "BR-107",
+  "BR-110",
+  "BR-111",
+  "BR-112"
+ ],
+ "workflows": [
+  "WF-01",
+  "WF-02",
+  "WF-03",
+  "WF-04",
+  "WF-05",
+  "WF-06",
+  "WF-07",
+  "WF-08",
+  "WF-09",
+  "WF-10",
+  "WF-11"
+ ],
+ "security_findings": [
+  "SEC-F01",
+  "SEC-F02",
+  "SEC-F03",
+  "SEC-F04",
+  "SEC-F05",
+  "SEC-F06",
+  "SEC-F07",
+  "SEC-F08",
+  "SEC-F09",
+  "SEC-F10",
+  "SEC-F11"
+ ],
+ "open_questions": [
+  "OQ-01",
+  "OQ-02",
+  "OQ-03",
+  "OQ-04",
+  "OQ-05",
+  "OQ-06",
+  "OQ-07",
+  "OQ-08",
+  "OQ-09",
+  "OQ-10",
+  "OQ-11",
+  "OQ-12",
+  "OQ-13",
+  "OQ-14",
+  "OQ-15",
+  "OQ-16",
+  "OQ-17",
+  "OQ-18"
+ ],
+ "coverage": {
+  "features_total": 64,
+  "feature_status": {
+   "Verified": 13,
+   "Declared": 9,
+   "Verified (screen)": 28,
+   "Declared (form Verified)": 2,
+   "Declared (UI Verified)": 1,
+   "Verified (create/delete executed)": 1,
+   "Verified (rule)": 2,
+   "Unknown \u2192 Proposed": 1,
+   "Verified (defect)": 1,
+   "Declared (screen Verified)": 2,
+   "Raise Verified; reply/close Declared": 1,
+   "Verified (CRUD executed)": 1,
+   "Verified (read)": 1,
+   "Proposed": 1
+  },
+  "reference_endpoints_total": 419,
+  "reference_endpoint_status": {
+   "Declared": 258,
+   "Verified": 161
+  },
+  "proposed_api_operations": 82,
+  "acceptance_tests_total": 55,
+  "acceptance_test_status": {
+   "Pass": 25,
+   "Not Tested": 17,
+   "Fail (reference defect)": 11,
+   "Blocked (no entitlements in tenant)": 1,
+   "Blocked (tool safety restriction)": 1
+  }
+ },
+ "not_verified": [
+  "Timesheet accept/reject",
+  "Query reply/close by admin",
+  "WSR status change",
+  "Reporting-manager leave approval",
+  "Leave entitlement calculation (OQ-02)",
+  "Server-side code, database schema, background jobs, email delivery",
+  "Recruitment public candidate pages (technical test, CIF, reference check) — declared in client code only"
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "hrdesk-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-scripts": "5.0.1",
+    "@mui/material": "5.16.14",
+    "@mui/icons-material": "5.16.14",
+    "@mui/x-data-grid": "7.29.9",
+    "@mui/x-date-pickers": "7.29.4",
+    "@emotion/react": "11.14.0",
+    "@emotion/styled": "11.14.0",
+    "react-router-dom": "6.30.1",
+    "@tanstack/react-query": "5.90.2",
+    "react-hook-form": "7.62.0",
+    "zod": "3.25.76",
+    "@hookform/resolvers": "3.10.0",
+    "axios": "1.12.2",
+    "dayjs": "1.11.18",
+    "@tiptap/react": "2.27.1",
+    "@tiptap/starter-kit": "2.27.1",
+    "@tiptap/pm": "2.27.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "14.3.1",
+    "@testing-library/jest-dom": "6.6.3",
+    "@testing-library/user-event": "14.6.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test"
+  },
+  "proxy": "http://127.0.0.1:8000",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

@@ -1,0 +1,910 @@
+{
+ "_note": "Reference lists captured from the tenant on 14 Oct 2026 (first page only where paginated; Country 194, Nationality 196, Locations 4002 rows exist \u2014 load a standard ISO list instead). Status values: Active/Deactive. No personal data.",
+ "lists": {
+  "skills": {
+   "source_route": "/master-skills",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Development",
+     "Status": "Deactive"
+    },
+    {
+     "Name": "Testing",
+     "Status": "Active"
+    },
+    {
+     "Name": "Project management",
+     "Status": "Active"
+    },
+    {
+     "Name": "Sap consultant",
+     "Status": "Active"
+    },
+    {
+     "Name": "software developer",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 5
+  },
+  "education_levels": {
+   "source_route": "/master-education",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "BCA",
+     "Status": "Active"
+    },
+    {
+     "Name": "Engineering",
+     "Status": "Active"
+    },
+    {
+     "Name": "BBA",
+     "Status": "Active"
+    },
+    {
+     "Name": "MCA",
+     "Status": "Active"
+    },
+    {
+     "Name": "MBA",
+     "Status": "Active"
+    },
+    {
+     "Name": "PGDM/MBA",
+     "Status": "Active"
+    },
+    {
+     "Name": "PG -DAC",
+     "Status": "Active"
+    },
+    {
+     "Name": "Master Degree",
+     "Status": "Active"
+    },
+    {
+     "Name": "Bachelor's Degree",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 9,
+   "note": "Completed from employee-profile Education dropdown (all active values)."
+  },
+  "working_modes": {
+   "source_route": "/master-working-mode",
+   "columns": [
+    "Name",
+    "Description",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "WFO",
+     "Description": "Work from Office",
+     "Status": "Active"
+    },
+    {
+     "Name": "NAY",
+     "Description": "Not Yet Joined",
+     "Status": "Deactive"
+    },
+    {
+     "Name": "PH",
+     "Description": "Public Holiday",
+     "Status": "Active"
+    },
+    {
+     "Name": "SL",
+     "Description": "Sick Leave",
+     "Status": "Active"
+    },
+    {
+     "Name": "HDL",
+     "Description": "Half Day Leave",
+     "Status": "Active"
+    },
+    {
+     "Name": "Leave",
+     "Description": "Leave",
+     "Status": "Active"
+    },
+    {
+     "Name": "LO",
+     "Description": "Left Organisation",
+     "Status": "Active"
+    },
+    {
+     "Name": "SS",
+     "Description": "Supplier Site",
+     "Status": "Active"
+    },
+    {
+     "Name": "CS",
+     "Description": "Client Site",
+     "Status": "Active"
+    },
+    {
+     "Name": "WFH /Office",
+     "Description": "Split between WFH and Office",
+     "Status": "Active"
+    },
+    {
+     "Name": "DNWT",
+     "Description": "Does Not Work Today",
+     "Status": "Active"
+    },
+    {
+     "Name": "WFH",
+     "Description": "Work From Home",
+     "Status": "Active"
+    },
+    {
+     "Name": "IWFOH",
+     "Description": "Intermittent working from the office and offsite sessionssdg df gedsdgds gdgsd sdhsdg sdg gsdgd sg sdg gdsfsdf sdfgd sfgd sff fg fhfd drfh fh",
+     "Status": "Active"
+    },
+    {
+     "Name": "OOOL",
+     "Description": "Out Of Office on Leave",
+     "Status": "Active"
+    },
+    {
+     "Name": "OOOW",
+     "Description": "Out Of Office but Working",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 15
+  },
+  "employment_statuses": {
+   "source_route": "/master-employee-status",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Part Time Employee",
+     "Status": "Active"
+    },
+    {
+     "Name": "Probation",
+     "Status": "Active"
+    },
+    {
+     "Name": "FULL TIME",
+     "Status": "Active"
+    },
+    {
+     "Name": "Ad Hoc Contractor",
+     "Status": "Active"
+    },
+    {
+     "Name": "Part Time Contractor",
+     "Status": "Active"
+    },
+    {
+     "Name": "Full Time Employee - Fixed Term",
+     "Status": "Active"
+    },
+    {
+     "Name": "Part-time Employee - Fixed Term",
+     "Status": "Active"
+    },
+    {
+     "Name": "Full Time Employee",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 8
+  },
+  "processes": {
+   "source_route": "/master-process",
+   "columns": [
+    "Name",
+    "TimeZone",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "UK",
+     "TimeZone": "Europe/London",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 1
+  },
+  "document_list": {
+   "source_route": "/master-document-list",
+   "columns": [
+    "Name",
+    "Document Type",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Bank Proof",
+     "Document Type": "Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Starter Checklist",
+     "Document Type": "Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Reference check Form",
+     "Document Type": "Pre-Employment Documents",
+     "Status": "Deactive"
+    },
+    {
+     "Name": "EHack Acknowledgement",
+     "Document Type": "Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "COS Cancellation Note",
+     "Document Type": "Post-Employement Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Reference Given",
+     "Document Type": "Post-Employement Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "P45",
+     "Document Type": "Post-Employement Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Resignation / Termination",
+     "Document Type": "Post-Employement Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Visa",
+     "Document Type": "Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Passport",
+     "Document Type": "Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "RTW",
+     "Document Type": "Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "COE",
+     "Document Type": "Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "MOI",
+     "Document Type": "Pre-Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "BRP",
+     "Document Type": "Pre-Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Passport",
+     "Document Type": "Pre-Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Consent Form",
+     "Document Type": "Pre-Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "COS",
+     "Document Type": "Pre-Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Degree",
+     "Document Type": "Pre-Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Naric",
+     "Document Type": "Pre-Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Appraisal Form",
+     "Document Type": "Paper Work",
+     "Status": "Active"
+    },
+    {
+     "Name": "Offer of Employment",
+     "Document Type": "(unknown \u2014 page 2)",
+     "Status": "Active"
+    },
+    {
+     "Name": "Contract of Employment",
+     "Document Type": "(unknown \u2014 page 2)",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 22
+  },
+  "document_types": {
+   "source_route": "/master-document-type",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Post-Employement Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Pre-Employment Documents",
+     "Status": "Active"
+    },
+    {
+     "Name": "Paper Work",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 4
+  },
+  "sub_units": {
+   "source_route": "/master-department",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Management",
+     "Status": "Active"
+    },
+    {
+     "Name": "Operations",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 2
+  },
+  "job_titles": {
+   "source_route": "/master-job-title",
+   "columns": [
+    "Title",
+    "Description",
+    "Job Specification File",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Title": "Director",
+     "Description": "Director",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "Market Research Analyst",
+     "Description": "Market Research Analyst",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "Product Research Head",
+     "Description": "Product Research Head",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "Operations Manager - E-commerce",
+     "Description": "Operations Manager - E-commerce",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "HR & Compliance Manager",
+     "Description": "HR & Compliance Manager",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "Head of Business & Finance",
+     "Description": "Head of Business & Finance",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "Digital Marketing Specialist",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "IT Project Manager",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "Web Producer",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "IT Business Analyst",
+     "Job Specification File": "-",
+     "Status": "Active"
+    },
+    {
+     "Title": "Software Developer",
+     "Job Specification File": "jobDescription_1.pdf",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 11
+  },
+  "designations": {
+   "source_route": "/master-designation",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Employee",
+     "Status": "Active"
+    },
+    {
+     "Name": "Director",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 2
+  },
+  "languages": {
+   "source_route": "/master-languages",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "English",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 1
+  },
+  "termination_reasons": {
+   "source_route": "/master-termination-reasons",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Extra Leaves",
+     "Status": "Active"
+    },
+    {
+     "Name": "Missbehaiving",
+     "Status": "Active"
+    },
+    {
+     "Name": "Hault",
+     "Status": "Active"
+    },
+    {
+     "Name": "Other",
+     "Status": "Active"
+    },
+    {
+     "Name": "Dismissed",
+     "Status": "Active"
+    },
+    {
+     "Name": "Physically Disabled/Compensated",
+     "Status": "Active"
+    },
+    {
+     "Name": "Resigned",
+     "Status": "Active"
+    },
+    {
+     "Name": "Resigned - Self Proposed",
+     "Status": "Active"
+    },
+    {
+     "Name": "Resigned - Company Requested",
+     "Status": "Active"
+    },
+    {
+     "Name": "Contract Not Renewed",
+     "Status": "Active"
+    },
+    {
+     "Name": "Retired",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 11
+  },
+  "work_authorizations": {
+   "source_route": "/master-work-authorization",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Tier 2 ICT (Intra-company Transfer) Visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "HSM (Highly Skill Migrant) Dependent",
+     "Status": "Active"
+    },
+    {
+     "Name": "Family Reunion Visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "Post Study Work Visa (PSW)",
+     "Status": "Active"
+    },
+    {
+     "Name": "PSW Dependant visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "EU Settlement Visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "EU Blue Card",
+     "Status": "Active"
+    },
+    {
+     "Name": "Tier 1 general visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "Tourist Visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "Medical Visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "Spouse Visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "Business Visa",
+     "Status": "Active"
+    },
+    {
+     "Name": "Tier 2 General Visa",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 13
+  },
+  "currency_codes": {
+   "source_route": "/master-currency-code",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "PLN",
+     "Status": "Active"
+    },
+    {
+     "Name": "Euro",
+     "Status": "Active"
+    },
+    {
+     "Name": "CHF",
+     "Status": "Active"
+    },
+    {
+     "Name": "INR",
+     "Status": "Active"
+    },
+    {
+     "Name": "USD",
+     "Status": "Active"
+    },
+    {
+     "Name": "GBP",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 6
+  },
+  "technical_statuses": {
+   "source_route": "/rms/master-technical-status",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Awaiting",
+     "Status": "Active"
+    },
+    {
+     "Name": "NEED TO CHECK",
+     "Status": "Active"
+    },
+    {
+     "Name": "NA",
+     "Status": "Active"
+    },
+    {
+     "Name": "Not Provided Yet",
+     "Status": "Active"
+    },
+    {
+     "Name": "Failed",
+     "Status": "Active"
+    },
+    {
+     "Name": "Pass",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 6
+  },
+  "interview_statuses": {
+   "source_route": "/rms/master-interview-status",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Awaiting",
+     "Status": "Active"
+    },
+    {
+     "Name": "UNDER PROCESS",
+     "Status": "Active"
+    },
+    {
+     "Name": "NA",
+     "Status": "Deactive"
+    },
+    {
+     "Name": "Not Provided Yet",
+     "Status": "Active"
+    },
+    {
+     "Name": "Unsuccessful",
+     "Status": "Active"
+    },
+    {
+     "Name": "Successful",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 6
+  },
+  "evaluation_statuses": {
+   "source_route": "/rms/master-evaluation-status",
+   "columns": [
+    "Name",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Under Process",
+     "Status": "Active"
+    },
+    {
+     "Name": "NA",
+     "Status": "Active"
+    },
+    {
+     "Name": "Not Provided Yet",
+     "Status": "Active"
+    },
+    {
+     "Name": "Unsuccessful",
+     "Status": "Active"
+    },
+    {
+     "Name": "Shortlisted",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 5
+  },
+  "holidays_2025": {
+   "source_route": "/master-holiday",
+   "columns": [
+    "Name",
+    "Holiday Date",
+    "Type",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "New Year's Day",
+     "Holiday Date": "01-01-2025",
+     "Type": "Full Day",
+     "Status": "Active"
+    },
+    {
+     "Name": "Good Friday",
+     "Holiday Date": "18-04-2025",
+     "Type": "Full Day",
+     "Status": "Active"
+    },
+    {
+     "Name": "Easter Monday",
+     "Holiday Date": "21-04-2025",
+     "Type": "Full Day",
+     "Status": "Active"
+    },
+    {
+     "Name": "Early May Bank Holiday",
+     "Holiday Date": "05-05-2025",
+     "Type": "Full Day",
+     "Status": "Active"
+    },
+    {
+     "Name": "Spring Bank Holiday",
+     "Holiday Date": "26-05-2025",
+     "Type": "Full Day",
+     "Status": "Active"
+    },
+    {
+     "Name": "Summer Bank Holiday",
+     "Holiday Date": "25-08-2025",
+     "Type": "Full Day",
+     "Status": "Active"
+    },
+    {
+     "Name": "Christmas Day",
+     "Holiday Date": "25-12-2025",
+     "Type": "Full Day",
+     "Status": "Active"
+    },
+    {
+     "Name": "Boxing Day",
+     "Holiday Date": "26-12-2025",
+     "Type": "Full Day",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 8
+  },
+  "holiday_years": {
+   "source_route": "/master-holiday-year",
+   "columns": [
+    "Year",
+    "Is Default",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Year": "01-01-2027 To 31-12-2027",
+     "Is Default": "No",
+     "Status": "Active"
+    },
+    {
+     "Year": "01-01-2025 To 31-12-2025",
+     "Is Default": "Yes",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 2
+  },
+  "leave_years": {
+   "source_route": "/master-leave-year",
+   "columns": [
+    "Year",
+    "Process Name",
+    "Is Default",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Year": "01-01-2025 To 31-12-2025",
+     "Process Name": "UK",
+     "Is Default": "Yes",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 1
+  },
+  "leave_types": {
+   "source_route": "/master-leave-types/10/1",
+   "columns": [
+    "Name",
+    "Allocation/Year",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Name": "Summer Vacations",
+     "Allocation/Year": "6",
+     "Status": "Deactive"
+    }
+   ],
+   "rows_captured": 1,
+   "note": "Only leave type at audit: 'Summer Vacations' 6/year, Deactive. Leave year 2025 only (no 2026 year) \u2014 configure current year at go-live."
+  },
+  "roles": {
+   "source_route": "/roles/",
+   "columns": [
+    "Role",
+    "Status"
+   ],
+   "rows": [
+    {
+     "Role": "Reviewer",
+     "Status": "Active"
+    },
+    {
+     "Role": "HiringManager",
+     "Status": "Active"
+    },
+    {
+     "Role": "Interviewer",
+     "Status": "Active"
+    },
+    {
+     "Role": "Employee",
+     "Status": "Active"
+    },
+    {
+     "Role": "Supervisor",
+     "Status": "Active"
+    },
+    {
+     "Role": "Admin",
+     "Status": "Active"
+    },
+    {
+     "Role": "Super Admin",
+     "Status": "Active"
+    }
+   ],
+   "rows_captured": 7
+  },
+  "countries": {
+   "note": "194 entries in reference; use ISO 3166 list"
+  },
+  "nationalities": {
+   "note": "196 entries in reference (contains duplicates e.g. 'Uruguayan'); use a de-duplicated standard list"
+  },
+  "locations": {
+   "note": "4002 state/region entries in reference; use ISO 3166-2 subdivisions"
+  },
+  "permissions_menu": {
+   "note": "See schemas/permissions.json"
+  }
+ }
+}

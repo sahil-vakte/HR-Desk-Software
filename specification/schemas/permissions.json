@@ -1,0 +1,667 @@
+{
+ "_status": "Verified \u2014 read from role edit screens (checkbox state) on 14 Oct 2026",
+ "menu_items": [
+  {
+   "menu_id": 1,
+   "label": "Dashboard",
+   "parent_id": null,
+   "reference_route": "/home"
+  },
+  {
+   "menu_id": 46,
+   "label": "Manager Leave Request",
+   "parent_id": null,
+   "reference_route": "/manager-leave-request"
+  },
+  {
+   "menu_id": 71,
+   "label": "My Profile",
+   "parent_id": null,
+   "reference_route": "/profile/:id"
+  },
+  {
+   "menu_id": 5,
+   "label": "Employee",
+   "parent_id": null,
+   "reference_route": null
+  },
+  {
+   "menu_id": 29,
+   "label": "Employee List",
+   "parent_id": 5,
+   "reference_route": "/employee/employee-list"
+  },
+  {
+   "menu_id": 28,
+   "label": "Attendance",
+   "parent_id": 5,
+   "reference_route": "/employee/admin-attendance"
+  },
+  {
+   "menu_id": 31,
+   "label": "Admin Leaves Request",
+   "parent_id": 5,
+   "reference_route": "/employee/admin-leave-request"
+  },
+  {
+   "menu_id": 81,
+   "label": "Hiring Process",
+   "parent_id": 5,
+   "reference_route": "/employee/hiring-process"
+  },
+  {
+   "menu_id": 75,
+   "label": "Hierarchy",
+   "parent_id": 5,
+   "reference_route": "/employee/hierarchy"
+  },
+  {
+   "menu_id": 16,
+   "label": "Holidays",
+   "parent_id": null,
+   "reference_route": "/master-holiday"
+  },
+  {
+   "menu_id": 24,
+   "label": "Leaves",
+   "parent_id": null,
+   "reference_route": null
+  },
+  {
+   "menu_id": 55,
+   "label": "Apply Leave",
+   "parent_id": 24,
+   "reference_route": "/leave/employee-leave"
+  },
+  {
+   "menu_id": 56,
+   "label": "Leaves Details",
+   "parent_id": 24,
+   "reference_route": "/leave/leave-details"
+  },
+  {
+   "menu_id": 27,
+   "label": "Attendance",
+   "parent_id": null,
+   "reference_route": "/attendance-employee"
+  },
+  {
+   "menu_id": 30,
+   "label": "Policies",
+   "parent_id": null,
+   "reference_route": "/policies"
+  },
+  {
+   "menu_id": 58,
+   "label": "Employee Directory",
+   "parent_id": null,
+   "reference_route": "/employee-directory"
+  },
+  {
+   "menu_id": 64,
+   "label": "Projects",
+   "parent_id": null,
+   "reference_route": null
+  },
+  {
+   "menu_id": 65,
+   "label": "Projects",
+   "parent_id": 64,
+   "reference_route": "/projects/project-list"
+  },
+  {
+   "menu_id": 66,
+   "label": "Task Details",
+   "parent_id": 64,
+   "reference_route": "/projects/task-details"
+  },
+  {
+   "menu_id": 76,
+   "label": "PMO",
+   "parent_id": null,
+   "reference_route": null
+  },
+  {
+   "menu_id": 77,
+   "label": "Newsletters",
+   "parent_id": 76,
+   "reference_route": "/pmo/newsletter"
+  },
+  {
+   "menu_id": 78,
+   "label": "WSR",
+   "parent_id": 76,
+   "reference_route": "/pmo/wsr"
+  },
+  {
+   "menu_id": 79,
+   "label": "Query",
+   "parent_id": 76,
+   "reference_route": "/pmo/query"
+  },
+  {
+   "menu_id": 80,
+   "label": "Whos Where",
+   "parent_id": 76,
+   "reference_route": "/pmo/whos-where"
+  },
+  {
+   "menu_id": 82,
+   "label": "Time",
+   "parent_id": null,
+   "reference_route": "/time/timesheet"
+  },
+  {
+   "menu_id": 41,
+   "label": "Reports",
+   "parent_id": null,
+   "reference_route": null
+  },
+  {
+   "menu_id": 42,
+   "label": "Leave Reports",
+   "parent_id": 41,
+   "reference_route": "/reports/leave-report"
+  },
+  {
+   "menu_id": 68,
+   "label": "Attendance Report",
+   "parent_id": 41,
+   "reference_route": "/reports/attendance-report"
+  },
+  {
+   "menu_id": 85,
+   "label": "PMO Report",
+   "parent_id": 41,
+   "reference_route": "/reports/pmo-report"
+  },
+  {
+   "menu_id": 33,
+   "label": "Settings",
+   "parent_id": null,
+   "reference_route": null
+  },
+  {
+   "menu_id": 40,
+   "label": "Company settings",
+   "parent_id": 33,
+   "reference_route": "/settings/company-settings"
+  },
+  {
+   "menu_id": 36,
+   "label": "Email Settings",
+   "parent_id": 33,
+   "reference_route": "/settings/email-settings"
+  },
+  {
+   "menu_id": 34,
+   "label": "Theme Settings",
+   "parent_id": 33,
+   "reference_route": "/settings/theme-settings"
+  },
+  {
+   "menu_id": 37,
+   "label": "Approval Settings",
+   "parent_id": 33,
+   "reference_route": "/settings/approval-settings"
+  },
+  {
+   "menu_id": 38,
+   "label": "Crone Settings",
+   "parent_id": 33,
+   "reference_route": "/settings/crone-settings"
+  },
+  {
+   "menu_id": 35,
+   "label": "Localization",
+   "parent_id": 33,
+   "reference_route": "/settings/localization-settings"
+  },
+  {
+   "menu_id": 52,
+   "label": "Work From Home",
+   "parent_id": null,
+   "reference_route": "/work-from-home"
+  },
+  {
+   "menu_id": 44,
+   "label": "RMS",
+   "parent_id": null,
+   "reference_route": null
+  },
+  {
+   "menu_id": 45,
+   "label": "Role Details",
+   "parent_id": 44,
+   "reference_route": "/rms/advert-list"
+  },
+  {
+   "menu_id": 47,
+   "label": "Applicants",
+   "parent_id": 44,
+   "reference_route": "/rms/candidate-list"
+  },
+  {
+   "menu_id": 69,
+   "label": "Applicants Documents List",
+   "parent_id": 44,
+   "reference_route": "/rms/candidate-documents-list"
+  },
+  {
+   "menu_id": 86,
+   "label": "Pipeline",
+   "parent_id": 44,
+   "reference_route": "/rms/pipeline-list"
+  },
+  {
+   "menu_id": 6,
+   "label": "Master",
+   "parent_id": null,
+   "reference_route": null
+  },
+  {
+   "menu_id": 7,
+   "label": "Skills",
+   "parent_id": 6,
+   "reference_route": "/master-skills"
+  },
+  {
+   "menu_id": 8,
+   "label": "Education",
+   "parent_id": 6,
+   "reference_route": "/master-education"
+  },
+  {
+   "menu_id": 74,
+   "label": "Document Type",
+   "parent_id": 6,
+   "reference_route": "/master-document-type"
+  },
+  {
+   "menu_id": 67,
+   "label": "Client",
+   "parent_id": 6,
+   "reference_route": "/master-client"
+  },
+  {
+   "menu_id": 60,
+   "label": "Working Mode",
+   "parent_id": 6,
+   "reference_route": "/master-working-mode"
+  },
+  {
+   "menu_id": 59,
+   "label": "Salary Slabs",
+   "parent_id": 6,
+   "reference_route": "/master-employee-salary"
+  },
+  {
+   "menu_id": 57,
+   "label": "Leave Years",
+   "parent_id": 6,
+   "reference_route": "/master-leave-year"
+  },
+  {
+   "menu_id": 43,
+   "label": "Employment Status",
+   "parent_id": 6,
+   "reference_route": "/master-employee-status"
+  },
+  {
+   "menu_id": 39,
+   "label": "Process",
+   "parent_id": 6,
+   "reference_route": "/master-process"
+  },
+  {
+   "menu_id": 32,
+   "label": "Documents List",
+   "parent_id": 6,
+   "reference_route": "/master-document-list"
+  },
+  {
+   "menu_id": 26,
+   "label": "Country",
+   "parent_id": 6,
+   "reference_route": "/master-country"
+  },
+  {
+   "menu_id": 22,
+   "label": "Sub Unit",
+   "parent_id": 6,
+   "reference_route": "/master-department"
+  },
+  {
+   "menu_id": 20,
+   "label": "Job Title",
+   "parent_id": 6,
+   "reference_route": "/master-job-title"
+  },
+  {
+   "menu_id": 19,
+   "label": "Customer",
+   "parent_id": 6,
+   "reference_route": "/master-customer"
+  },
+  {
+   "menu_id": 17,
+   "label": "Reporting Managers",
+   "parent_id": 6,
+   "reference_route": "/master-reporting-managers"
+  },
+  {
+   "menu_id": 15,
+   "label": "Work Week",
+   "parent_id": 6,
+   "reference_route": "/master-work-week"
+  },
+  {
+   "menu_id": 21,
+   "label": "Designation",
+   "parent_id": 6,
+   "reference_route": "/master-designation"
+  },
+  {
+   "menu_id": 9,
+   "label": "Licenses",
+   "parent_id": 6,
+   "reference_route": "(Licenses \u2014 no route found)"
+  },
+  {
+   "menu_id": 10,
+   "label": "Languages",
+   "parent_id": 6,
+   "reference_route": "/master-languages"
+  },
+  {
+   "menu_id": 14,
+   "label": "Leave Types",
+   "parent_id": 6,
+   "reference_route": "/master-leave-types"
+  },
+  {
+   "menu_id": 13,
+   "label": "Termination Reasons",
+   "parent_id": 6,
+   "reference_route": "/master-termination-reasons"
+  },
+  {
+   "menu_id": 12,
+   "label": "Nationalities",
+   "parent_id": 6,
+   "reference_route": "/master-nationality"
+  },
+  {
+   "menu_id": 84,
+   "label": "Holiday Year",
+   "parent_id": 6,
+   "reference_route": "/master-holiday-year"
+  },
+  {
+   "menu_id": 73,
+   "label": "Currency Code",
+   "parent_id": 6,
+   "reference_route": "/master-currency-code"
+  },
+  {
+   "menu_id": 72,
+   "label": "Work Authorization",
+   "parent_id": 6,
+   "reference_route": "/master-work-authorization"
+  },
+  {
+   "menu_id": 70,
+   "label": "Locations",
+   "parent_id": 6,
+   "reference_route": "/master-state"
+  },
+  {
+   "menu_id": 54,
+   "label": "Technical Test Questions",
+   "parent_id": 6,
+   "reference_route": "/rms/master-technical-questions"
+  },
+  {
+   "menu_id": 53,
+   "label": "Interview Questions",
+   "parent_id": 6,
+   "reference_route": "/rms/master-interview-questions"
+  },
+  {
+   "menu_id": 51,
+   "label": "Technical Status",
+   "parent_id": 6,
+   "reference_route": "/rms/master-technical-status"
+  },
+  {
+   "menu_id": 50,
+   "label": "Interview Status",
+   "parent_id": 6,
+   "reference_route": "/rms/master-interview-status"
+  },
+  {
+   "menu_id": 49,
+   "label": "Evaluation Status",
+   "parent_id": 6,
+   "reference_route": "/rms/master-evaluation-status"
+  },
+  {
+   "menu_id": 83,
+   "label": "HO",
+   "parent_id": null,
+   "reference_route": "/ho-document"
+  }
+ ],
+ "roles": {
+  "1": {
+   "name": "Super Admin",
+   "permissions": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    10,
+    12,
+    13,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    26,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    47,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    57,
+    60,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    72,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86
+   ]
+  },
+  "2": {
+   "name": "Admin",
+   "permissions": [
+    1,
+    5,
+    16,
+    24,
+    27,
+    28,
+    29,
+    30,
+    31,
+    41,
+    42,
+    46,
+    55,
+    56,
+    68,
+    71,
+    75,
+    76,
+    78,
+    80,
+    81,
+    82
+   ]
+  },
+  "3": {
+   "name": "Supervisor",
+   "permissions": [
+    1,
+    58
+   ]
+  },
+  "4": {
+   "name": "Employee",
+   "permissions": [
+    1,
+    16,
+    24,
+    27,
+    30,
+    46,
+    52,
+    55,
+    56,
+    64,
+    65,
+    66,
+    71,
+    76,
+    77,
+    78,
+    79,
+    80,
+    82
+   ]
+  },
+  "5": {
+   "name": "Master",
+   "permissions": [
+    1,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    19,
+    20,
+    21,
+    22,
+    24,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59
+   ]
+  },
+  "6": {
+   "name": "Interviewer",
+   "permissions": []
+  },
+  "7": {
+   "name": "HiringManager",
+   "permissions": []
+  },
+  "8": {
+   "name": "Reviewer",
+   "permissions": []
+  }
+ },
+ "special_flags": {
+  "is_reporting_manager": "Employee listed in Master \u2192 Reporting Managers. Gates 'Manager Leave Request' (menu 46) even when role has it. Inferred High.",
+  "user_menu_admin_only": [
+   "Roles",
+   "Users",
+   "Leave Rota",
+   "PunchIn Settings",
+   "Attendance update"
+  ]
+ },
+ "record_scoping_required": {
+  "leave": "own; reporting manager: direct reports; admin: all",
+  "wfh": "own; admin: all (reference shows all to everyone \u2014 defect)",
+  "projects/tasks": "members only; admin: all (Verified)",
+  "timesheets": "own; admin: all",
+  "queries": "own; admin: all",
+  "wsr": "own; admin: all",
+  "employees": "admin only; employee: own profile + directory safe fields"
+ }
+}

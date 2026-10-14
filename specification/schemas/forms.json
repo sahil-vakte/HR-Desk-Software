@@ -1,0 +1,7022 @@
+[
+ {
+  "id": "FORM-001",
+  "title": "Change in Circumstances",
+  "modal_id": "changeCircumstances",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0001",
+    "label": "What Circumstances have changed ? *",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0002",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0003",
+    "label": "Description *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-002",
+  "title": "Candidate Information",
+  "modal_id": "otherdocument",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0004",
+    "label": "Document Title*",
+    "control": "input/text",
+    "placeholder": "Enter Document Title",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0005",
+    "label": "Added By*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select --",
+     "Admin",
+     "Employee"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0006",
+    "label": "Updated Date*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0007",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0008",
+    "label": "Comment",
+    "control": "textarea/textarea",
+    "placeholder": "Enter your message here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-003",
+  "title": "Emergency Document",
+  "modal_id": "emergencydocument",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0009",
+    "label": "Document Title*",
+    "control": "input/text",
+    "placeholder": "Enter Document Title",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0010",
+    "label": "Added By*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select --",
+     "Admin",
+     "Employee"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0011",
+    "label": "Updated Date*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0012",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0013",
+    "label": "Comment",
+    "control": "textarea/textarea",
+    "placeholder": "Enter Comment",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-004",
+  "title": "Job",
+  "modal_id": "jobsInfo",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0014",
+    "label": "Job Title",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "- Select Job Title -",
+     "Director",
+     "Market Research Analyst",
+     "Product Research Head",
+     "Operations Manager - E-commerce",
+     "HR & Compliance Manager",
+     "Head of Business & Finance",
+     "Digital Marketing Specialist",
+     "IT Project Manager",
+     "Web Producer",
+     "IT Business Analyst",
+     "Software Developer"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0015",
+    "label": "Employment Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "- Select type -",
+     "Part Time Employee",
+     "Probation",
+     "FULL TIME",
+     "Ad Hoc Contractor",
+     "Part Time Contractor",
+     "Full Time Employee - Fixed Term",
+     "Part-time Employee - Fixed Term",
+     "Full Time Employee"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0016",
+    "label": "Joined Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0017",
+    "label": "Sub Unit",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Management",
+     "Operations"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0018",
+    "label": "Location",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Registered Address"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-005",
+  "title": "Job Document",
+  "modal_id": "jobdocument",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0019",
+    "label": "Document Title*",
+    "control": "input/text",
+    "placeholder": "Enter Document Title",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0020",
+    "label": "Added By",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-select-",
+     "Admin",
+     "Employee"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0021",
+    "label": "Updated Date*",
+    "control": "input/text",
+    "placeholder": "Select date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0022",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0023",
+    "label": "Comment",
+    "control": "textarea/textarea",
+    "placeholder": "Enter Comment",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-006",
+  "title": "Assign Supervisors",
+  "modal_id": "assignSupervisor",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Assign"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0024",
+    "label": "Assign Supervisor",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-007",
+  "title": "Assign Subordinates",
+  "modal_id": "assignSubordinates",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Assign"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0025",
+    "label": "Assign Subordinates",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "[dynamic: employee list]"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-008",
+  "title": "Attachment",
+  "modal_id": "educationdoc",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0026",
+    "label": "Document Title*",
+    "control": "input/text",
+    "placeholder": "Enter Document Title",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0027",
+    "label": "Added By*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "Admin",
+     "Employee"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0028",
+    "label": "Updated Date*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0029",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0030",
+    "label": "Comment",
+    "control": "textarea/textarea",
+    "placeholder": "Enter Comment",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-009",
+  "title": "Upload Documents",
+  "modal_id": "generate_pdf",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Generate Document"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0031",
+    "label": "Select Documents*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Bank Proof",
+     "Starter Checklist",
+     "Reference check Form",
+     "EHack Acknowledgement",
+     "COS Cancellation Note",
+     "\u2026 (23 options, dynamic list)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0032",
+    "label": "Upload Document *",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0033",
+    "label": "Date*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-010",
+  "title": "Generate Contract",
+  "modal_id": "generate_contract",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Generate Contract"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0034",
+    "label": "Select Type",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "Contract Type one",
+     "Contract Type two",
+     "Contract Type three"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0035",
+    "label": "Start Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0036",
+    "label": "End Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0037",
+    "label": "Job Title",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-- Select --",
+     "Web Designer",
+     "Front End Developer"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0038",
+    "label": "Salary Slab",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "--Select Salary--",
+     "200000",
+     "300000"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0039",
+    "label": "Working Hours",
+    "control": "input/text",
+    "placeholder": "Enter Working Hours",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0040",
+    "label": "Document date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-011",
+  "title": "Update Profile",
+  "modal_id": "profile_info",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "photo",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0041",
+    "label": "(unlabelled)",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0042",
+    "label": "First Name *",
+    "control": "input/text",
+    "placeholder": "Enter First Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0043",
+    "label": "Last Name *",
+    "control": "input/text",
+    "placeholder": "EnterLast Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0044",
+    "label": "Email *",
+    "control": "input/email",
+    "placeholder": "Enter Email",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0045",
+    "label": "Employee ID *",
+    "control": "input/text",
+    "placeholder": "Enter Employee ID",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0046",
+    "label": "Phone *",
+    "control": "input/text",
+    "placeholder": "Enter Phone",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0047",
+    "label": "Address *",
+    "control": "input/text",
+    "placeholder": "Enter Address",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0048",
+    "label": "Date Of Birth*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0049",
+    "label": "Employees Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Confirm Employees",
+     "On Probation",
+     "On Notice Period"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0050",
+    "label": "Nationality*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "Afghan",
+     "Albanian",
+     "Algerian",
+     "American",
+     "\u2026(60 options)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0051",
+    "label": "Reports To",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0052",
+    "label": "Process",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "UK"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0053",
+    "label": "Work Mode",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "WFO",
+     "PH",
+     "SL",
+     "HDL",
+     "Leave",
+     "LO",
+     "SS",
+     "CS",
+     "WFH /Office",
+     "DNWT",
+     "WFH",
+     "IWFOH",
+     "OOOL",
+     "OOOW"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0054",
+    "label": "Gender",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Male",
+     "Female",
+     "Other"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0055",
+    "label": "Marital Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Single",
+     "Married",
+     "Other"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0056",
+    "label": "Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Current Employee",
+     "Past Employee"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0057",
+    "label": "Working Capacity in %",
+    "control": "input/number",
+    "placeholder": "Enter working capacity",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0058",
+    "label": "Working Days",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0059",
+    "label": "If Any Medical Condition?",
+    "control": "input/text",
+    "placeholder": "Enter Medical Condition",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-012",
+  "title": "Emergency Contact",
+  "modal_id": "emergency_contact_modal",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0060",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0061",
+    "label": "Relationship *",
+    "control": "input/text",
+    "placeholder": "Enter Relationship",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0062",
+    "label": "Home Telephone",
+    "control": "input/text",
+    "placeholder": "Enter Home Telephone",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 2,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0063",
+    "label": "Mobile No.*",
+    "control": "input/text",
+    "placeholder": "Enter Mobile No.",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0064",
+    "label": "Email",
+    "control": "input/text",
+    "placeholder": "Enter Email",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 2,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0065",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0066",
+    "label": "Address",
+    "control": "input/text",
+    "placeholder": "Enter Address",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 2,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0067",
+    "label": "Comment",
+    "control": "input/text",
+    "placeholder": "Enter Comment",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 2,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0068",
+    "label": "Is Next Of KIN :",
+    "control": "input/radio",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 2,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0069",
+    "label": "Name",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0070",
+    "label": "Relationship",
+    "control": "input/text",
+    "placeholder": "Enter Relationship",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0071",
+    "label": "Mobile No.",
+    "control": "input/text",
+    "placeholder": "Enter Mobile No.",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0072",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-013",
+  "title": "Work Experience",
+  "modal_id": "workexperience",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0073",
+    "label": "Company *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0074",
+    "label": "Job Title *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0075",
+    "label": "Employment type *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select type --",
+     "Full Time",
+     "Part Time"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0076",
+    "label": "Location *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0077",
+    "label": "I am currently working in this role *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Yes",
+     "No"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0078",
+    "label": "Start Date *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Month --",
+     "January",
+     "February",
+     "March",
+     "April",
+     "May",
+     "June",
+     "July",
+     "August",
+     "September",
+     "October",
+     "November",
+     "December"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0079",
+    "label": "Start Date *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Year --",
+     "1990",
+     "1991",
+     "1992",
+     "1993",
+     "\u2026(38 options)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0080",
+    "label": "End Date",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-- Select Month --",
+     "January",
+     "February",
+     "March",
+     "April",
+     "May",
+     "June",
+     "July",
+     "August",
+     "September",
+     "October",
+     "November",
+     "December"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0081",
+    "label": "End Date",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-- Select Year --",
+     "1990",
+     "1991",
+     "1992",
+     "1993",
+     "\u2026(38 options)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0082",
+    "label": "Attachment",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-014",
+  "title": "Educational Informations",
+  "modal_id": "education",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0083",
+    "label": "Institute *",
+    "control": "input/text",
+    "placeholder": "Enter Institute",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0084",
+    "label": "Level *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "BCA",
+     "Engineering",
+     "BBA",
+     "MCA",
+     "MBA",
+     "PGDM/MBA",
+     "PG -DAC",
+     "Master Degree",
+     "Bachelor's Degree"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0085",
+    "label": "Major/Specialization *",
+    "control": "input/text",
+    "placeholder": "Enter Major/Specialization",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0086",
+    "label": "Year",
+    "control": "input/text",
+    "placeholder": "Enter Year",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0087",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-015",
+  "title": "Dependents Information",
+  "modal_id": "dependents",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0088",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0089",
+    "label": "Relationship *",
+    "control": "input/text",
+    "placeholder": "Enter Relationship",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0090",
+    "label": "Phone No.*",
+    "control": "input/text",
+    "placeholder": "Enter Phone No.",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0091",
+    "label": "Date of Birth*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0092",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-016",
+  "title": "Visa Immigration Details",
+  "modal_id": "visaimmigration",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0093",
+    "label": "Number *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0094",
+    "label": "Issued Date *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0095",
+    "label": "Expiry Date *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0096",
+    "label": "Eligible Status",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0097",
+    "label": "Checked Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0098",
+    "label": "Eligible Review Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0099",
+    "label": "Comments",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0100",
+    "label": "Attachment",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-017",
+  "title": "Document Details",
+  "modal_id": "passportimmigration",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0101",
+    "label": "Type *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "Reference check Form",
+     "MOI",
+     "BRP",
+     "Passport",
+     "Consent Form",
+     "COS",
+     "Degree",
+     "Naric",
+     "Offer of Employment"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0102",
+    "label": "Number",
+    "control": "input/text",
+    "placeholder": "Enter Number",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0103",
+    "label": "Issued Date",
+    "control": "input/text",
+    "placeholder": "Select date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0104",
+    "label": "Expiry Date",
+    "control": "input/text",
+    "placeholder": "Select date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0105",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0106",
+    "label": "Notes",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0107",
+    "label": "Verify",
+    "control": "input/checkbox",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-018",
+  "title": "Contact Details",
+  "modal_id": "contactDetails",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0108",
+    "label": "Address Street 1 *",
+    "control": "input/text",
+    "placeholder": "Enter Address Street 1",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0109",
+    "label": "Address Street 2 *",
+    "control": "input/text",
+    "placeholder": "Enter Address Street 2",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0110",
+    "label": "City",
+    "control": "input/text",
+    "placeholder": "Enter City",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0111",
+    "label": "State/Province",
+    "control": "input/text",
+    "placeholder": "Enter State/Province",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0112",
+    "label": "Zip/Postal Code",
+    "control": "input/text",
+    "placeholder": "Enter Zip/Postal Code",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0113",
+    "label": "Country",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Afghanistan",
+     "Albania",
+     "Algeria",
+     "America",
+     "\u2026(60 options)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0114",
+    "label": "Address Type",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Past Address",
+     "Current Address"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0115",
+    "label": "Added By",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "Admin",
+     "Employee"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0116",
+    "label": "To Month",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "-Select-",
+     "January",
+     "February",
+     "March",
+     "April",
+     "May",
+     "June",
+     "July",
+     "August",
+     "September",
+     "October",
+     "November",
+     "December"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0117",
+    "label": "To Year",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "-Select-",
+     "1990",
+     "1991",
+     "1992",
+     "\u2026(39 options)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0118",
+    "label": "From Month*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "-Select-",
+     "January",
+     "February",
+     "March",
+     "April",
+     "May",
+     "June",
+     "July",
+     "August",
+     "September",
+     "October",
+     "November",
+     "December"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0119",
+    "label": "From Year*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "-Select-",
+     "1990",
+     "1991",
+     "1992",
+     "\u2026(39 options)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0120",
+    "label": "Updated On Date",
+    "control": "input/text",
+    "placeholder": "Select date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0121",
+    "label": "Mobile No.*",
+    "control": "input/text",
+    "placeholder": "Mobile No.",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0122",
+    "label": "Work Email",
+    "control": "input/text",
+    "placeholder": "Work email",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0123",
+    "label": "Other Email",
+    "control": "input/text",
+    "placeholder": "Other email",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0124",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-019",
+  "title": "Bank Information",
+  "modal_id": "bank_info_modal",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0125",
+    "label": "Account Holder *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0126",
+    "label": "Bank Name *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0127",
+    "label": "Bank Account No. *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0128",
+    "label": "IFSC Code *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0129",
+    "label": "PAN No *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0130",
+    "label": "UAN No *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0131",
+    "label": "ESIC No *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0132",
+    "label": "Attachment",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-020",
+  "title": "Language",
+  "modal_id": "language_modal",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0133",
+    "label": "Language*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Language--",
+     "English"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0134",
+    "label": "Reading",
+    "control": "input/checkbox",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0135",
+    "label": "Writing",
+    "control": "input/checkbox",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0136",
+    "label": "Speaking",
+    "control": "input/checkbox",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0137",
+    "label": "Competency*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select --",
+     "Poor",
+     "Basic",
+     "Good",
+     "Mother Tongue"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0138",
+    "label": "Comment",
+    "control": "textarea/textarea",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-021",
+  "title": "Skills",
+  "modal_id": "skill_modal",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0139",
+    "label": "Skill*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Skill--",
+     "Development",
+     "Testing",
+     "Project management",
+     "Sap consultant",
+     "software developer"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0140",
+    "label": "Years of Experience*",
+    "control": "input/text",
+    "placeholder": "Enter Year of experience",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0141",
+    "label": "Comment",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-022",
+  "title": "Employee Address",
+  "modal_id": "employeeAddress",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0142",
+    "label": "Address *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0143",
+    "label": "Address Type*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Current Address",
+     "Past Address"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0144",
+    "label": "Start Date",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0145",
+    "label": "End Date",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0146",
+    "label": "Updated On",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0147",
+    "label": "Attachment",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-023",
+  "title": "Next Of KIN",
+  "modal_id": "next_of_kin_modal",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0148",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0149",
+    "label": "Relationship *",
+    "control": "input/text",
+    "placeholder": "Enter Relationship",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0150",
+    "label": "Address",
+    "control": "input/text",
+    "placeholder": "Enter Address",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0151",
+    "label": "Mobile No.*",
+    "control": "input/text",
+    "placeholder": "Enter Mobile No.",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0152",
+    "label": "Email",
+    "control": "input/text",
+    "placeholder": "Enter Email",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-024",
+  "title": "Employment Contract",
+  "modal_id": "emp_contract_info",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0153",
+    "label": "Start Date",
+    "control": "input/text",
+    "placeholder": "Select date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0154",
+    "label": "End Date",
+    "control": "input/text",
+    "placeholder": "Select date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0155",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-025",
+  "title": "Add Membership",
+  "modal_id": "membershipDetails",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0156",
+    "label": "Membership *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0157",
+    "label": "Subscription Paid By *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Paid By --",
+     "1"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0158",
+    "label": "Subscription Amount *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0159",
+    "label": "Currency *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Currency --",
+     "1"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0160",
+    "label": "Subscription Commence Date *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0161",
+    "label": "Subscription Renewal Date *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-026",
+  "title": "Add Attachment",
+  "modal_id": "membershipAttachment",
+  "screen": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "submit_buttons": [],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0162",
+    "label": "Select File *",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0163",
+    "label": "Comment *",
+    "control": "textarea/textarea",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-027",
+  "title": "Add Employee",
+  "modal_id": "add_tax",
+  "screen": "SCR-007",
+  "route": "/employee/employee-list",
+  "module": "MOD-03",
+  "submit_buttons": [
+   "\u00d7",
+   "photo",
+   "Submit"
+  ],
+  "server_rules": "Client: 'Email already exist please change email .' (Declared, bundle; checked via GET /api/checkEmail). Password policy (Declared, bundle): \u226512 chars, upper, lower, number, special \u2014 'Password must be 12+ chars with upper, lower, number & special character.'",
+  "fields": [
+   {
+    "id": "FIELD-0164",
+    "label": "(unlabelled)",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0165",
+    "label": "First Name *",
+    "control": "input/text",
+    "placeholder": "Enter First Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0166",
+    "label": "Last Name *",
+    "control": "input/text",
+    "placeholder": "Enter Last Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0167",
+    "label": "Email *",
+    "control": "input/email",
+    "placeholder": "Enter Email",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0168",
+    "label": "Password *(Example: $7H@n3p6JKrr.)",
+    "control": "input/password",
+    "placeholder": "Enter Password",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0169",
+    "label": "Confirm Password *",
+    "control": "input/password",
+    "placeholder": "Enter Password",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0170",
+    "label": "Employee ID *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0171",
+    "label": "Phone No.*",
+    "control": "input/text",
+    "placeholder": "Enter Phone No.",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0172",
+    "label": "Date Of Birth *",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0173",
+    "label": "Address",
+    "control": "input/text",
+    "placeholder": "Enter Address",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0174",
+    "label": "Date of Joining *",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0175",
+    "label": "Employment type*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "- Select type -",
+     "Part Time Employee",
+     "Probation",
+     "FULL TIME",
+     "Ad Hoc Contractor",
+     "Part Time Contractor",
+     "Full Time Employee - Fixed Term",
+     "Part-time Employee - Fixed Term",
+     "Full Time Employee"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0176",
+    "label": "Employement Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "- Select -",
+     "Confirm Employees",
+     "On Probation",
+     "On Notice Period"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0177",
+    "label": "Designation *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "- Select -",
+     "Employee",
+     "Director"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0178",
+    "label": "Work Mode",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "- Select -",
+     "WFO",
+     "PH",
+     "SL",
+     "HDL",
+     "Leave",
+     "LO",
+     "SS",
+     "CS",
+     "WFH /Office",
+     "DNWT",
+     "WFH",
+     "IWFOH",
+     "OOOL",
+     "OOOW"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0179",
+    "label": "Gender",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "Male",
+     "Female"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0180",
+    "label": "Marital Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "Single",
+     "Married",
+     "Other"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0181",
+    "label": "Job Title",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "- Select Job Title -",
+     "Director",
+     "Market Research Analyst",
+     "Product Research Head",
+     "Operations Manager - E-commerce",
+     "HR & Compliance Manager",
+     "Head of Business & Finance",
+     "Digital Marketing Specialist",
+     "IT Project Manager",
+     "Web Producer",
+     "IT Business Analyst",
+     "Software Developer"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0182",
+    "label": "Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0183",
+    "label": "Working Capacity in %",
+    "control": "input/number",
+    "placeholder": "Enter working capacity",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0184",
+    "label": "Working Days",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-028",
+  "title": "Add Attendance",
+  "modal_id": "attendance_update",
+  "screen": "SCR-013",
+  "route": "/attendance-update",
+  "module": "MOD-04",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0185",
+    "label": "Select Employee*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "[dynamic: employee list]"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0186",
+    "label": "Date *",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0187",
+    "label": "Work Mode",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-Select-",
+     "WFO",
+     "PH",
+     "SL",
+     "HDL",
+     "Leave",
+     "LO",
+     "SS",
+     "CS",
+     "WFH /Office",
+     "DNWT",
+     "WFH",
+     "IWFOH",
+     "OOOL",
+     "OOOW"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0188",
+    "label": "Punch-In Time",
+    "control": "input/time",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0189",
+    "label": "Punch-Out Time",
+    "control": "input/time",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-029",
+  "title": "Apply Leave",
+  "modal_id": "apply_leave",
+  "screen": "SCR-016",
+  "route": "/employee/admin-leave-request",
+  "module": "MOD-05",
+  "submit_buttons": [
+   "\u00d7",
+   "Apply"
+  ],
+  "server_rules": "Server: rejects when requested days exceed balance \u2192 HTTP 200 body {status:'error', message:'You only left 0 balance leaves , and you cannot apply more than that balance leave, please contact admin.'} (Verified). New build: return 422 with the same message.",
+  "fields": [
+   {
+    "id": "FIELD-0190",
+    "label": "Employee Name*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "[dynamic: employee list]"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0191",
+    "label": "Select Leave Type*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Verified",
+    "options": [
+     "- Select Leave Type -",
+     "Summer Vacations 2025-2025"
+    ],
+    "repeat": null,
+    "validation_message": "Please select leave type.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0192",
+    "label": "Duration*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Full Day",
+     "First Half",
+     "Second Half"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0193",
+    "label": "From Date*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please select from date.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0194",
+    "label": "To Date*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please select to date.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0195",
+    "label": "Comment",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-030",
+  "title": "Reject Leave",
+  "modal_id": "rejection_modal",
+  "screen": "SCR-016",
+  "route": "/employee/admin-leave-request",
+  "module": "MOD-05",
+  "submit_buttons": [
+   "\u00d7",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0196",
+    "label": "Rejection Reason",
+    "control": "textarea/textarea",
+    "placeholder": "Enter rejection reason here..",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-031",
+  "title": "Apply Leave",
+  "modal_id": "apply_leave",
+  "screen": "SCR-017",
+  "route": "/leave/employee-leave",
+  "module": "MOD-05",
+  "submit_buttons": [
+   "Apply"
+  ],
+  "server_rules": "Server: rejects when requested days exceed balance \u2192 HTTP 200 body {status:'error', message:'You only left 0 balance leaves , and you cannot apply more than that balance leave, please contact admin.'} (Verified). New build: return 422 with the same message.",
+  "fields": [
+   {
+    "id": "FIELD-0197",
+    "label": "Select Leave Type*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Verified",
+    "options": [
+     "- Select Leave Type -",
+     "Summer Vacations"
+    ],
+    "repeat": null,
+    "validation_message": "Please select leave type.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0198",
+    "label": "Duration*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Full Day",
+     "First Half",
+     "Second Half"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0199",
+    "label": "From Date*",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please select from date.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0200",
+    "label": "To Date*",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please select to date.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0201",
+    "label": "Comment",
+    "control": "textarea/textarea",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-032",
+  "title": "Reject Leave",
+  "modal_id": "rejection_modal",
+  "screen": "SCR-020",
+  "route": "/manager-leave-request",
+  "module": "MOD-05",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0202",
+    "label": "Rejection Reason",
+    "control": "textarea/textarea",
+    "placeholder": "Enter rejection reason here..",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-033",
+  "title": "Add Leave Type",
+  "modal_id": "add_tax",
+  "screen": "SCR-021",
+  "route": "/master-leave-types",
+  "module": "MOD-05",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0203",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please enter the name.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0204",
+    "label": "Allocation/Year *",
+    "control": "input/number",
+    "placeholder": "Enter Allocation per year",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please enter allocation/year leaves.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0205",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-034",
+  "title": "Add Leave Type",
+  "modal_id": "add_tax",
+  "screen": "SCR-022",
+  "route": "/master-leave-types/:id/:id",
+  "module": "MOD-05",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0206",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please enter the name.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0207",
+    "label": "Allocation/Year *",
+    "control": "input/number",
+    "placeholder": "Enter Allocation per year",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please enter allocation/year leaves.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0208",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-035",
+  "title": "Add Leave Year",
+  "modal_id": "add_tax",
+  "screen": "SCR-023",
+  "route": "/master-leave-year",
+  "module": "MOD-05",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0209",
+    "label": "From Date *",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0210",
+    "label": "To Date*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0211",
+    "label": "Process *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "UK"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0212",
+    "label": "Yes",
+    "control": "input/radio",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0213",
+    "label": "No",
+    "control": "input/radio",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0214",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-036",
+  "title": "Reject Work From Home",
+  "modal_id": "rejection_modal",
+  "screen": "SCR-024",
+  "route": "/work-from-home",
+  "module": "MOD-06",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0215",
+    "label": "Rejection Reason",
+    "control": "textarea/textarea",
+    "placeholder": "Enter rejection reason here..",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please enter some reason for rejection",
+    "validation_status": "Verified"
+   }
+  ]
+ },
+ {
+  "id": "FORM-037",
+  "title": "Add Holiday",
+  "modal_id": "add_tax",
+  "screen": "SCR-025",
+  "route": "/master-holiday",
+  "module": "MOD-07",
+  "submit_buttons": [
+   "\u00d7",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0216",
+    "label": "Holiday Name *",
+    "control": "input/text",
+    "placeholder": "Enter Holiday Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0217",
+    "label": "Holiday Date *",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0218",
+    "label": "Type *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "- Select Type -",
+     "Full Day",
+     "Half Day"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0219",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-038",
+  "title": "Add Holiday Year",
+  "modal_id": "add_tax",
+  "screen": "SCR-026",
+  "route": "/master-holiday-year",
+  "module": "MOD-07",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0220",
+    "label": "From Date*",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": 2,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0221",
+    "label": "Yes",
+    "control": "input/radio",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0222",
+    "label": "No",
+    "control": "input/radio",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-039",
+  "title": "Add Holiday",
+  "modal_id": "add_tax",
+  "screen": "SCR-027",
+  "route": "/master-holiday/:id/:id",
+  "module": "MOD-07",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0223",
+    "label": "Holiday Name *",
+    "control": "input/text",
+    "placeholder": "Enter Holiday Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0224",
+    "label": "Holiday Date *",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0225",
+    "label": "Type *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "- Select Type -",
+     "Full Day",
+     "Half Day"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0226",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-040",
+  "title": "Add Policy",
+  "modal_id": "add_policy",
+  "screen": "SCR-028",
+  "route": "/PoliciesList",
+  "module": "MOD-08",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0227",
+    "label": "Policy Code *",
+    "control": "input/text",
+    "placeholder": "Enter Policy Code",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0228",
+    "label": "Policy Name *",
+    "control": "input/text",
+    "placeholder": "Enter Policy Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0229",
+    "label": "Version *",
+    "control": "input/text",
+    "placeholder": "Enter Version",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0230",
+    "label": "In Effect From *",
+    "control": "input/text",
+    "placeholder": "select date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0231",
+    "label": "Last Update *",
+    "control": "input/text",
+    "placeholder": "select date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0232",
+    "label": "Sub Unit*",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0233",
+    "label": "URL",
+    "control": "input/text",
+    "placeholder": "Enter URL",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0234",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0235",
+    "label": "Description *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-041",
+  "title": "Add Document",
+  "modal_id": "add_policy",
+  "screen": "SCR-029",
+  "route": "/ho-document",
+  "module": "MOD-08",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0236",
+    "label": "Document Name *",
+    "control": "input/text",
+    "placeholder": "Enter Document Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0237",
+    "label": "Uploaded Date *",
+    "control": "input/text",
+    "placeholder": "select date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0238",
+    "label": "Description",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0239",
+    "label": "Choose file No file chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-042",
+  "title": "Add Policy",
+  "modal_id": "add_policy",
+  "screen": "SCR-030",
+  "route": "/policies",
+  "module": "MOD-08",
+  "submit_buttons": [
+   "\u00d7",
+   "ql-bold",
+   "ql-italic",
+   "ql-underline",
+   "ql-strike",
+   "ql-align",
+   "ql-blockquote",
+   "ql-code-block",
+   "ql-list",
+   "ql-indent",
+   "ql-link",
+   "ql-image",
+   "ql-video",
+   "ql-clean",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0240",
+    "label": "Policy Code *",
+    "control": "input/text",
+    "placeholder": "Enter Policy Code",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0241",
+    "label": "Policy Name *",
+    "control": "input/text",
+    "placeholder": "Enter Policy Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0242",
+    "label": "Version *",
+    "control": "input/text",
+    "placeholder": "Enter Version",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0243",
+    "label": "In Effect From *",
+    "control": "input/text",
+    "placeholder": "select date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0244",
+    "label": "Last Update *",
+    "control": "input/text",
+    "placeholder": "select date",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0245",
+    "label": "Sub Unit*",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0246",
+    "label": "URL",
+    "control": "input/text",
+    "placeholder": "Enter URL",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0247",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0248",
+    "label": "Description *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0249",
+    "label": "Description *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "\u2026 (35 options, dynamic list)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0250",
+    "label": "Description *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "\u2026 (35 options, dynamic list)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0251",
+    "label": "Description *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-043",
+  "title": "Assign the user to this project",
+  "modal_id": "assign_user",
+  "screen": "SCR-031",
+  "route": "/project/project-details/:id",
+  "module": "MOD-09",
+  "submit_buttons": [
+   "Search",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0252",
+    "label": "Search a user to assign",
+    "control": "input/text",
+    "placeholder": "Search a user to assign",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-044",
+  "title": "Add Task",
+  "modal_id": "addUpdateProjectTask",
+  "screen": "SCR-031",
+  "route": "/project/project-details/:id",
+  "module": "MOD-09",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0253",
+    "label": "Project",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0254",
+    "label": "Task Name *",
+    "control": "input/text",
+    "placeholder": "Enter Task Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0255",
+    "label": "Priority *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Priority --",
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0256",
+    "label": "Assign to",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0257",
+    "label": "Deadline",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0258",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Status --",
+     "To Do",
+     "Not Started",
+     "In progress",
+     "Testing",
+     "On Hold",
+     "Review",
+     "Completed"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0259",
+    "label": "Total Hours",
+    "control": "input/text",
+    "placeholder": "Enter Total Hours",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0260",
+    "label": "Estimated Hours",
+    "control": "input/text",
+    "placeholder": "Enter Estimated Hours",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0261",
+    "label": "Start Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0262",
+    "label": "End Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0263",
+    "label": "Description",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-045",
+  "title": "Add Project",
+  "modal_id": "add_project",
+  "screen": "SCR-031",
+  "route": "/project/project-details/:id",
+  "module": "MOD-09",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0264",
+    "label": "Project Name*",
+    "control": "input/text",
+    "placeholder": "Enter Project Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0265",
+    "label": "Client",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "- Select Client -"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0266",
+    "label": "Start Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0267",
+    "label": "End Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0268",
+    "label": "Project Lead *",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0269",
+    "label": "Project Members*",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0270",
+    "label": "Description",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-046",
+  "title": "Upload Documents",
+  "modal_id": "addProjectDocuments",
+  "screen": "SCR-031",
+  "route": "/project/project-details/:id",
+  "module": "MOD-09",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0271",
+    "label": "Document Name*",
+    "control": "input/text",
+    "placeholder": "Enter Document name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0272",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-047",
+  "title": "Assign the user to this project",
+  "modal_id": "assign_user",
+  "screen": "SCR-032",
+  "route": "/project/view/:id",
+  "module": "MOD-09",
+  "submit_buttons": [
+   "Search",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0273",
+    "label": "Search a user to assign",
+    "control": "input/text",
+    "placeholder": "Search a user to assign",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-048",
+  "title": "Add Project",
+  "modal_id": "add_project",
+  "screen": "SCR-033",
+  "route": "/projects/project-list",
+  "module": "MOD-09",
+  "submit_buttons": [
+   "\u00d7",
+   "ql-bold",
+   "ql-italic",
+   "ql-underline",
+   "ql-strike",
+   "ql-align",
+   "ql-blockquote",
+   "ql-code-block",
+   "ql-list",
+   "ql-indent",
+   "ql-link",
+   "ql-image",
+   "ql-video",
+   "ql-clean",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0274",
+    "label": "Project Name*",
+    "control": "input/text",
+    "placeholder": "Enter Project Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0275",
+    "label": "Client",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "- Select Client -"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0276",
+    "label": "Start Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0277",
+    "label": "End Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0278",
+    "label": "Project Lead *",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0279",
+    "label": "Project Members*",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0280",
+    "label": "Description",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0281",
+    "label": "Description",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "\u2026 (35 options, dynamic list)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0282",
+    "label": "Description",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "\u2026 (35 options, dynamic list)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0283",
+    "label": "Description",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-049",
+  "title": "Add Task",
+  "modal_id": "addUpdateProjectTask",
+  "screen": "SCR-034",
+  "route": "/projects/task-details",
+  "module": "MOD-09",
+  "submit_buttons": [
+   "\u00d7",
+   "ql-bold",
+   "ql-italic",
+   "ql-underline",
+   "ql-strike",
+   "ql-align",
+   "ql-blockquote",
+   "ql-code-block",
+   "ql-list",
+   "ql-indent",
+   "ql-link",
+   "ql-image",
+   "ql-video",
+   "ql-clean",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0284",
+    "label": "Project",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-- Select Project --",
+     "WIMS"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0285",
+    "label": "Task Name *",
+    "control": "input/text",
+    "placeholder": "Enter Task Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0286",
+    "label": "Priority *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Priority --",
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0287",
+    "label": "Assign to",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0288",
+    "label": "Deadline",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0289",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select Status --",
+     "To Do",
+     "Not Started",
+     "In progress",
+     "Testing",
+     "On Hold",
+     "Review",
+     "Completed"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0290",
+    "label": "Total Hours",
+    "control": "input/text",
+    "placeholder": "Enter Total Hours",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0291",
+    "label": "Estimated Hours",
+    "control": "input/text",
+    "placeholder": "Enter Estimated Hours",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0292",
+    "label": "Start Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0293",
+    "label": "End Date",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0294",
+    "label": "Description",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     ""
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0295",
+    "label": "Description",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "\u2026 (35 options, dynamic list)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0296",
+    "label": "Description",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "",
+     "",
+     "",
+     "",
+     "",
+     "",
+     "\u2026 (35 options, dynamic list)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0297",
+    "label": "Description",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-050",
+  "title": "Send Email Preview",
+  "modal_id": "add_tax",
+  "screen": "SCR-035",
+  "route": "/pmo/newsletter",
+  "module": "MOD-10",
+  "submit_buttons": [
+   "Undo",
+   "Redo",
+   "Paragraph",
+   "Bold",
+   "Italic",
+   "Link",
+   "Upload image from computer",
+   "Insert table",
+   "Block quote",
+   "Insert media",
+   "Bulleted List",
+   "Numbered List",
+   "Decrease indent",
+   "Increase indent",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0298",
+    "label": "Rich Text Editor",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-051",
+  "title": "Add Query",
+  "modal_id": "add_tax",
+  "screen": "SCR-036",
+  "route": "/pmo/query",
+  "module": "MOD-10",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0299",
+    "label": "Subject *",
+    "control": "input/text",
+    "placeholder": "Enter Subject",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please enter subject.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0300",
+    "label": "Priority*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Verified",
+    "options": [
+     "-Select-",
+     "High",
+     "Medium",
+     "Low"
+    ],
+    "repeat": null,
+    "validation_message": "Please select priority.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0301",
+    "label": "Select Employee *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "[dynamic: employee list]"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0302",
+    "label": "Message*",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please enter message.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0303",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-052",
+  "title": "Add WSR",
+  "modal_id": "add_tax",
+  "screen": "SCR-039",
+  "route": "/pmo/wsr",
+  "module": "MOD-10",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0304",
+    "label": "Week Name*",
+    "control": "input/text",
+    "placeholder": "Select Date",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please select date.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0305",
+    "label": "Select Employee *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "[dynamic: employee list]"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0306",
+    "label": "Submitted By *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-- Select --",
+     "Employee",
+     "Admin"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0307",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please select attachment file.",
+    "validation_status": "Verified"
+   }
+  ]
+ },
+ {
+  "id": "FORM-053",
+  "title": "Add Applicant",
+  "modal_id": "addRoleApplicantModal",
+  "screen": "SCR-050",
+  "route": "/rms/candidate-list",
+  "module": "MOD-13",
+  "submit_buttons": [
+   "Submit",
+   "Cancel"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0308",
+    "label": "Select Role *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "Digital Marketing Specialist",
+     "IT Project Manager",
+     "Web Producer",
+     "IT Business Analyst",
+     "Software Developer"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0309",
+    "label": "No File Choosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0310",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0311",
+    "label": "Email *",
+    "control": "input/text",
+    "placeholder": "Enter Email",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0312",
+    "label": "Contact No.",
+    "control": "input/text",
+    "placeholder": "Enter Contact No.",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0313",
+    "label": "Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-- Select Status-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-054",
+  "title": "Upload Document",
+  "modal_id": "dependents",
+  "screen": "SCR-051",
+  "route": "/rms/candidate-track-details-edit/:id",
+  "module": "MOD-13",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0314",
+    "label": "Document Name *",
+    "control": "input/text",
+    "placeholder": "Enter Document Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0315",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-055",
+  "title": "Add Applicant",
+  "modal_id": "addRoleApplicantModal",
+  "screen": "SCR-052",
+  "route": "/rms/pipeline-list",
+  "module": "MOD-13",
+  "submit_buttons": [
+   "Submit",
+   "Cancel"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0316",
+    "label": "Select Role *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "Digital Marketing Specialist",
+     "IT Project Manager",
+     "Web Producer",
+     "IT Business Analyst",
+     "Software Developer"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0317",
+    "label": "No File Choosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0318",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0319",
+    "label": "Email *",
+    "control": "input/text",
+    "placeholder": "Enter Email",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0320",
+    "label": "Contact No.",
+    "control": "input/text",
+    "placeholder": "Enter Contact No.",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0321",
+    "label": "Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-- Select Status-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-056",
+  "title": "Add Applicant",
+  "modal_id": "addRoleApplicantModal",
+  "screen": "SCR-053",
+  "route": "/rms/view-advert/:id",
+  "module": "MOD-13",
+  "submit_buttons": [
+   "Submit",
+   "Cancel"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0322",
+    "label": "No File Choosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0323",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0324",
+    "label": "Email *",
+    "control": "input/text",
+    "placeholder": "Enter Email",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0325",
+    "label": "Contact No.",
+    "control": "input/text",
+    "placeholder": "Enter Contact No.",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0326",
+    "label": "Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-- Select Status-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-057",
+  "title": "Add Job Description",
+  "modal_id": "addJobDescriptionModal",
+  "screen": "SCR-053",
+  "route": "/rms/view-advert/:id",
+  "module": "MOD-13",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0327",
+    "label": "Description *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-058",
+  "title": "Add Client",
+  "modal_id": "add_tax",
+  "screen": "SCR-054",
+  "route": "/master-client",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0328",
+    "label": "Client Name *",
+    "control": "input/text",
+    "placeholder": "Enter Client name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0329",
+    "label": "Email-Id *",
+    "control": "input/text",
+    "placeholder": "Enter Email-Id",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0330",
+    "label": "Contact No. *",
+    "control": "input/text",
+    "placeholder": "Enter Contact No.",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0331",
+    "label": "Description",
+    "control": "textarea/textarea",
+    "placeholder": "Enter your message here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0332",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-059",
+  "title": "Add Country",
+  "modal_id": "add_tax",
+  "screen": "SCR-055",
+  "route": "/master-country",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0333",
+    "label": "Country Name *",
+    "control": "input/text",
+    "placeholder": "Enter Country name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0334",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-060",
+  "title": "Add Currency Code",
+  "modal_id": "add_tax",
+  "screen": "SCR-056",
+  "route": "/master-currency-code",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0335",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0336",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-061",
+  "title": "Add Customer",
+  "modal_id": "add_tax",
+  "screen": "SCR-057",
+  "route": "/master-customer",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0337",
+    "label": "Customer Name *",
+    "control": "input/text",
+    "placeholder": "Enter Customer name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0338",
+    "label": "Description *",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0339",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-062",
+  "title": "Add Sub Unit",
+  "modal_id": "add_tax",
+  "screen": "SCR-058",
+  "route": "/master-department",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0340",
+    "label": "Sub Unit Name *",
+    "control": "input/text",
+    "placeholder": "Enter Sub unit",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0341",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-063",
+  "title": "Add Designation",
+  "modal_id": "add_tax",
+  "screen": "SCR-059",
+  "route": "/master-designation",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0342",
+    "label": "Designation Name *",
+    "control": "input/text",
+    "placeholder": "Enter Designation",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0343",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-064",
+  "title": "Add Document List",
+  "modal_id": "add_tax",
+  "screen": "SCR-060",
+  "route": "/master-document-list",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0344",
+    "label": "Document Name *",
+    "control": "input/text",
+    "placeholder": "Enter Document name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0345",
+    "label": "Document Type *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Paper Work",
+     "Pre-Employment Documents",
+     "Employment Documents",
+     "Post-Employement Documents"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0346",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-065",
+  "title": "AddDocument Type",
+  "modal_id": "add_tax",
+  "screen": "SCR-061",
+  "route": "/master-document-type",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0347",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0348",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-066",
+  "title": "Add Education",
+  "modal_id": "add_tax",
+  "screen": "SCR-062",
+  "route": "/master-education",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0349",
+    "label": "Education Name *",
+    "control": "input/text",
+    "placeholder": "Enter Education name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0350",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-067",
+  "title": "Add Salary Structure",
+  "modal_id": "add_salary",
+  "screen": "SCR-063",
+  "route": "/master-employee-salary",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0351",
+    "label": "Salary slab *",
+    "control": "input/text",
+    "placeholder": "Enter Salary slab",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0352",
+    "label": "Process *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "- Select Process -",
+     "UK"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-068",
+  "title": "Add Employment Status",
+  "modal_id": "add_tax",
+  "screen": "SCR-064",
+  "route": "/master-employee-status",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0353",
+    "label": "Employment Status Name *",
+    "control": "input/text",
+    "placeholder": "Enter Employment status",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0354",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-069",
+  "title": "Add Job Title",
+  "modal_id": "add_tax",
+  "screen": "SCR-065",
+  "route": "/master-job-title",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0355",
+    "label": "Job Title *",
+    "control": "input/text",
+    "placeholder": "Enter Job title",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0356",
+    "label": "Job Description *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0357",
+    "label": "Choose file No file Chosen",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0358",
+    "label": "Note",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0359",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-070",
+  "title": "Add Language",
+  "modal_id": "add_tax",
+  "screen": "SCR-066",
+  "route": "/master-languages",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0360",
+    "label": "Language Name *",
+    "control": "input/text",
+    "placeholder": "Enter Language",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0361",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-071",
+  "title": "Add Letters",
+  "modal_id": "add_tax",
+  "screen": "SCR-067",
+  "route": "/master-letters",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0362",
+    "label": "Title *",
+    "control": "input/text",
+    "placeholder": "Enter Title",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0363",
+    "label": "Description *",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0364",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-072",
+  "title": "Add Nationality",
+  "modal_id": "add_tax",
+  "screen": "SCR-068",
+  "route": "/master-nationality",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0365",
+    "label": "Nationality Name *",
+    "control": "input/text",
+    "placeholder": "Enter Nationality",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0366",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-073",
+  "title": "Add Process",
+  "modal_id": "add_tax",
+  "screen": "SCR-069",
+  "route": "/master-process",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0367",
+    "label": "Process Name *",
+    "control": "input/text",
+    "placeholder": "Enter Process name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0368",
+    "label": "TimeZone *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "(GMT-11:00) Midway Island",
+     "(GMT-11:00) Samoa",
+     "(GMT-10:00) Hawaii",
+     "(GMT-09:00) Alaska",
+     "(GMT-08:00) Pacific Time (US &amp; Canada)",
+     "\u2026 (60 options, dynamic list)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0369",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-074",
+  "title": "Add Reporting Managers",
+  "modal_id": "add_tax",
+  "screen": "SCR-070",
+  "route": "/master-reporting-managers",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0370",
+    "label": "Employee Name *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "[dynamic: employee list]"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0371",
+    "label": "Department *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "- Select-",
+     "Management",
+     "Operations"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0372",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-Select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-075",
+  "title": "Add Skills",
+  "modal_id": "add_tax",
+  "screen": "SCR-071",
+  "route": "/master-skills",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": "Server: accepts duplicate names (Verified defect). New build: unique (case-insensitive) among non-deleted records.",
+  "fields": [
+   {
+    "id": "FIELD-0373",
+    "label": "Skills Name *",
+    "control": "input/text",
+    "placeholder": "Enter Skill",
+    "required": "Verified",
+    "options": null,
+    "repeat": null,
+    "validation_message": "Please enter the name.",
+    "validation_status": "Verified"
+   },
+   {
+    "id": "FIELD-0374",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-076",
+  "title": "Add Location",
+  "modal_id": "add_tax",
+  "screen": "SCR-072",
+  "route": "/master-state",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0375",
+    "label": "Country*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "-Select-",
+     "Afghanistan",
+     "Albania",
+     "Algeria",
+     "\u2026(60 options)"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0376",
+    "label": "State Name *",
+    "control": "input/text",
+    "placeholder": "Enter State",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0377",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-077",
+  "title": "Add Termination Reasons",
+  "modal_id": "add_tax",
+  "screen": "SCR-073",
+  "route": "/master-termination-reasons",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0378",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0379",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-078",
+  "title": "Add Work Authorization",
+  "modal_id": "add_tax",
+  "screen": "SCR-074",
+  "route": "/master-work-authorization",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0380",
+    "label": "Work Authorization*",
+    "control": "input/text",
+    "placeholder": "Enter Work Authorization",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0381",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-079",
+  "title": "Add Working Mode",
+  "modal_id": "add_tax",
+  "screen": "SCR-076",
+  "route": "/master-working-mode",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0382",
+    "label": "Name *",
+    "control": "input/text",
+    "placeholder": "Enter Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0383",
+    "label": "Mode Description *",
+    "control": "input/text",
+    "placeholder": "Enter text here",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0384",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "-select-",
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-080",
+  "title": "Add Evaluation Status",
+  "modal_id": "add_tax",
+  "screen": "SCR-077",
+  "route": "/rms/master-evaluation-status",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0385",
+    "label": "Evaluation Status Name *",
+    "control": "input/text",
+    "placeholder": "Enter Evaluation Status Name ",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0386",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-081",
+  "title": "Add Question",
+  "modal_id": "add_tax",
+  "screen": "SCR-078",
+  "route": "/rms/master-interview-questions",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0387",
+    "label": "Add Roles *",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0388",
+    "label": "Interview Type *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Select Type",
+     "Interview Panel 1",
+     "Interview Panel 2",
+     "Interview Panel 3"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0389",
+    "label": "Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0390",
+    "label": "Add Questions *",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0391",
+    "label": "Correct Answer *",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-082",
+  "title": "Add Interview Status",
+  "modal_id": "add_tax",
+  "screen": "SCR-079",
+  "route": "/rms/master-interview-status",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0392",
+    "label": "Interview Status Name *",
+    "control": "input/text",
+    "placeholder": "Enter Interview Status Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0393",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-083",
+  "title": "Add Question",
+  "modal_id": "add_question",
+  "screen": "SCR-080",
+  "route": "/rms/master-technical-questions",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0394",
+    "label": "Add Roles*",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0395",
+    "label": "Question Type*",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Select Type",
+     "MCQ",
+     "Brief"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0396",
+    "label": "Add Question*",
+    "control": "textarea/textarea",
+    "placeholder": "Enter Question here",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0397",
+    "label": "Code Snippets",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0398",
+    "label": "Answer Explanation",
+    "control": "textarea/textarea",
+    "placeholder": "Enter text here",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0399",
+    "label": "Add Video Link",
+    "control": "input/text",
+    "placeholder": "Enter Url",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0400",
+    "label": "Status",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0401",
+    "label": "Add image for this question",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-084",
+  "title": "Add Technical Status",
+  "modal_id": "add_tax",
+  "screen": "SCR-081",
+  "route": "/rms/master-technical-status",
+  "module": "MOD-14",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0402",
+    "label": "Technical Status Name *",
+    "control": "input/text",
+    "placeholder": "Enter Technical Status Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0403",
+    "label": "Status *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "Active",
+     "Deactive"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-085",
+  "title": "Add User",
+  "modal_id": "add_edit_user",
+  "screen": "SCR-088",
+  "route": "/users",
+  "module": "MOD-16",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0404",
+    "label": "First Name *",
+    "control": "input/text",
+    "placeholder": "Enter First Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0405",
+    "label": "Last Name *",
+    "control": "input/text",
+    "placeholder": "Enter Last Name",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0406",
+    "label": "Email Id *",
+    "control": "input/text",
+    "placeholder": "Enter Email Id",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0407",
+    "label": "Password *",
+    "control": "input/password",
+    "placeholder": "Enter Password",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0408",
+    "label": "User Type *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "- Select User Type -",
+     "Super Admin",
+     "Admin"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0409",
+    "label": "Username",
+    "control": "input/text",
+    "placeholder": "Enter Username",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0410",
+    "label": "Phone No.",
+    "control": "input/number",
+    "placeholder": "Enter Phone No.",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-086",
+  "title": "Expenses",
+  "modal_id": "expenseModal",
+  "screen": "SCR-089",
+  "route": "/Hr-Forms",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "btn btn-sm btn-outline-danger me-1",
+   "btn btn-sm btn-outline-success",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0411",
+    "label": "Expense Period",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 2,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0412",
+    "label": "RI Number",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0413",
+    "label": "(unlabelled)",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 10,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0414",
+    "label": "(unlabelled)",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-- Select Category --",
+     "Category 1",
+     "Category 2",
+     "Category 3"
+    ],
+    "repeat": 5,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0415",
+    "label": "(unlabelled)",
+    "control": "input/number",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 5,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-087",
+  "title": "Add Questions",
+  "modal_id": "add_question",
+  "screen": "SCR-091",
+  "route": "/interview-questions",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Cancel",
+   "Save"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0416",
+    "label": "Add Roles",
+    "control": "input/text",
+    "placeholder": "Select option",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0417",
+    "label": "Question Type",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-",
+     "MCQ",
+     "Brief Answer"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0418",
+    "label": "Department",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-",
+     "Web Development",
+     "Application Development",
+     "IT Management",
+     "Accounts Management",
+     "Support Management",
+     "Marketing"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0419",
+    "label": "Add Questions",
+    "control": "textarea/textarea",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0420",
+    "label": "Option A",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0421",
+    "label": "Option B",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0422",
+    "label": "Option C",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0423",
+    "label": "Option D",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0424",
+    "label": "Correct Answer",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "-",
+     "Option A",
+     "Option B",
+     "Option C",
+     "Option D"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0425",
+    "label": "Correct Answer",
+    "control": "textarea/textarea",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0426",
+    "label": "Code Snippets",
+    "control": "textarea/textarea",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0427",
+    "label": "Answer Explanation",
+    "control": "textarea/textarea",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0428",
+    "label": "Add Video Link",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0429",
+    "label": "Add Image To Question",
+    "control": "input/file",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-088",
+  "title": "Add Task Board",
+  "modal_id": "add_task_board",
+  "screen": "SCR-093",
+  "route": "/project/task-board",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0430",
+    "label": "Task Board Name",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0431",
+    "label": "Task Board Color",
+    "control": "input/radio",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 6,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-089",
+  "title": "Edit Task Board",
+  "modal_id": "edit_task_board",
+  "screen": "SCR-093",
+  "route": "/project/task-board",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0432",
+    "label": "Task Board Name",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0433",
+    "label": "Task Board Color",
+    "control": "input/radio",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": 6,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-090",
+  "title": "Create New Project",
+  "modal_id": "new_project",
+  "screen": "SCR-093",
+  "route": "/project/task-board",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Create Project"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0434",
+    "label": "Project Name",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-091",
+  "title": "Assign Leader to this project",
+  "modal_id": "assign_leader",
+  "screen": "SCR-093",
+  "route": "/project/task-board",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Search",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0435",
+    "label": "Search to add a leader",
+    "control": "input/text",
+    "placeholder": "Search to add a leader",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-092",
+  "title": "Assign the user to this project",
+  "modal_id": "assign_user",
+  "screen": "SCR-093",
+  "route": "/project/task-board",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Search",
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0436",
+    "label": "Search a user to assign",
+    "control": "input/text",
+    "placeholder": "Search a user to assign",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-093",
+  "title": "Add Task",
+  "modal_id": "add_task_modal",
+  "screen": "SCR-093",
+  "route": "/project/task-board",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0437",
+    "label": "Task Name",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0438",
+    "label": "Task Priority",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "Select",
+     "High",
+     "Normal",
+     "Low"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0439",
+    "label": "Due Date",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0440",
+    "label": "Task Followers",
+    "control": "input/text",
+    "placeholder": "Search to add",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-094",
+  "title": "Edit Task",
+  "modal_id": "edit_task_modal",
+  "screen": "SCR-093",
+  "route": "/project/task-board",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0441",
+    "label": "Task Name",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0442",
+    "label": "Task Priority",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": [
+     "Select",
+     "High",
+     "Normal",
+     "Low"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0443",
+    "label": "Due Date",
+    "control": "input/text",
+    "placeholder": "",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0444",
+    "label": "Task Followers",
+    "control": "input/text",
+    "placeholder": "Search to add",
+    "required": "Optional (no marker)",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ },
+ {
+  "id": "FORM-095",
+  "title": "Add Salary Structure",
+  "modal_id": "add_salary",
+  "screen": "SCR-094",
+  "route": "/salary",
+  "module": "MOD-99",
+  "submit_buttons": [
+   "Submit"
+  ],
+  "server_rules": null,
+  "fields": [
+   {
+    "id": "FIELD-0445",
+    "label": "Salary slab *",
+    "control": "input/text",
+    "placeholder": "Enter Salary slab",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": null,
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   },
+   {
+    "id": "FIELD-0446",
+    "label": "Process *",
+    "control": "select/select-one",
+    "placeholder": "",
+    "required": "UI-marked (*) \u2014 enforcement unverified",
+    "options": [
+     "- Select Process -",
+     "UK"
+    ],
+    "repeat": null,
+    "validation_message": null,
+    "validation_status": "Unknown"
+   }
+  ]
+ }
+]

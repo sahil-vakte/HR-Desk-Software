@@ -1,0 +1,680 @@
+{
+  "masters": [
+    {
+      "model": "MasterItem",
+      "fields": [
+        "kind",
+        "name",
+        "description",
+        "time_zone",
+        "parent",
+        "email",
+        "contact_no",
+        "file",
+        "extra"
+      ]
+    },
+    {
+      "model": "WorkWeek",
+      "fields": [
+        "process",
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri",
+        "sat",
+        "sun"
+      ]
+    }
+  ],
+  "core": [
+    {
+      "model": "PrivateFile",
+      "fields": [
+        "owner",
+        "original_name",
+        "stored_name",
+        "content_type",
+        "size",
+        "sha256",
+        "purpose"
+      ]
+    },
+    {
+      "model": "Company",
+      "fields": [
+        "company_name",
+        "contact_person",
+        "address",
+        "country",
+        "state",
+        "city",
+        "postal_code",
+        "email",
+        "phone",
+        "mobile",
+        "fax",
+        "cin",
+        "website_url",
+        "tax_id",
+        "registration_no",
+        "handbook",
+        "logo",
+        "time_zone"
+      ]
+    },
+    {
+      "model": "Theme",
+      "fields": [
+        "site_logo",
+        "favicon",
+        "primary_color",
+        "secondary_color",
+        "sidebar_color",
+        "auto_punching"
+      ]
+    },
+    {
+      "model": "Localisation",
+      "fields": [
+        "country",
+        "date_format",
+        "timezone",
+        "language",
+        "currency_code",
+        "currency_symbol"
+      ]
+    },
+    {
+      "model": "SmtpProfile",
+      "fields": [
+        "profile",
+        "host",
+        "username",
+        "password",
+        "port",
+        "from_address",
+        "from_name",
+        "security"
+      ]
+    }
+  ],
+  "employees": [
+    {
+      "model": "Employee",
+      "fields": [
+        "user",
+        "employee_code",
+        "date_of_birth",
+        "date_of_joining",
+        "sub_unit",
+        "designation",
+        "nationality",
+        "reports_to",
+        "employment_type",
+        "employee_status",
+        "gender",
+        "marital_status",
+        "process",
+        "work_mode",
+        "job_title",
+        "working_capacity_pct",
+        "working_days",
+        "weekly_work_hours",
+        "address",
+        "location",
+        "driver_licence_number",
+        "licence_expiry",
+        "medical_condition",
+        "deactivated_on",
+        "photo",
+        "rms_applicant"
+      ]
+    },
+    {
+      "model": "EmployeeDocument",
+      "fields": [
+        "user",
+        "document_list_item",
+        "number",
+        "issued_date",
+        "expiry_date",
+        "file",
+        "notes",
+        "verified",
+        "checked_date",
+        "is_archived"
+      ]
+    },
+    {
+      "model": "Dependent",
+      "fields": [
+        "user",
+        "name",
+        "relationship",
+        "phone",
+        "date_of_birth",
+        "file"
+      ]
+    },
+    {
+      "model": "EmergencyContact",
+      "fields": [
+        "user",
+        "kind",
+        "name",
+        "relationship",
+        "home_phone",
+        "mobile",
+        "email",
+        "address",
+        "comment",
+        "file"
+      ]
+    },
+    {
+      "model": "Address",
+      "fields": [
+        "user",
+        "street1",
+        "street2",
+        "city",
+        "state",
+        "postal_code",
+        "mobile",
+        "work_email",
+        "other_email",
+        "country",
+        "address_type",
+        "from_month",
+        "from_year",
+        "to_month",
+        "to_year",
+        "added_by",
+        "file",
+        "verified"
+      ]
+    },
+    {
+      "model": "Education",
+      "fields": [
+        "user",
+        "institute",
+        "level",
+        "major",
+        "year",
+        "file"
+      ]
+    },
+    {
+      "model": "Experience",
+      "fields": [
+        "user",
+        "company",
+        "job_title",
+        "employment_type",
+        "location",
+        "current",
+        "start_date",
+        "end_date",
+        "file"
+      ]
+    },
+    {
+      "model": "Skill",
+      "fields": [
+        "user",
+        "skill",
+        "years",
+        "comment"
+      ]
+    },
+    {
+      "model": "Language",
+      "fields": [
+        "user",
+        "language",
+        "reading",
+        "writing",
+        "speaking",
+        "competency",
+        "comment"
+      ]
+    },
+    {
+      "model": "Membership",
+      "fields": [
+        "user",
+        "membership",
+        "paid_by",
+        "amount",
+        "currency",
+        "commence",
+        "renewal"
+      ]
+    },
+    {
+      "model": "ChangeOfCircumstance",
+      "fields": [
+        "user",
+        "circumstance_type",
+        "description",
+        "file"
+      ]
+    },
+    {
+      "model": "PaperworkDocument",
+      "fields": [
+        "user",
+        "document_list_item",
+        "file",
+        "date",
+        "title"
+      ]
+    },
+    {
+      "model": "Salary",
+      "fields": [
+        "user",
+        "amount",
+        "currency",
+        "pay_frequency",
+        "effective_from",
+        "bank_details"
+      ]
+    },
+    {
+      "model": "OrgDocument",
+      "fields": [
+        "kind",
+        "name",
+        "file",
+        "is_archived"
+      ]
+    }
+  ],
+  "holidays": [
+    {
+      "model": "HolidayYear",
+      "fields": [
+        "from_date",
+        "to_date",
+        "is_default"
+      ]
+    },
+    {
+      "model": "Holiday",
+      "fields": [
+        "holiday_year",
+        "name",
+        "date",
+        "type",
+        "process"
+      ]
+    }
+  ],
+  "leave": [
+    {
+      "model": "LeaveYear",
+      "fields": [
+        "from_date",
+        "to_date",
+        "process",
+        "is_default"
+      ]
+    },
+    {
+      "model": "LeaveType",
+      "fields": [
+        "leave_year",
+        "name",
+        "allocation_per_year",
+        "process"
+      ]
+    },
+    {
+      "model": "LeaveEntitlement",
+      "fields": [
+        "user",
+        "leave_type",
+        "assigned"
+      ]
+    },
+    {
+      "model": "LeaveRequest",
+      "fields": [
+        "user",
+        "leave_type",
+        "duration",
+        "from_date",
+        "to_date",
+        "days",
+        "comment",
+        "manager_status",
+        "status",
+        "rejection_reason"
+      ]
+    },
+    {
+      "model": "LeaveRota",
+      "fields": [
+        "user",
+        "date"
+      ]
+    }
+  ],
+  "wfh": [
+    {
+      "model": "WfhRequest",
+      "fields": [
+        "user",
+        "duration",
+        "date",
+        "comment",
+        "status",
+        "rejection_reason"
+      ]
+    }
+  ],
+  "attendance": [
+    {
+      "model": "AttendanceSession",
+      "fields": [
+        "user",
+        "date",
+        "work_mode",
+        "punch_in",
+        "punch_out",
+        "total_minutes",
+        "source"
+      ]
+    },
+    {
+      "model": "PunchSetting",
+      "fields": [
+        "user",
+        "working_capacity_pct",
+        "hours_per_week",
+        "mon",
+        "tue",
+        "wed",
+        "thu",
+        "fri"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "model": "Project",
+      "fields": [
+        "name",
+        "client",
+        "start_date",
+        "end_date",
+        "lead",
+        "members",
+        "description"
+      ]
+    },
+    {
+      "model": "ProjectDocument",
+      "fields": [
+        "project",
+        "name",
+        "file"
+      ]
+    },
+    {
+      "model": "Task",
+      "fields": [
+        "project",
+        "name",
+        "priority",
+        "assignees",
+        "deadline",
+        "status",
+        "total_hours",
+        "estimated_hours",
+        "remaining_hours",
+        "start_date",
+        "end_date",
+        "description"
+      ]
+    },
+    {
+      "model": "TaskComment",
+      "fields": [
+        "task",
+        "author",
+        "message",
+        "attachment"
+      ]
+    }
+  ],
+  "timesheets": [
+    {
+      "model": "Timesheet",
+      "fields": [
+        "user",
+        "start_date",
+        "end_date",
+        "approval_status"
+      ]
+    },
+    {
+      "model": "TimesheetLine",
+      "fields": [
+        "timesheet",
+        "project",
+        "activity",
+        "day1",
+        "day2",
+        "day3",
+        "day4",
+        "day5",
+        "day6",
+        "day7"
+      ]
+    },
+    {
+      "model": "TimesheetLog",
+      "fields": [
+        "timesheet",
+        "action",
+        "comment",
+        "actor",
+        "at"
+      ]
+    }
+  ],
+  "pmo": [
+    {
+      "model": "WeeklyStatusReport",
+      "fields": [
+        "user",
+        "week_start",
+        "week_end",
+        "submitted_by",
+        "attachment",
+        "status"
+      ]
+    },
+    {
+      "model": "Query",
+      "fields": [
+        "query_code",
+        "employee",
+        "created_by",
+        "subject",
+        "priority",
+        "message",
+        "attachment",
+        "status"
+      ]
+    },
+    {
+      "model": "QueryReply",
+      "fields": [
+        "query",
+        "author",
+        "message",
+        "attachment"
+      ]
+    },
+    {
+      "model": "WhosWhereEntry",
+      "fields": [
+        "user",
+        "week_start",
+        "project",
+        "day1",
+        "day2",
+        "day3",
+        "day4",
+        "day5"
+      ]
+    }
+  ],
+  "documents": [
+    {
+      "model": "Policy",
+      "fields": [
+        "code",
+        "name",
+        "version",
+        "effective_from",
+        "last_update",
+        "sub_units",
+        "url",
+        "attachment",
+        "description"
+      ]
+    },
+    {
+      "model": "HoDocument",
+      "fields": [
+        "name",
+        "uploaded_date",
+        "description",
+        "file",
+        "is_archived"
+      ]
+    }
+  ],
+  "recruitment": [
+    {
+      "model": "JobRole",
+      "fields": [
+        "reference_no",
+        "name",
+        "positions",
+        "publish_date",
+        "expiry_date",
+        "portal1_name",
+        "portal1_reference",
+        "portal2_name",
+        "portal2_reference",
+        "portal3_name",
+        "portal3_reference",
+        "salary_min_gbp",
+        "salary_max_gbp",
+        "description",
+        "notes",
+        "status"
+      ]
+    },
+    {
+      "model": "Applicant",
+      "fields": [
+        "job_role",
+        "name",
+        "email",
+        "phone",
+        "cv_file",
+        "cv_text",
+        "application_date",
+        "respond_to_portal",
+        "work_authorization",
+        "cv_evaluation_date",
+        "technical_test_date",
+        "final_interview_date",
+        "cif_date",
+        "job_offered_date",
+        "joining_date",
+        "cv_evaluation_status",
+        "technical_test_status",
+        "final_interview_status",
+        "application_pack_location",
+        "applicant_status"
+      ]
+    },
+    {
+      "model": "CvEvaluation",
+      "fields": [
+        "applicant",
+        "assessor_name",
+        "assessment_date",
+        "ratings",
+        "outcome",
+        "note"
+      ]
+    },
+    {
+      "model": "TechnicalQuestion",
+      "fields": [
+        "job_roles",
+        "type",
+        "question",
+        "option_a",
+        "option_b",
+        "option_c",
+        "option_d",
+        "correct_answer",
+        "code_snippet",
+        "answer_explanation",
+        "video_link",
+        "image"
+      ]
+    },
+    {
+      "model": "InterviewQuestion",
+      "fields": [
+        "job_roles",
+        "type",
+        "question"
+      ]
+    },
+    {
+      "model": "InterviewNote",
+      "fields": [
+        "applicant",
+        "panel",
+        "interviewer",
+        "date",
+        "notes",
+        "outcome"
+      ]
+    },
+    {
+      "model": "ApplicantDocument",
+      "fields": [
+        "applicant",
+        "name",
+        "file"
+      ]
+    },
+    {
+      "model": "CandidateInvitation",
+      "fields": [
+        "applicant",
+        "kind",
+        "digest",
+        "expires_at",
+        "consumed_at",
+        "questions",
+        "answers"
+      ]
+    }
+  ]
+}

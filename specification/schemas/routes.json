@@ -1,0 +1,1282 @@
+[
+ {
+  "reference_path": "/",
+  "name": "login",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/login",
+  "name": "login",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/register",
+  "name": "register",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/masterlogin",
+  "name": "masterlogin",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/verify-otp/:id",
+  "name": "verify-otp",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/forgot-password/:key",
+  "name": "forgotPassword",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/password/reset",
+  "name": "password.request",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/password/reset/:token",
+  "name": "password.reset",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/email/verify/:id",
+  "name": "verification.verify",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/email/resend",
+  "name": "verification.resend",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/technical-test-design",
+  "name": "technicalTest",
+  "module": "MOD-13",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/test-intro",
+  "name": "testIntro",
+  "module": "MOD-13",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/home",
+  "name": "home",
+  "module": "MOD-02",
+  "public": false,
+  "menu_id": 1,
+  "screen": "SCR-004",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/datatable-demo",
+  "name": "datatable-demo",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/roles/",
+  "name": "roles",
+  "module": "MOD-16",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-086",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/roles",
+  "name": null,
+  "module": "MOD-16",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-086",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-roles",
+  "name": "master-roles",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-092",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/interview-questions",
+  "name": "interviewQuestions",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-091",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/work-from-home",
+  "name": "workFromHome",
+  "module": "MOD-06",
+  "public": false,
+  "menu_id": 52,
+  "screen": "SCR-024",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/advert-list",
+  "name": "advert-list",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": 45,
+  "screen": "SCR-048",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/add-advert",
+  "name": "add-advert",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-046",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/view-advert/:id",
+  "name": "view-advert",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-053",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/add-advert/:id",
+  "name": "add-edit-advert",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-047",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/role-add-document",
+  "name": "role-add-document",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/rms/master-evaluation-status",
+  "name": "master-evaluation-status",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 49,
+  "screen": "SCR-077",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/master-interview-status",
+  "name": "master-interview-status",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 50,
+  "screen": "SCR-079",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/master-technical-status",
+  "name": "master-technical-status",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 51,
+  "screen": "SCR-081",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/master-interview-questions",
+  "name": "master-interview-questions",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 53,
+  "screen": "SCR-078",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/master-technical-questions",
+  "name": "master-technical-questions",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 54,
+  "screen": "SCR-080",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/candidate-list",
+  "name": "candidate-list",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": 47,
+  "screen": "SCR-050",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/pipeline-list",
+  "name": "pipeline-list",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": 86,
+  "screen": "SCR-052",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/candidate-track-details-add",
+  "name": "add-candidate",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/rms/candidate-track-details-edit/:id",
+  "name": "edit-candidate",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-051",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/rms/candidate-track-details-edit/:id/:tab",
+  "name": "view-candidate-documents",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/rms/candidate-track-details-view",
+  "name": "view-candidate",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/rms/candidate-documents-list",
+  "name": "candidate-documents-list",
+  "module": "MOD-13",
+  "public": false,
+  "menu_id": 69,
+  "screen": "SCR-049",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/salary",
+  "name": "salary",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-094",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/salary-slip",
+  "name": "salarySlip",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-095",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/reports/leave-report",
+  "name": "leave-report",
+  "module": "MOD-12",
+  "public": false,
+  "menu_id": 42,
+  "screen": "SCR-044",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/reports/attendance-report",
+  "name": "attendance-report",
+  "module": "MOD-12",
+  "public": false,
+  "menu_id": 68,
+  "screen": "SCR-043",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/reports/pmo-report",
+  "name": "pmo-report",
+  "module": "MOD-12",
+  "public": false,
+  "menu_id": 85,
+  "screen": "SCR-045",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/attendance-update",
+  "name": "attendance-update",
+  "module": "MOD-04",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-013",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/PoliciesList",
+  "name": "PoliciesList",
+  "module": "MOD-08",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-028",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/employee-directory",
+  "name": "employee-directory",
+  "module": "MOD-03",
+  "public": false,
+  "menu_id": 58,
+  "screen": "SCR-005",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings/theme-settings",
+  "name": "theme-settings",
+  "module": "MOD-15",
+  "public": false,
+  "menu_id": 34,
+  "screen": "SCR-085",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings/company-settings",
+  "name": "company-settings",
+  "module": "MOD-15",
+  "public": false,
+  "menu_id": 40,
+  "screen": "SCR-082",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings/localization-settings",
+  "name": "localization-settings",
+  "module": "MOD-15",
+  "public": false,
+  "menu_id": 35,
+  "screen": "SCR-084",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings/email-settings",
+  "name": "email-settings",
+  "module": "MOD-15",
+  "public": false,
+  "menu_id": 36,
+  "screen": "SCR-083",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings/approval-settings",
+  "name": "approval-settings",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": 37,
+  "screen": "SCR-096",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings/crone-settings",
+  "name": "crone-settings",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": 38,
+  "screen": "SCR-097",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/punchIn-settings",
+  "name": "punchIn-settings",
+  "module": "MOD-04",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-015",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-skills",
+  "name": "master-skills",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 7,
+  "screen": "SCR-071",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-languages",
+  "name": "master-languages",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 10,
+  "screen": "SCR-066",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-education",
+  "name": "master-education",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 8,
+  "screen": "SCR-062",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-nationality",
+  "name": "master-nationality",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 12,
+  "screen": "SCR-068",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-termination-reasons",
+  "name": "master-termination-reasons",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 13,
+  "screen": "SCR-073",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-leave-year",
+  "name": "master-leave-year",
+  "module": "MOD-05",
+  "public": false,
+  "menu_id": 57,
+  "screen": "SCR-023",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-leave-types",
+  "name": "master-leave-types",
+  "module": "MOD-05",
+  "public": false,
+  "menu_id": 14,
+  "screen": "SCR-021",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-leave-types/:leaveYearID/:page",
+  "name": "master-leave-types-year",
+  "module": "MOD-05",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-022",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-work-week",
+  "name": "master-work-week",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 15,
+  "screen": "SCR-075",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-reporting-managers",
+  "name": "master-reporting-managers",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 17,
+  "screen": "SCR-070",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-customer",
+  "name": "master-customer",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 19,
+  "screen": "SCR-057",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-job-title",
+  "name": "master-job-title",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 20,
+  "screen": "SCR-065",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-designation",
+  "name": "master-designation",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 21,
+  "screen": "SCR-059",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-department",
+  "name": "master-department",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 22,
+  "screen": "SCR-058",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-document-type",
+  "name": "master-document-type",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 74,
+  "screen": "SCR-061",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-holiday",
+  "name": "master-holiday",
+  "module": "MOD-07",
+  "public": false,
+  "menu_id": 16,
+  "screen": "SCR-025",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-holiday/:holidayYearID/:page",
+  "name": "master-holiday-years",
+  "module": "MOD-07",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-027",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-holiday-year",
+  "name": "master-holiday-year",
+  "module": "MOD-07",
+  "public": false,
+  "menu_id": 84,
+  "screen": "SCR-026",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-country",
+  "name": "master-country",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 26,
+  "screen": "SCR-055",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-state",
+  "name": "master-state",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 70,
+  "screen": "SCR-072",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-document-list",
+  "name": "master-document-list",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 32,
+  "screen": "SCR-060",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-process",
+  "name": "master-process",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 39,
+  "screen": "SCR-069",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-employee-status",
+  "name": "master-employee-status",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 43,
+  "screen": "SCR-064",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-employee-salary",
+  "name": "master-employee-salary",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 59,
+  "screen": "SCR-063",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-working-mode",
+  "name": "master-working-mode",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 60,
+  "screen": "SCR-076",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-client",
+  "name": "master-client",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 67,
+  "screen": "SCR-054",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-letters",
+  "name": "master-letters",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-067",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-work-authorization",
+  "name": "master-work-authorization",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 72,
+  "screen": "SCR-074",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/master-currency-code",
+  "name": "master-currency-code",
+  "module": "MOD-14",
+  "public": false,
+  "menu_id": 73,
+  "screen": "SCR-056",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/roles/edit/:id",
+  "name": "rolesEdit",
+  "module": "MOD-16",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-087",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/employee/employee-list",
+  "name": "employee",
+  "module": "MOD-03",
+  "public": false,
+  "menu_id": 29,
+  "screen": "SCR-007",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/employee/details-view/:id",
+  "name": "employee-details",
+  "module": "MOD-03",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-006",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/attendance-employee",
+  "name": "attendance-employee",
+  "module": "MOD-04",
+  "public": false,
+  "menu_id": 27,
+  "screen": "SCR-011",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/attendance-employee/:id",
+  "name": "attendance-employee-user",
+  "module": "MOD-04",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-012",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/employee/admin-attendance",
+  "name": "admin-attendance",
+  "module": "MOD-04",
+  "public": false,
+  "menu_id": 28,
+  "screen": "SCR-014",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/leave/employee-leave",
+  "name": "employee-leave",
+  "module": "MOD-05",
+  "public": false,
+  "menu_id": 55,
+  "screen": "SCR-017",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/leave/leave-details",
+  "name": "leave-details",
+  "module": "MOD-05",
+  "public": false,
+  "menu_id": 56,
+  "screen": "SCR-018",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/employee/admin-leave-request",
+  "name": "admin-leave-request",
+  "module": "MOD-05",
+  "public": false,
+  "menu_id": 31,
+  "screen": "SCR-016",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/manager-leave-request",
+  "name": "manager-leave-request",
+  "module": "MOD-05",
+  "public": false,
+  "menu_id": 46,
+  "screen": "SCR-020",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/policies",
+  "name": "policies",
+  "module": "MOD-08",
+  "public": false,
+  "menu_id": 30,
+  "screen": "SCR-030",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/projects/project-list",
+  "name": "project-list",
+  "module": "MOD-09",
+  "public": false,
+  "menu_id": 65,
+  "screen": "SCR-033",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/project/view/:id",
+  "name": "project-view",
+  "module": "MOD-09",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-032",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/project/task-board",
+  "name": "project-task-board",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-093",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/projects/task-details",
+  "name": "task-details",
+  "module": "MOD-09",
+  "public": false,
+  "menu_id": 66,
+  "screen": "SCR-034",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/projects/task-details/:page",
+  "name": "task-details-page",
+  "module": "MOD-09",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/project/project-details/:id",
+  "name": "project-task-list",
+  "module": "MOD-09",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-031",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/project/project-details/:id/:page",
+  "name": "project-task-list-page",
+  "module": "MOD-09",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/technical-test-intro/:id",
+  "name": "technical-test-intro",
+  "module": "MOD-13",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/online-technical-test/:id/:questionsID",
+  "name": "online-technical-test",
+  "module": "MOD-13",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/thank-you/:id",
+  "name": "thank-you",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/test-link-expired",
+  "name": "test-link-expired",
+  "module": "MOD-13",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/Hr-Forms",
+  "name": "Hr-Forms",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-089",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/Front-CIF/:token",
+  "name": "Front-CIF",
+  "module": "MOD-13",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/thankYou/:token",
+  "name": "thankYou",
+  "module": "MOD-01",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/Front-ReferenceCheck",
+  "name": "Front-ReferenceCheck",
+  "module": "MOD-13",
+  "public": true,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (public/candidate page)"
+ },
+ {
+  "reference_path": "/whosWhereDetail",
+  "name": "whosWhereDetail",
+  "module": "MOD-10",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-040",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/time/timesheet",
+  "name": "timesheet",
+  "module": "MOD-11",
+  "public": false,
+  "menu_id": 82,
+  "screen": "SCR-041",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/time/viewTimesheet/:userID/:date",
+  "name": "ViewTimesheet",
+  "module": "MOD-11",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/employee/hierarchy",
+  "name": "hierarchy",
+  "module": "MOD-03",
+  "public": false,
+  "menu_id": 75,
+  "screen": "SCR-008",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/pmo/wsr",
+  "name": "wsr",
+  "module": "MOD-10",
+  "public": false,
+  "menu_id": 78,
+  "screen": "SCR-039",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/pmo/newsletter",
+  "name": "newsletters",
+  "module": "MOD-10",
+  "public": false,
+  "menu_id": 77,
+  "screen": "SCR-035",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/pmo/query",
+  "name": "query",
+  "module": "MOD-10",
+  "public": false,
+  "menu_id": 79,
+  "screen": "SCR-036",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/pmo/query-view/:id",
+  "name": "queryView",
+  "module": "MOD-10",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-037",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/employee/hiring-process",
+  "name": "hiringprocess",
+  "module": "MOD-03",
+  "public": false,
+  "menu_id": 81,
+  "screen": "SCR-009",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/pmo/whos-where",
+  "name": "whoswhere",
+  "module": "MOD-10",
+  "public": false,
+  "menu_id": 80,
+  "screen": "SCR-038",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/pmo/whos-where/:date",
+  "name": "getwhoswhere",
+  "module": "MOD-10",
+  "public": false,
+  "menu_id": 80,
+  "screen": "SCR-038",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/ho-document",
+  "name": "ho",
+  "module": "MOD-08",
+  "public": false,
+  "menu_id": 83,
+  "screen": "SCR-029",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/file-manager",
+  "name": "fileManager",
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-090",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings/",
+  "name": null,
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/settings/profile",
+  "name": "settings.profile",
+  "module": "MOD-01",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-003",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings/password",
+  "name": "settings.password",
+  "module": "MOD-01",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-002",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/settings",
+  "name": null,
+  "module": "MOD-99",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/change_password",
+  "name": "change-password",
+  "module": "MOD-01",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-001",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/profile/:id",
+  "name": "profile",
+  "module": "MOD-03",
+  "public": false,
+  "menu_id": 71,
+  "screen": "SCR-010",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/users",
+  "name": "users",
+  "module": "MOD-16",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-088",
+  "captured": true,
+  "status": "Verified (captured)"
+ },
+ {
+  "reference_path": "/users/:page",
+  "name": "users-page",
+  "module": "MOD-16",
+  "public": false,
+  "menu_id": null,
+  "screen": null,
+  "captured": false,
+  "status": "Declared (route exists; not captured)"
+ },
+ {
+  "reference_path": "/leaveRota",
+  "name": "users",
+  "module": "MOD-05",
+  "public": false,
+  "menu_id": null,
+  "screen": "SCR-019",
+  "captured": true,
+  "status": "Verified (captured)"
+ }
+]

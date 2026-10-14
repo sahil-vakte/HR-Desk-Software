@@ -1,0 +1,1112 @@
+[
+ {
+  "id": "SCR-001",
+  "route": "/change_password",
+  "module": "MOD-01",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-002",
+  "route": "/settings/password",
+  "module": "MOD-01",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-003",
+  "route": "/settings/profile",
+  "module": "MOD-01",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-004",
+  "route": "/home",
+  "module": "MOD-02",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-005",
+  "route": "/employee-directory",
+  "module": "MOD-03",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-006",
+  "route": "/employee/details-view/:id",
+  "module": "MOD-03",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-007",
+  "route": "/employee/employee-list",
+  "module": "MOD-03",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-008",
+  "route": "/employee/hierarchy",
+  "module": "MOD-03",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-009",
+  "route": "/employee/hiring-process",
+  "module": "MOD-03",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-010",
+  "route": "/profile/:id",
+  "module": "MOD-03",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-011",
+  "route": "/attendance-employee",
+  "module": "MOD-04",
+  "roles_captured": [
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-012",
+  "route": "/attendance-employee/:id",
+  "module": "MOD-04",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-013",
+  "route": "/attendance-update",
+  "module": "MOD-04",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-014",
+  "route": "/employee/admin-attendance",
+  "module": "MOD-04",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-015",
+  "route": "/punchIn-settings",
+  "module": "MOD-04",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-016",
+  "route": "/employee/admin-leave-request",
+  "module": "MOD-05",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-017",
+  "route": "/leave/employee-leave",
+  "module": "MOD-05",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-018",
+  "route": "/leave/leave-details",
+  "module": "MOD-05",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-019",
+  "route": "/leaveRota",
+  "module": "MOD-05",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-020",
+  "route": "/manager-leave-request",
+  "module": "MOD-05",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-021",
+  "route": "/master-leave-types",
+  "module": "MOD-05",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-022",
+  "route": "/master-leave-types/:id/:id",
+  "module": "MOD-05",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-023",
+  "route": "/master-leave-year",
+  "module": "MOD-05",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-024",
+  "route": "/work-from-home",
+  "module": "MOD-06",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-025",
+  "route": "/master-holiday",
+  "module": "MOD-07",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-026",
+  "route": "/master-holiday-year",
+  "module": "MOD-07",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-027",
+  "route": "/master-holiday/:id/:id",
+  "module": "MOD-07",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-028",
+  "route": "/PoliciesList",
+  "module": "MOD-08",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-029",
+  "route": "/ho-document",
+  "module": "MOD-08",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-030",
+  "route": "/policies",
+  "module": "MOD-08",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-031",
+  "route": "/project/project-details/:id",
+  "module": "MOD-09",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-032",
+  "route": "/project/view/:id",
+  "module": "MOD-09",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-033",
+  "route": "/projects/project-list",
+  "module": "MOD-09",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-034",
+  "route": "/projects/task-details",
+  "module": "MOD-09",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-035",
+  "route": "/pmo/newsletter",
+  "module": "MOD-10",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-036",
+  "route": "/pmo/query",
+  "module": "MOD-10",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-037",
+  "route": "/pmo/query-view/:id",
+  "module": "MOD-10",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-038",
+  "route": "/pmo/whos-where",
+  "module": "MOD-10",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-039",
+  "route": "/pmo/wsr",
+  "module": "MOD-10",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-040",
+  "route": "/whosWhereDetail",
+  "module": "MOD-10",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-041",
+  "route": "/time/timesheet",
+  "module": "MOD-11",
+  "roles_captured": [
+   "Super Admin",
+   "Employee A",
+   "Employee B"
+  ],
+  "entry": [
+   "Super Admin menu",
+   "Employee menu"
+  ]
+ },
+ {
+  "id": "SCR-042",
+  "route": "/time/viewTimesheet/:id/:date",
+  "module": "MOD-11",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-043",
+  "route": "/reports/attendance-report",
+  "module": "MOD-12",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-044",
+  "route": "/reports/leave-report",
+  "module": "MOD-12",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-045",
+  "route": "/reports/pmo-report",
+  "module": "MOD-12",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-046",
+  "route": "/rms/add-advert",
+  "module": "MOD-13",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-047",
+  "route": "/rms/add-advert/:id",
+  "module": "MOD-13",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-048",
+  "route": "/rms/advert-list",
+  "module": "MOD-13",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-049",
+  "route": "/rms/candidate-documents-list",
+  "module": "MOD-13",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-050",
+  "route": "/rms/candidate-list",
+  "module": "MOD-13",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-051",
+  "route": "/rms/candidate-track-details-edit/:id",
+  "module": "MOD-13",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-052",
+  "route": "/rms/pipeline-list",
+  "module": "MOD-13",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-053",
+  "route": "/rms/view-advert/:id",
+  "module": "MOD-13",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-054",
+  "route": "/master-client",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-055",
+  "route": "/master-country",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-056",
+  "route": "/master-currency-code",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-057",
+  "route": "/master-customer",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-058",
+  "route": "/master-department",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-059",
+  "route": "/master-designation",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-060",
+  "route": "/master-document-list",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-061",
+  "route": "/master-document-type",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-062",
+  "route": "/master-education",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-063",
+  "route": "/master-employee-salary",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-064",
+  "route": "/master-employee-status",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-065",
+  "route": "/master-job-title",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-066",
+  "route": "/master-languages",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-067",
+  "route": "/master-letters",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-068",
+  "route": "/master-nationality",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-069",
+  "route": "/master-process",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-070",
+  "route": "/master-reporting-managers",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-071",
+  "route": "/master-skills",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-072",
+  "route": "/master-state",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-073",
+  "route": "/master-termination-reasons",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-074",
+  "route": "/master-work-authorization",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-075",
+  "route": "/master-work-week",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-076",
+  "route": "/master-working-mode",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-077",
+  "route": "/rms/master-evaluation-status",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-078",
+  "route": "/rms/master-interview-questions",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-079",
+  "route": "/rms/master-interview-status",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-080",
+  "route": "/rms/master-technical-questions",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-081",
+  "route": "/rms/master-technical-status",
+  "module": "MOD-14",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-082",
+  "route": "/settings/company-settings",
+  "module": "MOD-15",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-083",
+  "route": "/settings/email-settings",
+  "module": "MOD-15",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-084",
+  "route": "/settings/localization-settings",
+  "module": "MOD-15",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-085",
+  "route": "/settings/theme-settings",
+  "module": "MOD-15",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-086",
+  "route": "/roles/",
+  "module": "MOD-16",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-087",
+  "route": "/roles/edit/:id",
+  "module": "MOD-16",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-088",
+  "route": "/users",
+  "module": "MOD-16",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Super Admin menu"
+  ]
+ },
+ {
+  "id": "SCR-089",
+  "route": "/Hr-Forms",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-090",
+  "route": "/file-manager",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-091",
+  "route": "/interview-questions",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-092",
+  "route": "/master-roles",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-093",
+  "route": "/project/task-board",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-094",
+  "route": "/salary",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-095",
+  "route": "/salary-slip",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-096",
+  "route": "/settings/approval-settings",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ },
+ {
+  "id": "SCR-097",
+  "route": "/settings/crone-settings",
+  "module": "MOD-99",
+  "roles_captured": [
+   "Super Admin"
+  ],
+  "entry": [
+   "Detail/deep link (not in menu)"
+  ]
+ }
+]

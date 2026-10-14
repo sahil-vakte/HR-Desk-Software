@@ -1,0 +1,10 @@
+.venv/
+node_modules/
+build/
+.env
+*.sqlite3*
+__pycache__/
+.pytest_cache/
+private_media/
+staticfiles/
+coverage/
