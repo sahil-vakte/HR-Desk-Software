@@ -26,7 +26,13 @@ COPY --from=frontend-build /app/frontend/build /app/frontend/build
 
 WORKDIR /app/backend
 
-RUN python manage.py collectstatic --noinput
+# Generate temporary settings for collecting static files.
+# These are NOT production secrets.
+RUN DJANGO_SECRET_KEY="temporary-build-key-not-for-production" \
+    FIELD_ENCRYPTION_KEY="$(python -c 'from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())')" \
+    DJANGO_ALLOWED_HOSTS="localhost,127.0.0.1" \
+    DJANGO_CSRF_TRUSTED_ORIGINS="http://localhost" \
+    python manage.py collectstatic --noinput
 
 EXPOSE 10000
 
