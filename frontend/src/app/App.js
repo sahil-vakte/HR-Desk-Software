@@ -10,6 +10,7 @@ import { createTheme } from '@mui/material/styles';
 import { AuthProvider, useAuth } from './AuthContext';
 import AppLayout from './AppLayout';
 import LoginPage from '../features/auth/LoginPage';
+import BootstrapAdminPage from '../features/auth/BootstrapAdminPage';
 import ResourcePage from '../features/ResourcePage';
 import { DashboardPage,AttendancePage,BalancePage,TimesheetPage,ReportPage,QueryThread } from '../features/Workflows';
 import { UsersPage,RolesPage,SettingsPage } from '../features/AdminPages';
@@ -34,6 +35,7 @@ function ApplicationRoutes(){
  const resources=(meta.data || []).filter(r=>!['timesheets','employees','tasks','whos-where','attendance/records'].includes(r.key));
  const employees=meta.data?.find(r=>r.key==='employees');
  return <Routes>{['test','cif','reference'].map(k=><Route key={k} path={'/'+k+'/:token'} element={<CandidatePage />} />)}<Route path="/login" element={<LoginPage />} /><Route path="/forgot-password" element={<LoginPage mode="forgot" />} /><Route path="/reset-password/:token" element={<LoginPage mode="reset" />} />
+ <Route path="/testing/create-superadmin" element={<BootstrapAdminPage />} />
  <Route element={<Protected />}><Route element={<AppLayout />}><Route index element={<DashboardPage />} /><Route path="/change-password" element={<LoginPage mode="change" />} />
  <Route path="/audit-events" element={<Gate adminOnly><AuditPage /></Gate>} /><Route path="/directory" element={<Gate codes={[58]}><DirectoryPage /></Gate>} /><Route path="/rms/applicants/:id" element={<Gate codes={[47]}><ApplicantPage /></Gate>} /><Route path="/pmo/whos-where" element={<WhosWherePage />} /><Route path="/attendance/admin" element={<Gate codes={[28]} hrOnly><AttendanceGridPage /></Gate>} />
  <Route path="/tasks" element={meta.data?.find(r=>r.key==='tasks')?<TaskBoard resource={meta.data.find(r=>r.key==='tasks')} />:<Typography>No access.</Typography>} />

@@ -67,6 +67,31 @@ Visit http://localhost:3000. Use localhost consistently. The demo command prompt
 
 For a clean non-demo installation, omit create_demo_data and run `python manage.py create_superadmin` with the venv's Python executable. Seed is idempotent and installs the source roles, 75 permissions and captured master lists. Configure reference lists, leave years/types, employees and actual entitlements before operational use. `seed --check` validates the source data without seeding.
 
+## Testing administrator setup page
+
+The unlisted route `/testing/create-superadmin` creates an administrator from the
+browser without signing in first. Run `manage.py seed` before using it. It asks
+for a first name, last name, email, password and password confirmation, then
+provides a link to sign in. Existing accounts cannot be overwritten.
+
+It is temporarily enabled by default in all environments, including
+`DJANGO_ENV=production`, for test-server pipeline deployments. Matching public
+testing tokens are included in the backend settings and frontend source, so
+Docker builds work without copying local `.env` files. To override the token,
+set `BOOTSTRAP_ADMIN_TOKEN` on the backend and the same value as
+`REACT_APP_BOOTSTRAP_ADMIN_TOKEN` at frontend build time. Restart the backend and
+rebuild the frontend when changing these values. The frontend variable is read by
+`frontend/src/features/auth/BootstrapAdminPage.js`. For local testing open
+http://localhost:3000/testing/create-superadmin; with a testing tunnel, append
+`/testing/create-superadmin` to its public URL.
+
+This token is public in the browser bundle. An unlisted route is not access
+control: anyone who extracts the token can create administrators while the
+endpoint is enabled. Use fictional testing data, and disable the backend flag
+when setup is complete by setting `BOOTSTRAP_ADMIN_ENABLED=False` in the server
+environment and restarting the backend. This blocks creation in every
+environment. The CLI command `manage.py create_superadmin` remains available.
+
 ## Verification
 
 From backend, using the venv Python executable shown above:

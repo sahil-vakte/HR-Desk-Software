@@ -3,6 +3,7 @@ from rest_framework.routers import DefaultRouter
 from apps.core.views import HealthView, csrf_token, SpaView
 from apps.accounts.views import LoginView, LogoutView, SessionView, ForgotPasswordView, ResetPasswordView, ChangePasswordView
 from apps.accounts.admin_api import UsersViewSet, RolesViewSet, MenusViewSet
+from apps.accounts.bootstrap import BootstrapAdminView
 from apps.core.api import ResourceViewSet
 from apps.core.registry import RESOURCES
 from apps.core.ui import ResourceMetadata, LookupView, ProfileMetadata
@@ -32,6 +33,7 @@ for key in RESOURCES:
     view=type(key.replace('/','_').replace('-','_')+'ViewSet',(ResourceViewSet,),{'resource_key':key})
     router.register(key,view,basename=key.replace('/','-'))
 urlpatterns=[
+    path('api/v1/auth/bootstrap-admin/', BootstrapAdminView.as_view()),
     path('api/v1/employees/next-id/',NextId.as_view()),
     path('api/v1/employees/check-email/',CheckEmail.as_view()),
     path('api/v1/employees/export.csv',EmployeeExport.as_view()),

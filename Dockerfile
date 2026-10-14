@@ -7,6 +7,8 @@ COPY frontend/package.json frontend/package-lock.json ./
 RUN npm ci
 
 COPY frontend/ ./
+# Optional public testing-token override; must match the backend runtime token.
+ARG REACT_APP_BOOTSTRAP_ADMIN_TOKEN
 RUN npm run build
 
 # Install and run Django

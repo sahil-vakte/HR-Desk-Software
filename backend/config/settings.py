@@ -9,6 +9,10 @@ ENVIRONMENT = env("DJANGO_ENV", default="production")
 if ENVIRONMENT not in {"development", "production", "test"}:
     raise ImproperlyConfigured("DJANGO_ENV must be development, production or test.")
 DEBUG = ENVIRONMENT == "development"
+# Temporary test-server bootstrap, including production-mode deployments.
+# The matching token ships in the frontend; disable this flag after testing.
+BOOTSTRAP_ADMIN_ENABLED = env.bool("BOOTSTRAP_ADMIN_ENABLED", default=True)
+BOOTSTRAP_ADMIN_TOKEN = env("BOOTSTRAP_ADMIN_TOKEN", default="QqguIjFjutXXnvTbJTo55443B5LyK93bFvnmkzAuL0M")
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 if not SECRET_KEY or SECRET_KEY.startswith("replace-"):
     raise ImproperlyConfigured("Generate DJANGO_SECRET_KEY before starting.")
