@@ -28,7 +28,9 @@ WORKDIR /app/backend
 
 # Generate temporary settings for collecting static files.
 # These are NOT production secrets.
-RUN DJANGO_SECRET_KEY="temporary-build-key-not-for-production" \
+
+
+RUN DJANGO_SECRET_KEY="temporary-build-only-secret-key-0123456789-abcdefghijklmnopqrstuvwxyz-0123456789" \
     FIELD_ENCRYPTION_KEY="$(python -c 'from cryptography.fernet import Fernet; print(Fernet.generate_key().decode())')" \
     DJANGO_ALLOWED_HOSTS="localhost,127.0.0.1" \
     DJANGO_CSRF_TRUSTED_ORIGINS="http://localhost" \
