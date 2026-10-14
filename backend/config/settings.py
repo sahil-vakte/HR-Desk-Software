@@ -132,5 +132,6 @@ FRONTEND_ORIGIN = env("FRONTEND_ORIGIN", default="http://localhost:3000")
 
 STATICFILES_DIRS = [BASE_DIR.parent / "frontend" / "build" / "static"] if (BASE_DIR.parent / "frontend" / "build" / "static").exists() else []
 MIDDLEWARE.insert(1, "whitenoise.middleware.WhiteNoiseMiddleware")
-if env.bool("TRUST_HTTPS_PROXY", default=False):
-    SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
+# Render terminates HTTPS at its proxy and forwards the original
+# protocol to the Django application.
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
